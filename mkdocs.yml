@@ -1,0 +1,70 @@
+site_name: Agile & Software Delivery Mastery Path
+site_description: A structured, module-wise Agile, Scrum, Kanban, Waterfall and SDLC training program from entry level to master level, treated as one integrated software delivery methodology curriculum.
+site_url: https://sigilipelli.github.io/agile-mastery-path/
+repo_url: https://github.com/SIGILIPELLI/agile-mastery-path
+repo_name: agile-mastery-path
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+# --- auto-pruned stub levels (see AdSense low-value-content fix) ---
+exclude_docs: |
+  level-2/*
+  level-3/*
+  level-4/*
+# --- end auto-pruned stub levels ---
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · What Is the SDLC?": level-1/01-what-is-sdlc.md
+      - "02 · The Waterfall Model": level-1/02-waterfall-model.md
+      - "03 · The Agile Manifesto & Principles": level-1/03-agile-manifesto-principles.md
+      - "04 · Scrum Roles, Events & Artifacts": level-1/04-scrum-roles-events-artifacts.md
+      - "05 · Kanban Basics (WIP Limits & Pull)": level-1/05-kanban-basics.md
+      - "06 · Agile vs. Waterfall": level-1/06-agile-vs-waterfall.md
+      - "07 · User Stories & Backlogs": level-1/07-user-stories-backlogs.md
+      - "08 · Estimation Basics (Story Points & Planning Poker)": level-1/08-estimation-basics.md
+      - "09 · Sprint Planning Exercise": level-1/09-sprint-planning-exercise.md
+      - "10 · Capstone — Mock 1-Week Sprint Plan": level-1/10-capstone-mock-sprint-plan.md
