@@ -46,12 +46,6 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
-# --- auto-pruned stub levels (see AdSense low-value-content fix) ---
-exclude_docs: |
-  level-2/*
-  level-3/*
-  level-4/*
-# --- end auto-pruned stub levels ---
 
 nav:
   - Home: index.md
@@ -68,3 +62,39 @@ nav:
       - "08 · Estimation Basics (Story Points & Planning Poker)": level-1/08-estimation-basics.md
       - "09 · Sprint Planning Exercise": level-1/09-sprint-planning-exercise.md
       - "10 · Capstone — Mock 1-Week Sprint Plan": level-1/10-capstone-mock-sprint-plan.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Scrum Ceremonies in Depth": level-2/01-scrum-ceremonies-in-depth.md
+      - "02 · Sprint Retrospectives": level-2/02-sprint-retrospectives.md
+      - "03 · Backlog Refinement": level-2/03-backlog-refinement.md
+      - "04 · Kanban Metrics (Cycle Time, Lead Time, CFD)": level-2/04-kanban-metrics.md
+      - "05 · Definition of Done & Definition of Ready": level-2/05-definition-of-done-ready.md
+      - "06 · Velocity Tracking": level-2/06-velocity-tracking.md
+      - "07 · Release Planning": level-2/07-release-planning.md
+      - "08 · Working Agreements & Team Norms": level-2/08-working-agreements-team-norms.md
+      - "09 · Handling Scope Change Mid-Sprint": level-2/09-handling-scope-change.md
+      - "10 · Project — Release Plan with Sprint Roadmap": level-2/10-project-release-plan.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · Scaling Frameworks Overview (SAFe, LeSS, Nexus)": level-3/01-scaling-frameworks-overview.md
+      - "02 · Agile in Distributed Teams": level-3/02-agile-distributed-teams.md
+      - "03 · Hybrid Agile-Waterfall Models": level-3/03-hybrid-agile-waterfall.md
+      - "04 · Risk Management Across SDLC Phases": level-3/04-risk-management-sdlc.md
+      - "05 · DevOps & CI/CD Integration with Agile": level-3/05-devops-cicd-agile.md
+      - "06 · Metrics & Reporting for Stakeholders": level-3/06-metrics-reporting-stakeholders.md
+      - "07 · Multi-Team Dependency Management": level-3/07-multi-team-dependency-management.md
+      - "08 · Agile Contracts & Vendor Management": level-3/08-agile-contracts-vendor-management.md
+      - "09 · Technical Debt in an Agile Delivery Model": level-3/09-technical-debt-agile.md
+      - "10 · Project — Scaled Program Delivery Plan": level-3/10-project-scaled-program-plan.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Agile Transformation & Change Management": level-4/01-agile-transformation-change-management.md
+      - "02 · Coaching Teams": level-4/02-coaching-teams.md
+      - "03 · Enterprise SDLC Governance": level-4/03-enterprise-sdlc-governance.md
+      - "04 · Choosing the Right Methodology per Project Type": level-4/04-choosing-right-methodology.md
+      - "05 · Building an Internal Agile Center of Excellence": level-4/05-internal-agile-center-of-excellence.md
+      - "06 · Measuring Transformation Success": level-4/06-measuring-transformation-success.md
+      - "07 · Leading Agile at Portfolio Level": level-4/07-leading-agile-portfolio-level.md
+      - "08 · Agile & AI-Assisted Delivery": level-4/08-agile-ai-assisted-delivery.md
+      - "09 · Career Growth: Scrum Master to Agile Coach/Director": level-4/09-career-growth-scrum-master-to-coach.md
+      - "10 · Capstone — Full Organizational Agile Transformation Roadmap": level-4/10-capstone-organizational-transformation-roadmap.md

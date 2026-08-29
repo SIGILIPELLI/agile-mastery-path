@@ -21,9 +21,9 @@ organization.
 | Level | Focus | Modules |
 |-------|-------|---------|
 | [Level 1 · Entry](level-1/index.md) | SDLC fundamentals, Waterfall, the Agile Manifesto, Scrum roles/events/artifacts, Kanban basics, Agile vs. Waterfall, user stories, estimation | 9 topics + 1 capstone |
-| Level 2 · Intermediate | Scrum ceremonies in depth, retrospectives, backlog refinement, Kanban metrics, Definition of Done/Ready, velocity, release planning | 9 topics + 1 project |
-| Level 3 · Advanced | Scaling frameworks (SAFe, LeSS, Nexus), distributed Agile teams, hybrid Agile-Waterfall, risk management across the SDLC, DevOps/CI-CD integration | 9 topics + 1 project |
-| Level 4 · Master | Agile transformation & change management, coaching teams, enterprise SDLC governance, choosing the right methodology per project | 9 topics + 1 capstone |
+| [Level 2 · Intermediate](level-2/index.md) | Scrum ceremonies in depth, retrospectives, backlog refinement, Kanban metrics, Definition of Done/Ready, velocity, release planning | 9 topics + 1 project |
+| [Level 3 · Advanced](level-3/index.md) | Scaling frameworks (SAFe, LeSS, Nexus), distributed Agile teams, hybrid Agile-Waterfall, risk management across the SDLC, DevOps/CI-CD integration | 9 topics + 1 project |
+| [Level 4 · Master](level-4/index.md) | Agile transformation & change management, coaching teams, enterprise SDLC governance, choosing the right methodology per project | 9 topics + 1 capstone |
 
 ## How to use this site
 
