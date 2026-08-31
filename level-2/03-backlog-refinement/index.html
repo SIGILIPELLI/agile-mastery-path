@@ -998,6 +998,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Backlog Refinement
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1014,6 +1032,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-refinement-actually-produces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What refinement actually produces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-definition-of-ready-as-refinements-exit-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Definition of Ready as refinement's exit criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Splitting techniques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-refinement-actually-produces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What refinement actually produces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-definition-of-ready-as-refinements-exit-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Definition of Ready as refinement's exit criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Splitting techniques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,148 @@
 
 
 <h1 id="03-backlog-refinement">03 · Backlog Refinement<a class="headerlink" href="#03-backlog-refinement" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Sprint Planning runs long, stories get pulled in half-understood, and
+developers discover missing acceptance criteria mid-sprint — almost every
+one of these traces back to refinement not happening, or happening too
+shallow. This module treats refinement as its own discipline.</p>
+<h2 id="what-refinement-actually-produces">What refinement actually produces<a class="headerlink" href="#what-refinement-actually-produces" title="Permanent link">&para;</a></h2>
+<p>Refinement (formerly "grooming") is the ongoing activity of taking backlog
+items from "idea" to "ready to pull into a sprint." It is not a single
+meeting — it's a habit, ideally consuming no more than 10% of team capacity
+per sprint, spread across short working sessions.</p>
+<table>
+<thead>
+<tr>
+<th>Refinement activity</th>
+<th>Output</th>
+<th>Who drives it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Splitting large items</td>
+<td>Stories small enough to fit in one sprint</td>
+<td>PO + team together</td>
+</tr>
+<tr>
+<td>Adding acceptance criteria</td>
+<td>Testable "done" conditions per story</td>
+<td>PO, validated by team</td>
+</tr>
+<tr>
+<td>Estimating</td>
+<td>Story points or sizing for prioritization</td>
+<td>Whole team</td>
+</tr>
+<tr>
+<td>Ordering</td>
+<td>Backlog sequence reflecting value and dependency</td>
+<td>Product Owner</td>
+</tr>
+<tr>
+<td>Removing stale items</td>
+<td>A backlog that reflects current reality</td>
+<td>Product Owner</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-definition-of-ready-as-refinements-exit-criteria">The Definition of Ready as refinement's exit criteria<a class="headerlink" href="#the-definition-of-ready-as-refinements-exit-criteria" title="Permanent link">&para;</a></h2>
+<p>A story is "ready" for Sprint Planning when the team can forecast it with
+confidence. A practical checklist:</p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Independent</td>
+<td>Doesn't silently depend on another unstarted story</td>
+</tr>
+<tr>
+<td>Negotiable</td>
+<td>Not a rigid spec — room to discuss the "how"</td>
+</tr>
+<tr>
+<td>Valuable</td>
+<td>Ties to a real user or business outcome</td>
+</tr>
+<tr>
+<td>Estimable</td>
+<td>Team has enough shared understanding to size it</td>
+</tr>
+<tr>
+<td>Small</td>
+<td>Fits comfortably inside one sprint</td>
+</tr>
+<tr>
+<td>Testable</td>
+<td>Has explicit acceptance criteria</td>
+</tr>
+</tbody>
+</table>
+<p>(This is the INVEST model, applied specifically as a refinement gate — see
+Module 05 for the full Definition of Ready/Done relationship.)</p>
+<h2 id="splitting-techniques">Splitting techniques<a class="headerlink" href="#splitting-techniques" title="Permanent link">&para;</a></h2>
+<p>Large stories ("epics") are the most common refinement blocker. Useful
+splitting axes:</p>
+<table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Workflow steps</td>
+<td>"Checkout" → browse cart, apply coupon, pay, confirm</td>
+</tr>
+<tr>
+<td>Business rules / variations</td>
+<td>"Discounts" → percentage-off, first order, bulk</td>
+</tr>
+<tr>
+<td>Data boundaries</td>
+<td>"Import users" → CSV import, then API import</td>
+</tr>
+<tr>
+<td>CRUD operations</td>
+<td>"Manage products" → create, then edit, then archive</td>
+</tr>
+<tr>
+<td>Happy path vs. edge cases</td>
+<td>Ship the common case first; edge cases as follow-up stories</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A team's backlog has a single item, "Improve search," sized at "too big to
+estimate," sitting untouched for three sprints. In a 30-minute refinement
+session:</p>
+<ol>
+<li>The PO explains the underlying goal: users abandon search when results
+   feel irrelevant.</li>
+<li>The team splits along workflow steps: (a) add relevance ranking by
+   purchase history, (b) add typo tolerance, (c) add filter-by-category,
+   (d) add "no results" suggestions.</li>
+<li>Each split story gets acceptance criteria — e.g., (b) "a search for
+   'shose' returns shoe results" — and gets estimated at 3–5 points instead
+   of "unknown."</li>
+<li>The PO reorders: (a) and (b) go first since they address the actual
+   abandonment cause found in analytics; (c) and (d) move to a later sprint.</li>
+</ol>
+<p>The backlog goes from one unmovable epic to four independently shippable,
+estimated, ordered stories in one session.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Take an epic-sized backlog item (real or invented, e.g. "add
+notifications"). (1) Pick a splitting axis from the table and split it into
+3–5 stories. (2) Write one acceptance criterion per story. (3) Run each
+split story through the six-point Definition of Ready checklist and flag
+any that still fail a criterion. (4) State how you'd resolve the failing
+criterion before the story enters a sprint.</p>
 
 
 

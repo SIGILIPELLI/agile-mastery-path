@@ -1082,6 +1082,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Velocity Tracking
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1098,6 +1116,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-velocity-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What velocity is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velocity-inflation-cause-and-symptom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocity inflation: cause and symptom
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-velocity-for-release-forecasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using velocity for release forecasting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-velocity-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What velocity is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velocity-inflation-cause-and-symptom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocity inflation: cause and symptom
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-velocity-for-release-forecasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using velocity for release forecasting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,127 @@
 
 
 <h1 id="06-velocity-tracking">06 · Velocity Tracking<a class="headerlink" href="#06-velocity-tracking" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Velocity is the most commonly misused Agile metric — treated as a
+productivity score, a cross-team comparison tool, or a management target,
+none of which it was designed for. This module covers what velocity
+actually is and the failure modes of using it wrong.</p>
+<h2 id="what-velocity-is">What velocity is<a class="headerlink" href="#what-velocity-is" title="Permanent link">&para;</a></h2>
+<p>Velocity is simply: <strong>story points completed per sprint</strong>, averaged over
+several recent sprints. It exists for exactly one purpose — forecasting how
+much a <em>specific team</em> can likely complete in a <em>future sprint</em>, based on
+its own recent history.</p>
+<table>
+<thead>
+<tr>
+<th>Correct use</th>
+<th>Incorrect use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forecasting this team's own capacity next sprint</td>
+<td>Comparing Team A's velocity to Team B's</td>
+</tr>
+<tr>
+<td>Sanity-checking Sprint Planning ("we're pulling 40 points, we usually do 28")</td>
+<td>Setting velocity as a target to hit or exceed</td>
+</tr>
+<tr>
+<td>Release forecasting: remaining points ÷ average velocity = sprints remaining</td>
+<td>Using velocity in performance reviews</td>
+</tr>
+<tr>
+<td>Spotting a real capacity change (illness, holidays, new hire ramp-up)</td>
+<td>Comparing velocity across different estimation scales or teams</td>
+</tr>
+</tbody>
+</table>
+<p>Because story points are relative and team-specific (a "5" on one team
+means nothing on another), any cross-team comparison is comparing
+different units and produces meaningless conclusions — usually pressure to
+inflate estimates, which is the well-known cause of "velocity inflation."</p>
+<h2 id="velocity-inflation-cause-and-symptom">Velocity inflation: cause and symptom<a class="headerlink" href="#velocity-inflation-cause-and-symptom" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cause</th>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocity used as a target</td>
+<td>Story points creep up for the same work</td>
+<td>Stop using velocity as a KPI; use it only for forecasting</td>
+</tr>
+<tr>
+<td>Cross-team comparison</td>
+<td>Teams game their own scale to look "faster"</td>
+<td>Compare throughput/cycle time trends instead, if comparison is needed at all</td>
+</tr>
+<tr>
+<td>Partial-credit counting</td>
+<td>Points counted for stories not fully done</td>
+<td>Only count points for stories meeting the full Definition of Done</td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-velocity-for-release-forecasting">Using velocity for release forecasting<a class="headerlink" href="#using-velocity-for-release-forecasting" title="Permanent link">&para;</a></h2>
+<p>A simple, honest forecast uses a <em>range</em>, not a single number, because
+velocity varies sprint to sprint:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remaining backlog</td>
+<td>140 points</td>
+</tr>
+<tr>
+<td>Last 6 sprints' velocity</td>
+<td>18, 22, 15, 24, 19, 21</td>
+</tr>
+<tr>
+<td>Average velocity</td>
+<td>≈ 19.8</td>
+</tr>
+<tr>
+<td>Range (min–max)</td>
+<td>15–24</td>
+</tr>
+<tr>
+<td>Forecast</td>
+<td>140 ÷ 19.8 ≈ 7 sprints (best case ~6, worst case ~9)</td>
+</tr>
+</tbody>
+</table>
+<p>Presenting the range rather than the average alone sets more honest
+stakeholder expectations and avoids the "you said 7 sprints" trap when
+reality lands at 8.</p>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A manager starts publishing a leaderboard ranking five teams by velocity.
+Within two sprints, every team's average velocity rises 20–30% with no
+corresponding increase in delivered features — teams have recalibrated
+their own point scales upward to avoid looking slow. The Scrum Masters
+diagnose this as velocity-as-target inflation and take it to the manager
+with the release-forecasting table above: velocity is only meaningful
+within one team's own consistent scale, and the leaderboard is comparing
+units that were never equivalent. The fix is removing the leaderboard and
+replacing it with each team's own release forecast range, reviewed
+privately with each team.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Given a team's last 8 sprint velocities (invent plausible numbers with some
+variance) and a backlog of 200 remaining points: (1) compute the average
+and a min–max range, (2) produce a sprint-count forecast as a range, not a
+single number, (3) identify one thing that would make you distrust this
+forecast (e.g., a big backlog item with no split yet), and (4) explain in
+one paragraph why comparing this team's velocity to another team's would be
+invalid.</p>
 
 
 

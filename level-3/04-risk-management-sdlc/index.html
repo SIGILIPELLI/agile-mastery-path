@@ -1400,6 +1400,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Risk Management Across SDLC Phases
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1416,6 +1434,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#risk-categories-and-where-they-concentrate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk categories and where they concentrate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-lightweight-risk-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A lightweight risk register
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-agile-helps-risk-management-and-where-it-doesnt-automatically" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where Agile helps risk management, and where it doesn't automatically
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#risk-categories-and-where-they-concentrate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk categories and where they concentrate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-lightweight-risk-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A lightweight risk register
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-agile-helps-risk-management-and-where-it-doesnt-automatically" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where Agile helps risk management, and where it doesn't automatically
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,148 @@
 
 
 <h1 id="04-risk-management-across-sdlc-phases">04 · Risk Management Across SDLC Phases<a class="headerlink" href="#04-risk-management-across-sdlc-phases" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Waterfall front-loads risk analysis into one upfront phase; Agile spreads
+risk management across every sprint, but that only works if someone
+actually does it deliberately rather than assuming short cycles
+automatically dissolve risk. This module gives a phase-aware risk practice.</p>
+<h2 id="risk-categories-and-where-they-concentrate">Risk categories and where they concentrate<a class="headerlink" href="#risk-categories-and-where-they-concentrate" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Risk category</th>
+<th>Concentrates in</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requirements risk</td>
+<td>Early (discovery, backlog formation)</td>
+<td>Misunderstood user need</td>
+</tr>
+<tr>
+<td>Technical/architecture risk</td>
+<td>Early-to-mid (design, first builds)</td>
+<td>Chosen approach doesn't scale</td>
+</tr>
+<tr>
+<td>Schedule/scope risk</td>
+<td>Ongoing, spikes near release</td>
+<td>Underestimated stories, scope creep</td>
+</tr>
+<tr>
+<td>Integration risk</td>
+<td>Mid-to-late</td>
+<td>Two teams' components don't compose as assumed</td>
+</tr>
+<tr>
+<td>Operational risk</td>
+<td>Late (release, post-release)</td>
+<td>Deployment failure, unhandled load</td>
+</tr>
+<tr>
+<td>Compliance/legal risk</td>
+<td>Can appear at any phase</td>
+<td>A late-discovered regulatory requirement</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-lightweight-risk-register">A lightweight risk register<a class="headerlink" href="#a-lightweight-risk-register" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Risk description</td>
+<td>One sentence, specific, not vague ("integration may be hard")</td>
+</tr>
+<tr>
+<td>Likelihood (L/M/H)</td>
+<td>Rough, not false-precision</td>
+</tr>
+<tr>
+<td>Impact (L/M/H)</td>
+<td>What breaks if it happens</td>
+</tr>
+<tr>
+<td>Trigger/signal</td>
+<td>The specific observable that means it's happening</td>
+</tr>
+<tr>
+<td>Mitigation</td>
+<td>What reduces likelihood or impact, and by when</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>A person, not a team</td>
+</tr>
+</tbody>
+</table>
+<p>Likelihood × Impact gives a rough priority (High/High first), but the
+<strong>trigger/signal</strong> column is what actually makes a risk register useful day
+to day — it converts "watch out for X" into a specific, checkable
+condition someone can notice during normal work.</p>
+<h2 id="where-agile-helps-risk-management-and-where-it-doesnt-automatically">Where Agile helps risk management, and where it doesn't automatically<a class="headerlink" href="#where-agile-helps-risk-management-and-where-it-doesnt-automatically" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Agile mechanism</th>
+<th>Risk benefit</th>
+<th>What it doesn't cover</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Short sprints</td>
+<td>Surfaces requirements/technical risk within weeks, not months</td>
+<td>Doesn't surface risks nobody thought to name in the register</td>
+</tr>
+<tr>
+<td>Sprint Review</td>
+<td>Validates against real stakeholder feedback early</td>
+<td>Doesn't substitute for a deliberate architecture risk-spike</td>
+</tr>
+<tr>
+<td>Retrospective</td>
+<td>Surfaces process/team risk</td>
+<td>Rarely surfaces external risk (vendor delay, compliance change)</td>
+</tr>
+<tr>
+<td>Backlog reprioritization</td>
+<td>Can de-risk by resequencing risky work earlier</td>
+<td>Only works if risky items are <em>tagged</em> as such in refinement</td>
+</tr>
+</tbody>
+</table>
+<p>The key discipline: tag genuinely risky backlog items during refinement
+(Module 03, Level 2) and deliberately schedule them <strong>earlier</strong>, even if
+they're not the highest business value, specifically to buy down risk while
+there's still time to react — this is often called a "risk-based spike" or
+"walking skeleton" approach.</p>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A team building a payments integration doesn't register the third-party
+payment gateway's undocumented rate limits as a risk — it isn't visible
+until week 9 of a 12-week project, when load testing suddenly fails.</p>
+<p>Retrospective analysis: the risk register, if it had existed, should have
+had "third-party gateway may have undocumented limits under load" logged
+in week 1 with trigger "load test throughput below X" and mitigation
+"run a small-scale load test against the gateway in sprint 1, not sprint
+9." For the next project of similar shape, the team adds a standing rule:
+any story involving an unfamiliar third-party dependency gets a
+risk-register entry and an early, small-scale spike in the first sprint
+that touches it — regardless of that story's business priority ranking.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>For a project integrating with an unfamiliar external API under a fixed
+deadline: (1) list three risks across at least two categories from the
+table, (2) write a full risk-register row (all six fields) for the highest
+Likelihood×Impact one, (3) propose a risk-based spike you'd schedule in
+sprint 1 rather than by business priority alone, and (4) name the specific
+trigger/signal that would tell you the mitigation isn't working and the
+risk is materializing anyway.</p>
 
 
 

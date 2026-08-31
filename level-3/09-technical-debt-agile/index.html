@@ -1540,6 +1540,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Technical Debt in an Agile Delivery Model
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1556,6 +1574,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-technical-debt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of technical debt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-debt-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making debt visible
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deciding-what-to-pay-down-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deciding what to pay down first
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-technical-debt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of technical debt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-debt-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making debt visible
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deciding-what-to-pay-down-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deciding what to pay down first
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,125 @@
 
 
 <h1 id="09-technical-debt-in-an-agile-delivery-model">09 · Technical Debt in an Agile Delivery Model<a class="headerlink" href="#09-technical-debt-in-an-agile-delivery-model" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Agile's short cycles and pressure to ship every sprint make it easy to
+accumulate technical debt without anyone explicitly deciding to. This module
+covers naming debt honestly, tracking it, and paying it down without
+stopping feature delivery.</p>
+<h2 id="types-of-technical-debt">Types of technical debt<a class="headerlink" href="#types-of-technical-debt" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+<th>How it's usually incurred</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deliberate, tracked</td>
+<td>"We'll hardcode this config to hit the demo deadline"</td>
+<td>A conscious trade-off, logged for later</td>
+</tr>
+<tr>
+<td>Deliberate, untracked</td>
+<td>Same trade-off, never written down anywhere</td>
+<td>The most dangerous kind — invisible until it bites</td>
+</tr>
+<tr>
+<td>Accidental, discovered</td>
+<td>A design that seemed fine turns out not to scale</td>
+<td>Found through use, not foreseeable at the time</td>
+</tr>
+<tr>
+<td>Bit rot</td>
+<td>Code that was fine when written, now stale relative to newer patterns/libraries</td>
+<td>Normal decay as the codebase and ecosystem evolve</td>
+</tr>
+</tbody>
+</table>
+<p>The dangerous quadrant is deliberate-and-untracked: it's a choice, but
+nobody outside the moment it was made knows it exists.</p>
+<h2 id="making-debt-visible">Making debt visible<a class="headerlink" href="#making-debt-visible" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>How it works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Debt log / backlog tag</td>
+<td>Every known shortcut logged as a backlog item, tagged <code>tech-debt</code>, with the trade-off it made explicit</td>
+</tr>
+<tr>
+<td>Debt-interest framing</td>
+<td>Describe cost in terms stakeholders understand: "this slows every future story touching this module by ~20%"</td>
+</tr>
+<tr>
+<td>Boy Scout rule</td>
+<td>Small, opportunistic cleanup bundled into stories that touch the affected code, instead of always deferring</td>
+</tr>
+<tr>
+<td>Dedicated capacity</td>
+<td>A fixed percentage of each sprint (commonly 10-20%) reserved for debt paydown, protected like any other commitment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deciding-what-to-pay-down-first">Deciding what to pay down first<a class="headerlink" href="#deciding-what-to-pay-down-first" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Debt in a module changed almost every sprint</td>
+<td>High — interest compounds fastest here</td>
+</tr>
+<tr>
+<td>Debt in code touched once a year</td>
+<td>Low — the interest rarely comes due</td>
+</tr>
+<tr>
+<td>Debt actively causing production incidents</td>
+<td>Highest — it's no longer just slow, it's breaking</td>
+</tr>
+<tr>
+<td>Debt only the original author understands (bus factor)</td>
+<td>High — risk compounds independently of change frequency</td>
+</tr>
+</tbody>
+</table>
+<p>The rule of thumb: prioritize by <em>how often the debt is paid in interest</em>,
+not by how uncomfortable it is to look at.</p>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A team's checkout module accumulated debt over six months: a payment-gateway
+integration was hardcoded for one provider "temporarily" during a launch
+crunch, with no ticket ever filed. Nine months later, the business wants a
+second payment provider, and every estimate for that work balloons because
+the hardcoded assumption is threaded through five files with no clean
+seam.</p>
+<p>The team runs a retrospective focused specifically on this incident and
+introduces two changes: every deliberate shortcut now requires a backlog
+item tagged <code>tech-debt</code> before the sprint closes (making the deliberate
+kind trackable), and the team commits a fixed 15% of each sprint's capacity
+to debt paydown, prioritized using the interest-frequency signal rather than
+gut feel. Six months later, the debt log shows the payment-gateway coupling
+as the single highest-interest item (touched by four of the last six
+features), and it gets scheduled and fixed before it blocks the next
+required integration.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Your team just shipped a feature under deadline pressure by copy-pasting a
+validation function instead of refactoring a shared one, and no one logged
+it. Using this module's framework: (1) classify the debt type, (2) write
+the backlog item that should have been logged, including its "interest"
+description in stakeholder terms, (3) decide whether it belongs in the
+current sprint's Boy Scout cleanup or the dedicated debt-capacity backlog
+and justify the choice using the interest-frequency signal, and (4) propose
+one process change that would make deliberate debt trackable going forward.</p>
 
 
 

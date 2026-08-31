@@ -1456,6 +1456,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Metrics & Reporting for Stakeholders
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1472,6 +1490,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#internal-metrics-vs-stakeholder-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal metrics vs. stakeholder questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-stakeholder-reporting-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A stakeholder reporting structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-what-not-to-show" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing what NOT to show
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#internal-metrics-vs-stakeholder-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal metrics vs. stakeholder questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-stakeholder-reporting-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A stakeholder reporting structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-what-not-to-show" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing what NOT to show
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,137 @@
 
 
 <h1 id="06-metrics-reporting-for-stakeholders">06 · Metrics &amp; Reporting for Stakeholders<a class="headerlink" href="#06-metrics-reporting-for-stakeholders" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>The metrics a team needs to run itself (cycle time, velocity range) are
+rarely the metrics a stakeholder needs to make a decision. This module
+covers translating internal delivery metrics into reporting that answers
+the questions executives and clients actually ask.</p>
+<h2 id="internal-metrics-vs-stakeholder-questions">Internal metrics vs. stakeholder questions<a class="headerlink" href="#internal-metrics-vs-stakeholder-questions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Stakeholder question</th>
+<th>Wrong metric to lead with</th>
+<th>Right translation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Are we on track?"</td>
+<td>Raw velocity number</td>
+<td>Forecast range against the release plan (Level 2, Module 07)</td>
+</tr>
+<tr>
+<td>"Is quality okay?"</td>
+<td>Story point count</td>
+<td>Defect trend, escaped-bug rate, DoD compliance</td>
+</tr>
+<tr>
+<td>"Why did this slip?"</td>
+<td>"Velocity dropped"</td>
+<td>Named cause: scope change, dependency block, risk materializing (Module 04)</td>
+</tr>
+<tr>
+<td>"What are we getting for our investment?"</td>
+<td>Points delivered</td>
+<td>Business outcomes tied to delivered features (adoption, revenue, retention)</td>
+</tr>
+</tbody>
+</table>
+<p>Reporting raw team-internal metrics to stakeholders (especially velocity —
+see Level 2 Module 06) invites exactly the misuse that metric was designed
+to avoid: comparison, target-setting, and blame, none of which the metric
+supports.</p>
+<h2 id="a-stakeholder-reporting-structure">A stakeholder reporting structure<a class="headerlink" href="#a-stakeholder-reporting-structure" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Content</th>
+<th>Cadence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Status</td>
+<td>On track / at risk / off track, one line</td>
+<td>Every sprint or release checkpoint</td>
+</tr>
+<tr>
+<td>Delivered this period</td>
+<td>Business-language feature list, not ticket IDs</td>
+<td>Every sprint</td>
+</tr>
+<tr>
+<td>Forecast</td>
+<td>Range, not a single date (Level 2, Module 07)</td>
+<td>Every sprint, updated</td>
+</tr>
+<tr>
+<td>Risks</td>
+<td>Top 2–3 from the risk register (Module 04), plain language</td>
+<td>Every sprint</td>
+</tr>
+<tr>
+<td>Ask</td>
+<td>What's needed from the stakeholder (decision, budget, feedback)</td>
+<td>As needed</td>
+</tr>
+</tbody>
+</table>
+<p>The "Ask" row is the most frequently omitted and most valuable — a report
+that only informs, without ever asking the stakeholder to decide something,
+trains them to skim it rather than act on it.</p>
+<h2 id="choosing-what-not-to-show">Choosing what NOT to show<a class="headerlink" href="#choosing-what-not-to-show" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Internal artifact</th>
+<th>Show to stakeholders?</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Burndown chart</td>
+<td>Rarely as-is</td>
+<td>Reads as behind schedule to someone unfamiliar with normal sprint variance</td>
+</tr>
+<tr>
+<td>CFD (Level 2, Module 04)</td>
+<td>Only to technically literate stakeholders</td>
+<td>Requires explanation to avoid misreading</td>
+</tr>
+<tr>
+<td>Release forecast range</td>
+<td>Yes</td>
+<td>Directly answers "when," honestly</td>
+</tr>
+<tr>
+<td>Business-outcome dashboard (adoption, NPS, revenue)</td>
+<td>Yes</td>
+<td>Answers "was it worth it," which velocity never answers</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A program manager has been sending executives a weekly slide with each
+team's velocity trend line. One team's velocity dips for two sprints (a
+planned migration absorbed capacity) and an executive escalates, assuming
+the team is underperforming. The Scrum Master reframes the next report
+using the structure above: status is "on track — release forecast
+unchanged," the dip is explained in the risks section as a planned,
+time-boxed migration already factored into the forecast range, and the
+"delivered this period" section lists the actual completed migration work
+in business terms. The escalation resolves in one conversation, because the
+report now answers "are we on track" directly instead of leaving the
+executive to infer it from a graph never designed for that audience.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Given a sprint where the team completed 14 of 18 planned points because a
+dependency on another team blocked one story: (1) write the one-line status
+using the structure above, (2) write a "delivered this period" section in
+business, not ticket, language, (3) write the risk-register-derived risk
+entry in plain language, and (4) write a specific, answerable "ask" for the
+stakeholder — not a vague "please be aware."</p>
 
 
 

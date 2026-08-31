@@ -1372,6 +1372,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Hybrid Agile-Waterfall Models
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1388,6 +1406,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-pure-models-rarely-survive-contact-with-reality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why pure models rarely survive contact with reality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-water-scrum-fall-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "Water-Scrum-Fall" pattern
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-a-hybrid-deliberately" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Designing a hybrid deliberately
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-hybrids-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where hybrids go wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-pure-models-rarely-survive-contact-with-reality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why pure models rarely survive contact with reality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-water-scrum-fall-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "Water-Scrum-Fall" pattern
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-a-hybrid-deliberately" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Designing a hybrid deliberately
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-hybrids-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where hybrids go wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2187,130 @@
 
 
 <h1 id="03-hybrid-agile-waterfall-models">03 · Hybrid Agile-Waterfall Models<a class="headerlink" href="#03-hybrid-agile-waterfall-models" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Most real organizations aren't purely Agile or purely Waterfall — a fixed
+contractual milestone, a hardware dependency, or a regulatory gate often
+forces some Waterfall-style sequencing around an Agile core. This module
+covers doing that deliberately instead of by accident.</p>
+<h2 id="why-pure-models-rarely-survive-contact-with-reality">Why pure models rarely survive contact with reality<a class="headerlink" href="#why-pure-models-rarely-survive-contact-with-reality" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Constraint</th>
+<th>Why it resists pure Agile</th>
+<th>Why it resists pure Waterfall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fixed hardware manufacturing lead time</td>
+<td>Can't iteratively "release" a physical board mid-sprint</td>
+<td>Waterfall alone ignores that the software running on it benefits from iteration</td>
+</tr>
+<tr>
+<td>Government/regulatory approval gate</td>
+<td>The gate itself is a hard, sequential milestone</td>
+<td>Everything <em>except</em> the gate benefits from iterative delivery</td>
+</tr>
+<tr>
+<td>Fixed-price client contract with a spec</td>
+<td>Client wants a locked scope and price upfront</td>
+<td>Delivery execution still benefits from sprints and continuous feedback</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-water-scrum-fall-pattern">The "Water-Scrum-Fall" pattern<a class="headerlink" href="#the-water-scrum-fall-pattern" title="Permanent link">&para;</a></h2>
+<p>The most common hybrid shape: Waterfall-style phases at the edges (upfront
+requirements/contracting, and final release/deployment/compliance
+sign-off), with Agile iteration in the middle where uncertainty is highest
+and feedback is most valuable.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Style</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requirements &amp; contracting</td>
+<td>Waterfall-like</td>
+<td>Client/legal need a defined scope and price before committing budget</td>
+</tr>
+<tr>
+<td>Build &amp; design</td>
+<td>Agile (sprints)</td>
+<td>Highest uncertainty; iteration and feedback reduce risk fastest here</td>
+</tr>
+<tr>
+<td>Release, compliance sign-off</td>
+<td>Waterfall-like</td>
+<td>Regulatory or deployment gates are inherently sequential and non-negotiable</td>
+</tr>
+</tbody>
+</table>
+<h2 id="designing-a-hybrid-deliberately">Designing a hybrid deliberately<a class="headerlink" href="#designing-a-hybrid-deliberately" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Identify which constraints are genuinely fixed and sequential (a
+   regulatory gate, a hardware ship date) versus which are just <em>assumed</em>
+   to be fixed out of habit.</li>
+<li>Keep the sequential parts as small as possible — a locked scope
+   document doesn't have to mean a locked <em>solution design</em>, just a locked
+   <em>outcome and price</em>.</li>
+<li>Run everything else — design, build, internal testing — as normal
+   sprints with real Sprint Reviews, even inside a fixed-price contract.</li>
+<li>Use the Definition of Done and release checklist (Module 03/05, Level 2)
+   as the bridge artifact between the Agile middle and the Waterfall-style
+   release gate.</li>
+</ol>
+<h2 id="where-hybrids-go-wrong">Where hybrids go wrong<a class="headerlink" href="#where-hybrids-go-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure</th>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Agile" in name only</td>
+<td>Sprints exist, but scope and design are fully locked upfront, so sprints just execute a plan with no real feedback loop</td>
+<td>Ensure the contract locks <em>outcomes</em>, not implementation details, leaving room for the team to adapt <em>how</em></td>
+</tr>
+<tr>
+<td>Waterfall creeping into the middle</td>
+<td>Every sprint needs sign-off from a change-control board before starting</td>
+<td>Reserve heavyweight change control for genuinely fixed constraints, not internal iteration</td>
+</tr>
+<tr>
+<td>No true iteration ever demoed to the client</td>
+<td>Client only sees the work at the final Waterfall-style gate</td>
+<td>Insist on Sprint Reviews with the client, even under a fixed-price contract — cheaper to catch misalignment early</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A vendor signs a fixed-price contract to build a hospital records feature,
+which requires final regulatory sign-off (a hard, sequential gate). The
+initial plan treats the entire project as Waterfall to satisfy the
+contract's need for a locked price. Nine months in, the client discovers
+the delivered UI doesn't match evolving clinical workflow needs — because
+there was no feedback loop until the very end.</p>
+<p>The team restructures for the next phase: the contract locks the <em>outcome</em>
+(patient record access meeting a named regulatory standard) and price, but
+the build itself runs as 2-week sprints with a client-facing Sprint Review
+every sprint. The regulatory sign-off remains a genuine Waterfall-style gate
+at the end — that part can't be iterative — but everything before it now
+gets caught early instead of at a single final review.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>For a project with a fixed government compliance deadline 6 months out and
+a fixed-price contract: (1) identify which parts of the project are
+genuinely sequential/fixed versus which are just assumed to be, (2) design
+a Water-Scrum-Fall shape naming what happens in each phase, (3) propose one
+way to keep the fixed-price contract while still allowing real client
+feedback loops mid-project, and (4) name one specific failure mode from the
+table above you'd watch for.</p>
 
 
 

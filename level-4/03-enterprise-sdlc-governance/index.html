@@ -1746,6 +1746,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Enterprise SDLC Governance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1762,6 +1780,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#where-governance-and-agile-collide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where governance and agile collide
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-governance-model-that-scales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A governance model that scales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#where-governance-and-agile-collide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where governance and agile collide
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-governance-model-that-scales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A governance model that scales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,130 @@
 
 
 <h1 id="03-enterprise-sdlc-governance">03 · Enterprise SDLC Governance<a class="headerlink" href="#03-enterprise-sdlc-governance" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 4 · Master.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Large enterprises carry real governance obligations — audit, compliance,
+security sign-off, financial controls — that don't disappear because
+delivery teams adopt agile. The master-level skill is designing governance
+that satisfies those obligations without recreating a stage-gated waterfall
+process around every sprint.</p>
+<h2 id="where-governance-and-agile-collide">Where governance and agile collide<a class="headerlink" href="#where-governance-and-agile-collide" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Governance need</th>
+<th>Traditional mechanism</th>
+<th>Agile-compatible alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Change approval / audit trail</td>
+<td>Change Advisory Board sign-off before each release</td>
+<td>Automated, logged approvals baked into the CI/CD pipeline (who approved, what changed, when)</td>
+</tr>
+<tr>
+<td>Security review</td>
+<td>A dedicated security-gate phase before release</td>
+<td>Security-as-code checks (SAST/DAST) run on every build; a human reviews only flagged exceptions</td>
+</tr>
+<tr>
+<td>Financial controls (capitalization, budget)</td>
+<td>Fixed project budgets tied to a fixed scope</td>
+<td>Budgets tied to a team/product for a period (quarter), not to a project's fixed deliverable list</td>
+</tr>
+<tr>
+<td>Regulatory documentation</td>
+<td>A large document produced at the end of a phase</td>
+<td>Documentation generated incrementally, alongside the work, from artifacts already produced (tickets, PRs, test results)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-governance-model-that-scales">A governance model that scales<a class="headerlink" href="#a-governance-model-that-scales" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>What it governs</th>
+<th>Cadence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team</td>
+<td>Day-to-day technical and process decisions</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>Program/product</td>
+<td>Cross-team priorities, dependencies, release readiness</td>
+<td>Sprint/PI boundary</td>
+</tr>
+<tr>
+<td>Portfolio</td>
+<td>Investment allocation across products, strategic risk</td>
+<td>Quarterly</td>
+</tr>
+<tr>
+<td>Enterprise/compliance</td>
+<td>Regulatory, security, audit obligations</td>
+<td>Continuous, automated where possible; exception-based human review</td>
+</tr>
+</tbody>
+</table>
+<p>The design principle: push governance decisions down to the lowest layer
+capable of making them safely, and automate the enterprise layer wherever
+the check is mechanical (a lint rule, a security scan) rather than
+judgment-based.</p>
+<h2 id="common-anti-patterns">Common anti-patterns<a class="headerlink" href="#common-anti-patterns" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Anti-pattern</th>
+<th>Why it happens</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A single CAB meeting gates every team's every release</td>
+<td>Historical control point never re-examined after agile adoption</td>
+<td>Replace with automated, logged approval for standard changes; reserve CAB for genuinely high-risk changes</td>
+</tr>
+<tr>
+<td>Compliance documentation written after the fact, disconnected from real work</td>
+<td>Documentation treated as a separate deliverable instead of a by-product</td>
+<td>Generate docs from the actual artifacts (commit history, test reports, ticket trail) continuously</td>
+</tr>
+<tr>
+<td>Portfolio budgeting still assumes fixed-scope annual projects</td>
+<td>Finance processes never updated for iterative delivery</td>
+<td>Fund persistent teams/products for a period, not one-off projects with fixed scope</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A financial-services company's release process requires every production
+change to pass a weekly Change Advisory Board meeting, regardless of size —
+a habit inherited from a pre-agile era when releases were rare and risky.
+Teams now deploy daily but batch changes into the weekly window to satisfy
+the CAB, reintroducing the large, risky, infrequent-release pattern agile
+was meant to eliminate.</p>
+<p>The fix: the CAB is redefined to review only high-risk changes (touching
+payment processing, PII, or external regulatory reporting), identified by
+an automated risk-classification check in the pipeline. Standard changes
+that pass all automated gates (tests, security scans, a peer-reviewed PR)
+deploy continuously with an auto-generated audit log satisfying the same
+compliance requirement the CAB previously covered — and the audit trail is
+provably more complete, since it's generated from every change instead of a
+weekly sample.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Your organization requires a compliance officer to manually approve every
+production deployment, and this has become the single largest bottleneck to
+daily releases. Using this module's framework: (1) classify this governance
+need using the "governance need" table, (2) propose an agile-compatible
+alternative mechanism, (3) define which layer (team/program/portfolio/
+enterprise) should own the exception-based human review going forward, and
+(4) name one piece of evidence the automated version would need to produce
+to satisfy an auditor that manual sign-off previously provided.</p>
 
 
 

@@ -1830,6 +1830,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Measuring Transformation Success
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1846,6 +1864,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#outcome-metrics-vs-compliance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outcome metrics vs. compliance metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-balanced-measurement-set-dora-adjacent-broadened" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A balanced measurement set (DORA-adjacent, broadened)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baselining-and-cadence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Baselining and cadence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#outcome-metrics-vs-compliance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outcome metrics vs. compliance metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-balanced-measurement-set-dora-adjacent-broadened" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A balanced measurement set (DORA-adjacent, broadened)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baselining-and-cadence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Baselining and cadence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,129 @@
 
 
 <h1 id="06-measuring-transformation-success">06 · Measuring Transformation Success<a class="headerlink" href="#06-measuring-transformation-success" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 4 · Master.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>"Are we agile yet?" is the wrong question — it invites checklist theater
+(are we doing the ceremonies) instead of measuring whether the
+transformation delivered the business outcome it was meant to. This module
+covers picking measures that reflect outcomes, not compliance.</p>
+<h2 id="outcome-metrics-vs-compliance-metrics">Outcome metrics vs. compliance metrics<a class="headerlink" href="#outcome-metrics-vs-compliance-metrics" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Compliance metric (avoid as a success measure)</th>
+<th>Outcome metric (prefer)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>% of teams "doing Scrum" (running the ceremonies)</td>
+<td>Lead time from idea to production</td>
+</tr>
+<tr>
+<td>Story points completed per sprint</td>
+<td>Deployment frequency and change failure rate</td>
+</tr>
+<tr>
+<td>Number of teams trained</td>
+<td>Employee-reported engagement/psychological safety</td>
+</tr>
+<tr>
+<td>Certification counts</td>
+<td>Customer-reported satisfaction / NPS trend</td>
+</tr>
+</tbody>
+</table>
+<p>Compliance metrics are easy to game (run the meeting, skip the substance)
+and easy to measure. Outcome metrics are harder to measure but much harder
+to fake, because they reflect what actually reached customers or
+employees.</p>
+<h2 id="a-balanced-measurement-set-dora-adjacent-broadened">A balanced measurement set (DORA-adjacent, broadened)<a class="headerlink" href="#a-balanced-measurement-set-dora-adjacent-broadened" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Metric</th>
+<th>What it reveals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Speed</td>
+<td>Lead time for changes</td>
+<td>How fast value reaches customers</td>
+</tr>
+<tr>
+<td>Stability</td>
+<td>Change failure rate, MTTR</td>
+<td>Whether speed is coming at the cost of quality</td>
+</tr>
+<tr>
+<td>People</td>
+<td>Engagement/psychological-safety survey trend</td>
+<td>Whether the transformation is sustainable, not just fast</td>
+</tr>
+<tr>
+<td>Business</td>
+<td>Time-to-market for new initiatives, customer satisfaction trend</td>
+<td>Whether any of the above actually mattered to the business</td>
+</tr>
+</tbody>
+</table>
+<p>Track a small set across all four dimensions — optimizing only "speed"
+metrics reliably produces stability regressions, and optimizing only
+"people" metrics without tying to business outcomes makes the transformation
+hard to defend at budget time.</p>
+<h2 id="baselining-and-cadence">Baselining and cadence<a class="headerlink" href="#baselining-and-cadence" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baseline before the change</td>
+<td>Capture pre-transformation values for every chosen metric; without this, "improvement" is unfalsifiable</td>
+</tr>
+<tr>
+<td>Set a realistic time horizon</td>
+<td>Meaningful movement in lead time/stability usually takes 2-3 quarters, not weeks</td>
+</tr>
+<tr>
+<td>Review quarterly, not weekly</td>
+<td>Weekly noise in these metrics is normal; quarterly trend is the signal</td>
+</tr>
+<tr>
+<td>Pair every metric with a story</td>
+<td>A number without the human context behind it ("why did MTTR spike in Q2") won't survive stakeholder scrutiny</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A company's leadership declares its 18-month agile transformation a success
+because 100% of teams now run Scrum ceremonies and average two
+certifications per engineer. Six months later, customer complaints about
+release quality have increased, and time-to-market for new features hasn't
+measurably changed — the metrics leadership tracked were all compliance
+metrics, and none of them detected the actual problem.</p>
+<p>A retrospective on the measurement approach itself introduces a balanced
+set: lead time (baselined against pre-transformation data pulled from old
+ticket timestamps), change failure rate (newly instrumented from the
+deploy pipeline), a quarterly engagement survey, and time-to-market on the
+next three initiatives. Within two quarters, the new metrics show lead time
+essentially unchanged despite the ceremony rollout — surfacing that the
+real bottleneck was a manual, weekly-batch QA sign-off process the
+transformation never touched, invisible to compliance metrics but obvious
+in the outcome ones.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Your organization is six months into an agile transformation and leadership
+wants a one-page success report. Using this module's framework: (1) name
+one compliance metric currently being reported that should be dropped or
+demoted, (2) choose one metric from each of the four dimensions (speed,
+stability, people, business) to include instead, (3) state what
+pre-transformation baseline you'd need for each and how you'd source it if
+it was never captured, and (4) name the realistic time horizon you'd set
+expectations against before claiming success or failure.</p>
 
 
 

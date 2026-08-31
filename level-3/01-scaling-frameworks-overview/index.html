@@ -1316,6 +1316,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Scaling Frameworks Overview (SAFe, LeSS, Nexus)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1332,6 +1350,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-core-problem-scaling-frameworks-solve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The core problem scaling frameworks solve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-major-frameworks-compared" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three major frameworks, compared
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-trade-off-underneath-all-three" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The trade-off underneath all three
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-not-defaulting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing, not defaulting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-core-problem-scaling-frameworks-solve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The core problem scaling frameworks solve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-major-frameworks-compared" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three major frameworks, compared
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-trade-off-underneath-all-three" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The trade-off underneath all three
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-not-defaulting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing, not defaulting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2187,147 @@
 
 
 <h1 id="01-scaling-frameworks-overview-safe-less-nexus">01 · Scaling Frameworks Overview (SAFe, LeSS, Nexus)<a class="headerlink" href="#01-scaling-frameworks-overview-safe-less-nexus" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>A single Scrum team tops out around 5–9 people. Once a product needs 3, 10,
+or 50 teams working toward the same goal, something has to coordinate
+backlogs, dependencies, and releases across teams — that's what scaling
+frameworks solve, each with a different philosophy about how much structure
+to add.</p>
+<h2 id="the-core-problem-scaling-frameworks-solve">The core problem scaling frameworks solve<a class="headerlink" href="#the-core-problem-scaling-frameworks-solve" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problem at scale</th>
+<th>Single-team Scrum answer</th>
+<th>Why it breaks with N teams</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One backlog, one PO</td>
+<td>Product Owner refines and orders it</td>
+<td>One person can't hold context for 10 teams' worth of detail</td>
+</tr>
+<tr>
+<td>Shared Sprint cadence</td>
+<td>Sprint Planning aligns the team</td>
+<td>Teams drift out of sync without a shared calendar</td>
+</tr>
+<tr>
+<td>Cross-team dependencies</td>
+<td>Doesn't exist within one team</td>
+<td>Team A blocked on Team B becomes routine</td>
+</tr>
+<tr>
+<td>Architectural coherence</td>
+<td>Whatever the team agrees</td>
+<td>No mechanism to keep 10 teams' technical decisions compatible</td>
+</tr>
+</tbody>
+</table>
+<h2 id="three-major-frameworks-compared">Three major frameworks, compared<a class="headerlink" href="#three-major-frameworks-compared" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Philosophy</th>
+<th>Structure added</th>
+<th>Best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SAFe</strong> (Scaled Agile Framework)</td>
+<td>Prescriptive, enterprise-wide alignment</td>
+<td>Program Increment (PI) Planning, Release Train Engineer, Agile Release Trains (ARTs) of 5–12 teams</td>
+<td>Large enterprises needing budget/portfolio-level alignment, often with compliance needs</td>
+</tr>
+<tr>
+<td><strong>LeSS</strong> (Large-Scale Scrum)</td>
+<td>Minimal — "more Scrum, not Scrum-plus"</td>
+<td>One Product Backlog, one PO, one Sprint across up to 8 teams (LeSS Huge for more)</td>
+<td>Product-centric orgs wanting to scale without adding new roles</td>
+</tr>
+<tr>
+<td><strong>Nexus</strong></td>
+<td>Lightweight, Scrum.org's own extension</td>
+<td>A "Nexus Integration Team" resolves cross-team dependencies and integration</td>
+<td>3–9 teams working from a single Product Backlog needing a thin coordination layer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-trade-off-underneath-all-three">The trade-off underneath all three<a class="headerlink" href="#the-trade-off-underneath-all-three" title="Permanent link">&para;</a></h2>
+<p>Every scaling framework trades team-level autonomy for organization-level
+coordination. More structure (SAFe) buys predictable, synchronized planning
+across dozens of teams at the cost of process overhead and role
+proliferation. Less structure (LeSS) keeps close to single-team Scrum and
+minimizes overhead, but demands more discipline and technical maturity from
+every team to self-coordinate without a heavy layer telling them how.</p>
+<table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>SAFe</th>
+<th>LeSS</th>
+<th>Nexus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overhead</td>
+<td>Highest</td>
+<td>Lowest</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Prescriptiveness</td>
+<td>High (defined roles/ceremonies)</td>
+<td>Low (extends Scrum's own rules)</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Team count sweet spot</td>
+<td>Dozens to hundreds</td>
+<td>Up to ~8 (Huge beyond)</td>
+<td>3–9</td>
+</tr>
+<tr>
+<td>New roles introduced</td>
+<td>Many (RTE, Solution Train Engineer, etc.)</td>
+<td>Almost none</td>
+<td>One (Nexus Integration Team)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="choosing-not-defaulting">Choosing, not defaulting<a class="headerlink" href="#choosing-not-defaulting" title="Permanent link">&para;</a></h2>
+<p>A common failure is adopting SAFe because it's the best-known name, for an
+organization of 3 teams that needed only Nexus-level coordination — the
+extra roles and ceremonies become overhead with no corresponding benefit.
+The right starting question is team count and coordination need, not brand
+recognition:</p>
+<ol>
+<li>How many teams need to ship from the <em>same</em> product/backlog?</li>
+<li>Is there a hard portfolio/budget alignment need across many products?</li>
+<li>How much process overhead can the organization's culture tolerate?</li>
+</ol>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A company with 4 teams building one consumer product adopts full SAFe,
+including a Release Train Engineer and quarterly PI Planning across all 4
+teams. Within two quarters, teams report PI Planning consumes a full week
+per quarter for a scale that didn't need it — the same coordination could
+happen in a half-day Nexus-style dependency-mapping session. The
+organization downgrades to Nexus: one shared backlog, a small integration
+team pulled from existing engineers (no new RTE role), and a lightweight
+weekly cross-team sync. Planning overhead drops by roughly 80% with no loss
+of coordination, because the team count never justified SAFe's scale in the
+first place.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Given an organization with 6 teams building two related products sharing a
+platform: (1) recommend one of the three frameworks and justify it using
+the comparison table, (2) name one specific role or ceremony from your
+chosen framework and what problem it solves for this organization, (3)
+name one overhead cost that choice introduces, and (4) describe the signal
+that would tell you, a year later, that you chose wrong and should scale
+down or up.</p>
 
 
 

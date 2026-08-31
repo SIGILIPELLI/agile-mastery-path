@@ -1428,6 +1428,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · DevOps & CI/CD Integration with Agile
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1444,6 +1462,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#two-feedback-loops-not-one" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two feedback loops, not one
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-cicd-pipeline-as-an-extension-of-the-definition-of-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The CI/CD pipeline as an extension of the Definition of Done
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-strategies-that-keep-releases-low-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment strategies that keep releases low-risk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops-culture-not-just-tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DevOps culture, not just tooling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#two-feedback-loops-not-one" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two feedback loops, not one
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-cicd-pipeline-as-an-extension-of-the-definition-of-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The CI/CD pipeline as an extension of the Definition of Done
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-strategies-that-keep-releases-low-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment strategies that keep releases low-risk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops-culture-not-just-tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DevOps culture, not just tooling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2187,127 @@
 
 
 <h1 id="05-devops-cicd-integration-with-agile">05 · DevOps &amp; CI/CD Integration with Agile<a class="headerlink" href="#05-devops-cicd-integration-with-agile" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Agile shortens the <em>planning</em> feedback loop to weeks; DevOps and CI/CD are
+what shorten the <em>technical</em> feedback loop to minutes. Without them, a team
+can run perfect two-week sprints and still only actually ship to production
+once a quarter — this module covers why both loops need to be short
+together.</p>
+<h2 id="two-feedback-loops-not-one">Two feedback loops, not one<a class="headerlink" href="#two-feedback-loops-not-one" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Loop</th>
+<th>Shortened by</th>
+<th>Answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planning/product loop</td>
+<td>Scrum events, sprints</td>
+<td>"Are we building the right thing?"</td>
+</tr>
+<tr>
+<td>Technical delivery loop</td>
+<td>CI/CD pipeline, automated testing, deployment automation</td>
+<td>"Can we actually ship what we built, safely, right now?"</td>
+</tr>
+</tbody>
+</table>
+<p>A team can have excellent Sprint Reviews demoing "done" work that then sits
+in a release-candidate branch for two months waiting on manual QA and a
+change-advisory-board meeting — Agile ceremonies alone don't guarantee fast
+technical delivery.</p>
+<h2 id="the-cicd-pipeline-as-an-extension-of-the-definition-of-done">The CI/CD pipeline as an extension of the Definition of Done<a class="headerlink" href="#the-cicd-pipeline-as-an-extension-of-the-definition-of-done" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>DoD criterion (Level 2, Module 05)</th>
+<th>CI/CD equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code peer-reviewed</td>
+<td>Pull request gate, required approvals</td>
+</tr>
+<tr>
+<td>Tests passing</td>
+<td>Automated test suite runs on every commit</td>
+</tr>
+<tr>
+<td>No new critical findings</td>
+<td>Automated static analysis / security scan in the pipeline</td>
+</tr>
+<tr>
+<td>Merged to main, CI green</td>
+<td>Continuous Integration step</td>
+</tr>
+<tr>
+<td>Deployable</td>
+<td>Continuous Delivery: automated build + deploy to a staging/production-like environment</td>
+</tr>
+</tbody>
+</table>
+<p>Framed this way, CI/CD isn't a separate initiative from Agile process — it's
+the <em>automation</em> of the Definition of Done, removing the manual toil that
+otherwise makes "done" mean "done, pending a two-week manual release
+process."</p>
+<h2 id="deployment-strategies-that-keep-releases-low-risk">Deployment strategies that keep releases low-risk<a class="headerlink" href="#deployment-strategies-that-keep-releases-low-risk" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>How it works</th>
+<th>Fits well with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Feature flags</td>
+<td>Ship code dark, turn on for users independently of deploy</td>
+<td>Decoupling "deploy" from "release," letting Sprint Review demo features safely before general rollout</td>
+</tr>
+<tr>
+<td>Trunk-based development</td>
+<td>Small, frequent merges to main instead of long-lived branches</td>
+<td>Short sprints, avoiding integration risk (Module 04) piling up</td>
+</tr>
+<tr>
+<td>Canary/blue-green deploys</td>
+<td>Roll out to a small slice of traffic first</td>
+<td>Catching operational risk before it hits everyone</td>
+</tr>
+</tbody>
+</table>
+<h2 id="devops-culture-not-just-tooling">DevOps culture, not just tooling<a class="headerlink" href="#devops-culture-not-just-tooling" title="Permanent link">&para;</a></h2>
+<p>Pipelines alone don't produce DevOps outcomes if the org still has separate
+Dev and Ops teams with a ticket-based handoff between them — that's the
+same handoff latency Agile eliminated between Product and Dev, just moved
+one step later. The cultural shift mirrors Scrum's own: "you build it, you
+run it" collapses the same silo CI/CD collapses technically.</p>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A team ships "done" stories every sprint per its Definition of Done, but a
+separate Ops team still manually deploys once a month after a change
+request form. Sprint Reviews demo working software that stakeholders can't
+actually use for weeks. Diagnosis: the team's DoD stops at "merged to
+main," but delivery to real users is gated by a process outside the team's
+control.</p>
+<p>Fix, over two quarters: (1) the team adds an automated staging deploy on
+every merge, closing the gap between "merged" and "deployed to a
+production-like environment"; (2) feature flags are introduced so new work
+can be merged and deployed dark, then turned on progressively; (3) the
+manual change-request gate is renegotiated to apply only to flag flips, not
+every code deploy, since deploys themselves are now low-risk and reversible.
+Time from "done" to "usable by real users" drops from a month to same-day.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>For a team whose Definition of Done currently stops at "merged to main,
+tests passing": (1) map each DoD criterion to its CI/CD automation
+equivalent using the table above, (2) name one deployment strategy from the
+table you'd add and why it fits this team's risk profile, (3) identify one
+non-technical organizational handoff (like the Ops example) that would
+still block fast delivery even with a perfect pipeline, and (4) propose one
+concrete change to remove it.</p>
 
 
 

@@ -942,6 +942,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Scrum Ceremonies in Depth
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -958,6 +976,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-four-inspect-and-adapt-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The four inspect-and-adapt loops
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facilitation-failure-modes-event-by-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Facilitation failure modes, event by event
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeboxing-is-a-design-constraint-not-a-suggestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timeboxing is a design constraint, not a suggestion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example-rescuing-a-broken-daily-scrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example: rescuing a broken Daily Scrum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-four-inspect-and-adapt-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The four inspect-and-adapt loops
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facilitation-failure-modes-event-by-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Facilitation failure modes, event by event
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeboxing-is-a-design-constraint-not-a-suggestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timeboxing is a design constraint, not a suggestion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example-rescuing-a-broken-daily-scrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example: rescuing a broken Daily Scrum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,128 @@
 
 
 <h1 id="01-scrum-ceremonies-in-depth">01 · Scrum Ceremonies in Depth<a class="headerlink" href="#01-scrum-ceremonies-in-depth" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Level 1 introduced the five Scrum events as a table of timeboxes and
+purposes. That's enough to recognize Scrum on paper. Running the ceremonies
+well — so they actually produce the outcomes they're designed for, instead
+of becoming calendar filler — takes a deeper look at <em>how</em> each one should
+be facilitated, and the specific ways each one degrades in practice.</p>
+<h2 id="the-four-inspect-and-adapt-loops">The four inspect-and-adapt loops<a class="headerlink" href="#the-four-inspect-and-adapt-loops" title="Permanent link">&para;</a></h2>
+<p>Scrum's events aren't independent — they're four nested feedback loops, each
+inspecting a different thing at a different frequency.</p>
+<table>
+<thead>
+<tr>
+<th>Loop</th>
+<th>Event(s)</th>
+<th>Inspects</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product direction</td>
+<td>Sprint Review</td>
+<td>The Increment, against real stakeholder needs</td>
+<td>Every sprint</td>
+</tr>
+<tr>
+<td>Sprint execution</td>
+<td>Daily Scrum</td>
+<td>Progress toward the Sprint Goal</td>
+<td>Every day</td>
+</tr>
+<tr>
+<td>Process health</td>
+<td>Sprint Retrospective</td>
+<td>How the team works together</td>
+<td>Every sprint</td>
+</tr>
+<tr>
+<td>Plan formation</td>
+<td>Sprint Planning</td>
+<td>What's achievable and valuable next</td>
+<td>Every sprint</td>
+</tr>
+</tbody>
+</table>
+<p>Notice the pattern: the <em>outer</em> loop (Sprint Review) checks whether you
+built the right thing; the <em>inner</em> loop (Daily Scrum) checks whether you're
+on track to build what you planned. Teams that only run the inner loop well
+(tight daily standups) but skip a genuine Sprint Review can be extremely
+efficient at building the wrong thing.</p>
+<h2 id="facilitation-failure-modes-event-by-event">Facilitation failure modes, event by event<a class="headerlink" href="#facilitation-failure-modes-event-by-event" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Healthy version</th>
+<th>Common failure mode</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sprint Planning</td>
+<td>Team pulls work and forms its own Sprint Goal</td>
+<td>PO or manager assigns work top-down</td>
+<td>PO presents <em>why</em>, team decides <em>how much</em></td>
+</tr>
+<tr>
+<td>Daily Scrum</td>
+<td>Developers re-plan the next 24 hours together</td>
+<td>Round-robin status report to the Scrum Master</td>
+<td>Ask "what's blocking the Sprint Goal?" not "what did you do yesterday?"</td>
+</tr>
+<tr>
+<td>Sprint Review</td>
+<td>Working software demoed, backlog updated live</td>
+<td>Slide deck, no stakeholders, no backlog change</td>
+<td>Only demo what's actually done-done; invite real users</td>
+</tr>
+<tr>
+<td>Sprint Retrospective</td>
+<td>Concrete, owned action items</td>
+<td>Venting session with no follow-through</td>
+<td>Cap at 1–3 actions; review last sprint's actions first</td>
+</tr>
+</tbody>
+</table>
+<p>The single highest-leverage fix here is the last row of the Daily Scrum:
+reframing the question from "what did I do" (which produces a status report
+to whoever's listening) to "what's in the way of the Sprint Goal" (which
+produces a self-organizing team, since only the team can act on blockers).</p>
+<h2 id="timeboxing-is-a-design-constraint-not-a-suggestion">Timeboxing is a design constraint, not a suggestion<a class="headerlink" href="#timeboxing-is-a-design-constraint-not-a-suggestion" title="Permanent link">&para;</a></h2>
+<p>Every Scrum event is timeboxed for a reason: the timebox forces the
+<em>minimum viable version</em> of the conversation. A Sprint Planning that runs 6
+hours for a 2-week sprint usually means the Product Backlog wasn't refined
+beforehand (see Module 03) — the timebox is surfacing an upstream problem,
+not causing one. Extending the timebox treats the symptom; fixing backlog
+refinement treats the cause.</p>
+<h2 id="a-worked-example-rescuing-a-broken-daily-scrum">A worked example: rescuing a broken Daily Scrum<a class="headerlink" href="#a-worked-example-rescuing-a-broken-daily-scrum" title="Permanent link">&para;</a></h2>
+<p>A support-tooling team's Daily Scrum has become a 25-minute status report to
+their tech lead, who then assigns the day's tasks. The Scrum Master
+diagnoses this against the table above: this is the "status report" failure
+mode, root-caused by a Product Owner/tech-lead pattern that never
+established self-organization. Over two sprints, the fix is incremental:</p>
+<ol>
+<li><strong>Sprint 1</strong>: The Scrum Master stops calling on people by name and asks
+   the team to self-organize the speaking order. The tech lead is coached to
+   ask <em>questions</em> ("what do you need to unblock that?") instead of giving
+   <em>assignments</em>.</li>
+<li><strong>Sprint 1, Retrospective</strong>: The team names the pattern explicitly and
+   agrees the Daily Scrum's only output should be a plan for the next 24
+   hours, decided by whoever is doing the work.</li>
+<li><strong>Sprint 2</strong>: Daily Scrum drops to 12 minutes. The tech lead now attends
+   as a resource to unblock people, not as the person assigning the day's
+   work.</li>
+</ol>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Pick one Scrum event from the table above that you believe is running
+poorly on a team you've observed (or invent a plausible scenario). Write:
+(1) which failure mode from the table it matches, (2) the specific symptom
+that reveals it (a quote, a pattern, a duration), (3) a two-sprint
+remediation plan like the worked example above, and (4) one metric or
+observable sign you'd check after two sprints to confirm the fix worked.</p>
 
 
 

@@ -1886,6 +1886,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Agile & AI-Assisted Delivery
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1902,6 +1920,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-actually-changes-with-ai-assisted-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What actually changes with AI-assisted delivery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjusting-the-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adjusting the flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-ai-helps-agile-practice-itself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where AI helps agile practice itself
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-actually-changes-with-ai-assisted-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What actually changes with AI-assisted delivery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjusting-the-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adjusting the flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-ai-helps-agile-practice-itself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where AI helps agile practice itself
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,117 @@
 
 
 <h1 id="08-agile-ai-assisted-delivery">08 · Agile &amp; AI-Assisted Delivery<a class="headerlink" href="#08-agile-ai-assisted-delivery" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 4 · Master.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>AI coding assistants and agents change the economics of individual tasks —
+often making implementation faster than estimation, review, or
+integration. Agile practices built around human-only delivery speeds need
+deliberate adjustment, or the bottleneck just moves without anyone noticing.</p>
+<h2 id="what-actually-changes-with-ai-assisted-delivery">What actually changes with AI-assisted delivery<a class="headerlink" href="#what-actually-changes-with-ai-assisted-delivery" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Old assumption</th>
+<th>New reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Writing code is usually the slowest step in a story</td>
+<td>Writing code is often now faster than review, testing, and integration</td>
+</tr>
+<tr>
+<td>Story point estimates reflect roughly human-only implementation effort</td>
+<td>Estimates need to account for AI-accelerated implementation plus unchanged review/verification effort</td>
+</tr>
+<tr>
+<td>One engineer, one story, sequential</td>
+<td>An engineer can run several AI-assisted threads in parallel, raising WIP-limit questions</td>
+</tr>
+<tr>
+<td>Code review checks for correctness and style</td>
+<td>Code review also needs to check for AI-specific failure modes: plausible-looking but subtly wrong logic, hallucinated APIs, license/provenance issues</td>
+</tr>
+</tbody>
+</table>
+<h2 id="adjusting-the-flow">Adjusting the flow<a class="headerlink" href="#adjusting-the-flow" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Practice</th>
+<th>Adjustment for AI-assisted work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WIP limits</td>
+<td>May need lowering, not raising — faster implementation can pile more unreviewed work into the review column than the team can actually verify</td>
+</tr>
+<tr>
+<td>Definition of Done</td>
+<td>Add explicit AI-specific checks: no hallucinated dependencies, no unreviewed generated tests asserting trivial/tautological conditions</td>
+</tr>
+<tr>
+<td>Estimation</td>
+<td>Re-baseline story points periodically; a task that was a 5 six months ago may genuinely be a 2 now, and pretending otherwise inflates apparent velocity for no reason</td>
+</tr>
+<tr>
+<td>Pairing/review</td>
+<td>Human review effort becomes the real constraint — invest coaching there, not in prompting technique alone</td>
+</tr>
+</tbody>
+</table>
+<h2 id="where-ai-helps-agile-practice-itself">Where AI helps agile practice itself<a class="headerlink" href="#where-ai-helps-agile-practice-itself" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ceremony/artifact</th>
+<th>AI-assisted use</th>
+<th>Caution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backlog refinement</td>
+<td>Drafting acceptance criteria, surfacing edge cases from a rough story description</td>
+<td>Still needs human judgment on business priority and actual user need</td>
+</tr>
+<tr>
+<td>Retrospective</td>
+<td>Summarizing patterns across many past retro notes</td>
+<td>Don't let it replace the team's own reflection — summaries can flatten real disagreement</td>
+</tr>
+<tr>
+<td>Release notes / documentation</td>
+<td>Drafting from commit/PR history</td>
+<td>Needs a human accuracy pass before anything customer-facing ships</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A team adopts an AI coding assistant and initially celebrates a 3x increase
+in story throughput. Within two sprints, the review queue backs up
+severely, a subtle bug from AI-generated code (correct-looking but wrong
+edge-case handling in a discount calculation) reaches production, and two
+engineers report they're now spending more time reviewing generated code
+than they used to spend writing it themselves — the team's real cycle time
+hasn't actually improved.</p>
+<p>The team responds by lowering its review-column WIP limit (rather than
+raising the "in progress" limit as they'd initially planned), adding an
+explicit Definition-of-Done item requiring a human-written test for any
+business-logic branch introduced by generated code, and re-baselining
+story points for a sample of recent stories to reflect that implementation
+time dropped but review time didn't. The next retrospective tracks cycle
+time specifically (not just story throughput), revealing the real
+bottleneck moved to code review — prompting the team to invest coaching
+time in review practices rather than further prompting technique.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Your team has adopted an AI coding assistant and story throughput has
+doubled, but two production incidents in the last month traced back to
+AI-generated code that passed review too quickly. Using this module's
+framework: (1) name one Definition-of-Done addition that would have caught
+this class of bug, (2) decide whether WIP limits should move up or down and
+justify it, (3) propose how you'd re-baseline estimates without simply
+inflating apparent velocity, and (4) name one ceremony where AI assistance
+is appropriate and one where you'd deliberately keep it out.</p>
 
 
 

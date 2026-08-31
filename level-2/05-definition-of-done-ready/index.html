@@ -1054,6 +1054,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Definition of Done & Definition of Ready
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1070,6 +1088,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#two-gates-two-purposes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two gates, two purposes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-representative-definition-of-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A representative Definition of Done
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-representative-definition-of-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A representative Definition of Ready
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#two-gates-two-purposes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two gates, two purposes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-representative-definition-of-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A representative Definition of Done
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-representative-definition-of-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A representative Definition of Ready
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,120 @@
 
 
 <h1 id="05-definition-of-done-definition-of-ready">05 · Definition of Done &amp; Definition of Ready<a class="headerlink" href="#05-definition-of-done-definition-of-ready" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Two short checklists — one gating entry into a sprint, one gating exit —
+prevent most of the mid-sprint surprises teams blame on "bad requirements"
+or "bad estimation." This module treats them as a single system rather than
+two independent artifacts.</p>
+<h2 id="two-gates-two-purposes">Two gates, two purposes<a class="headerlink" href="#two-gates-two-purposes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Definition of Ready (DoR)</th>
+<th>Definition of Done (DoD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gates</td>
+<td>Entry into a sprint</td>
+<td>Exit from a sprint (or a story)</td>
+</tr>
+<tr>
+<td>Owned by</td>
+<td>Product Owner, validated by team</td>
+<td>Whole team</td>
+</tr>
+<tr>
+<td>Answers</td>
+<td>"Can we confidently start this?"</td>
+<td>"Is this actually finished?"</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Per story</td>
+<td>Usually team- or increment-wide, plus per-story acceptance criteria</td>
+</tr>
+<tr>
+<td>Changes how often</td>
+<td>Rarely — it's a quality bar for backlog items</td>
+<td>Rarely, but should grow as engineering maturity grows</td>
+</tr>
+</tbody>
+</table>
+<p>A team with a strong DoD but no DoR still pulls in vague stories and
+discovers mid-sprint they don't know what "done" for <em>that story</em>
+specifically means. A team with a strong DoR but weak DoD ships
+inconsistent quality — "done" means something different depending on who
+finished the ticket.</p>
+<h2 id="a-representative-definition-of-done">A representative Definition of Done<a class="headerlink" href="#a-representative-definition-of-done" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Example criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Peer-reviewed, merged, follows style guide</td>
+</tr>
+<tr>
+<td>Tests</td>
+<td>Unit tests written and passing, coverage doesn't drop</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>No new critical/high static-analysis findings</td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>Merged to main, CI green</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>User-facing docs or changelog updated if behavior changed</td>
+</tr>
+<tr>
+<td>Acceptance</td>
+<td>Product Owner has verified against the story's acceptance criteria</td>
+</tr>
+</tbody>
+</table>
+<p>DoD is layered: some criteria apply to every single story (code review,
+tests); others apply once per sprint or release (regression suite,
+performance check). Conflating the two makes the DoD too heavy to check per
+story.</p>
+<h2 id="a-representative-definition-of-ready">A representative Definition of Ready<a class="headerlink" href="#a-representative-definition-of-ready" title="Permanent link">&para;</a></h2>
+<p>See Module 03 for the full INVEST-based checklist (Independent, Negotiable,
+Valuable, Estimable, Small, Testable). The DoR is intentionally the
+<em>minimum</em> bar — a story doesn't need every detail resolved, just enough for
+the team to commit to it confidently.</p>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A team's velocity is volatile: some sprints finish everything early, others
+carry 40% of stories over. Diagnosis:</p>
+<ol>
+<li>Inspecting the DoD reveals it only says "code merged" — no test or
+   review requirement. Some stories ship with zero tests, inflating
+   apparent velocity while accumulating defects that resurface later as
+   unplanned work.</li>
+<li>Inspecting the DoR reveals it doesn't exist — the PO writes one-line
+   stories and the team estimates them on the spot in Planning.</li>
+<li>Fix: the team writes an explicit DoD (code review + tests + PO
+   acceptance) and a DoR checklist, and applies the DoR as a literal
+   checklist item on the Planning board — no story enters Planning without
+   a check next to each DoR item.</li>
+</ol>
+<p>Three sprints later, carryover drops to under 10% and defect reports
+trace-backed to "missing tests" fall to zero, because incomplete work no
+longer counts as done.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Write a Definition of Done (5–7 criteria) and a Definition of Ready (5–6
+criteria) for a team building a mobile app feature. Then take one vague
+story ("add push notifications") and (1) show what's missing against your
+DoR, (2) rewrite it so it passes, and (3) list which of your DoD criteria
+would have caught a bug that shipped without tests.</p>
 
 
 

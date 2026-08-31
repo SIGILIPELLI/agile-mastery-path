@@ -1026,6 +1026,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Kanban Metrics (Cycle Time, Lead Time, CFD)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1042,6 +1060,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-core-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The core measurements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-a-cumulative-flow-diagram-cfd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading a Cumulative Flow Diagram (CFD)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cycle-time-distributions-not-averages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cycle time distributions, not averages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-core-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The core measurements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-a-cumulative-flow-diagram-cfd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading a Cumulative Flow Diagram (CFD)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cycle-time-distributions-not-averages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cycle time distributions, not averages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,128 @@
 
 
 <h1 id="04-kanban-metrics-cycle-time-lead-time-cfd">04 · Kanban Metrics (Cycle Time, Lead Time, CFD)<a class="headerlink" href="#04-kanban-metrics-cycle-time-lead-time-cfd" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Level 1 covered WIP limits and pull as Kanban's mechanics. This module
+covers the metrics that tell you whether those mechanics are actually
+working — and how to read them without over-interpreting noise.</p>
+<h2 id="the-core-measurements">The core measurements<a class="headerlink" href="#the-core-measurements" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Definition</th>
+<th>Answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead time</td>
+<td>Time from request created to delivered</td>
+<td>"How long does a customer wait?"</td>
+</tr>
+<tr>
+<td>Cycle time</td>
+<td>Time from work started to delivered</td>
+<td>"How long does work take once we commit to it?"</td>
+</tr>
+<tr>
+<td>Throughput</td>
+<td>Items completed per unit time</td>
+<td>"How much do we ship?"</td>
+</tr>
+<tr>
+<td>WIP</td>
+<td>Items currently in progress</td>
+<td>"How much is in flight right now?"</td>
+</tr>
+</tbody>
+</table>
+<p>Little's Law ties three of these together: <strong>Average Cycle Time = Average
+WIP ÷ Average Throughput</strong>. This is the mathematical justification for WIP
+limits — for a fixed throughput, lowering WIP mechanically lowers cycle
+time. Teams that want faster delivery without hiring more people should
+look at WIP first.</p>
+<h2 id="reading-a-cumulative-flow-diagram-cfd">Reading a Cumulative Flow Diagram (CFD)<a class="headerlink" href="#reading-a-cumulative-flow-diagram-cfd" title="Permanent link">&para;</a></h2>
+<p>A CFD stacks cumulative counts of items in each column (To Do, In Progress,
+Done) over time.</p>
+<table>
+<thead>
+<tr>
+<th>CFD signal</th>
+<th>What to look for</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Band width (vertical gap)</td>
+<td>Widening "In Progress" band</td>
+<td>Growing WIP — bottleneck forming</td>
+</tr>
+<tr>
+<td>Band slope</td>
+<td>Flattening "Done" line</td>
+<td>Throughput dropping</td>
+</tr>
+<tr>
+<td>Parallel bands</td>
+<td>Consistent, near-parallel lines</td>
+<td>Stable, predictable flow</td>
+</tr>
+<tr>
+<td>Diverging bands</td>
+<td>Gap between "In Progress" and "Done" widening steadily</td>
+<td>Work is starting faster than it's finishing</td>
+</tr>
+</tbody>
+</table>
+<p>The horizontal distance between two bands at a given height is an
+approximate cycle time; the vertical distance between bands at a given date
+is WIP. A CFD makes bottlenecks visible weeks before they show up as missed
+commitments.</p>
+<h2 id="cycle-time-distributions-not-averages">Cycle time distributions, not averages<a class="headerlink" href="#cycle-time-distributions-not-averages" title="Permanent link">&para;</a></h2>
+<p>Cycle time is rarely normally distributed — it has a long right tail from
+outlier items (blocked stories, forgotten items). Reporting only the average
+hides this. A cycle time scatterplot with 50th/85th/95th percentile lines is
+more honest:</p>
+<table>
+<thead>
+<tr>
+<th>Percentile</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50th (median)</td>
+<td>Typical item — good for day-to-day expectations</td>
+</tr>
+<tr>
+<td>85th</td>
+<td>A reasonable "when will this likely be done" forecast</td>
+</tr>
+<tr>
+<td>95th</td>
+<td>Worst-case planning for commitments to external stakeholders</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A support team's CFD shows the "In Review" band widening over three weeks
+while "Done" flattens. Cycle time scatterplot confirms: median cycle time
+rose from 3 to 6 days, driven entirely by items sitting in "In Review."
+Investigation finds the team has one designated reviewer who's also doing
+feature work. The fix: cap "In Review" WIP at 2, and rotate review duty
+among three people instead of one. Four weeks later, the CFD bands run
+parallel again and median cycle time returns to 3 days — a case of the
+metric localizing a bottleneck that a status meeting alone hadn't
+surfaced.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Using a real or invented set of 15 completed items with start and finish
+dates, (1) compute median and 85th-percentile cycle time, (2) sketch (in
+words or a simple table) what the CFD bands would look like if WIP were
+rising, and (3) propose one WIP-limit change using Little's Law to justify
+the expected effect on cycle time, and (4) state what you'd check two weeks
+later to confirm the change worked.</p>
 
 
 

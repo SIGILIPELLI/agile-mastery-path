@@ -1110,6 +1110,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Release Planning
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1126,6 +1144,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-planning-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release planning inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-planning-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two planning shapes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building the plan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-planning-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release planning inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-planning-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two planning shapes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building the plan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,114 @@
 
 
 <h1 id="07-release-planning">07 · Release Planning<a class="headerlink" href="#07-release-planning" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Sprints answer "what are we doing next"; release planning answers "when
+will stakeholders actually get something, and what will it contain." This
+module covers building a release plan that stays honest as reality departs
+from the original guess.</p>
+<h2 id="release-planning-inputs">Release planning inputs<a class="headerlink" href="#release-planning-inputs" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Source</th>
+<th>Role in the plan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prioritized backlog</td>
+<td>Product Owner</td>
+<td>Defines <em>what</em>, in order of value</td>
+</tr>
+<tr>
+<td>Velocity range</td>
+<td>Module 06</td>
+<td>Defines <em>how much</em> per sprint, realistically</td>
+</tr>
+<tr>
+<td>Fixed constraints</td>
+<td>Business (date, budget, compliance deadline)</td>
+<td>Defines the boundary the plan must fit</td>
+</tr>
+<tr>
+<td>Dependencies</td>
+<td>Architecture, other teams</td>
+<td>Defines sequencing constraints</td>
+</tr>
+<tr>
+<td>Risk register</td>
+<td>Team + stakeholders</td>
+<td>Defines what could blow up the plan</td>
+</tr>
+</tbody>
+</table>
+<h2 id="two-planning-shapes">Two planning shapes<a class="headerlink" href="#two-planning-shapes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Shape</th>
+<th>Fixed</th>
+<th>Variable</th>
+<th>Best when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Date-driven</td>
+<td>Release date</td>
+<td>Scope (what fits by that date)</td>
+<td>Marketing launch, compliance deadline, trade show</td>
+</tr>
+<tr>
+<td>Scope-driven</td>
+<td>Feature set (MVP)</td>
+<td>Date (ships when the scope is done)</td>
+<td>New product where date has no external driver</td>
+</tr>
+</tbody>
+</table>
+<p>Most real releases are a hybrid: a target date the business would like, and
+a scope the business needs — release planning's job is to show, honestly,
+whether both can hold, and if not, which one has to give.</p>
+<h2 id="building-the-plan">Building the plan<a class="headerlink" href="#building-the-plan" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Order the backlog by value and dependency.</li>
+<li>Slice it into a "must-have" (true MVP) and "nice-to-have" tier.</li>
+<li>Using the velocity range, forecast how many sprints the must-have tier
+   takes (min–max, as in Module 06).</li>
+<li>Compare the forecast to the fixed constraint. If the range clears the
+   date comfortably, add nice-to-have items. If not, cut scope, not
+   quality — never compress the Definition of Done to hit a date.</li>
+<li>Re-forecast every sprint using updated velocity and remaining backlog —
+   a release plan is a living forecast, not a one-time Gantt chart.</li>
+</ol>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A team needs to ship a compliance feature by a hard regulatory date 10
+weeks out (5 two-week sprints). The must-have backlog is 95 points; average
+velocity is 19 (range 15–24).</p>
+<ul>
+<li>Forecast: 95 ÷ 19 ≈ 5 sprints — exactly matches the fixed date, with the
+  worst-case (15/sprint) reading closer to 7 sprints.</li>
+<li>The team flags this at the release-planning session: the plan is <em>tight</em>,
+  not safe. Two options are proposed: cut two nice-to-have items already
+  scoped into the "must-have" pile by mistake (found on re-review), or add
+  a contingency sprint by moving the internal soft-launch date.</li>
+<li>The business chooses to trim scope: two lower-value compliance edge cases
+  move to a fast-follow release after the deadline, which the legal team
+  confirms is acceptable.</li>
+<li>Each sprint, the team re-forecasts; by sprint 3, actual velocity of 21–23
+  confirms the trimmed scope will land on time with margin.</li>
+</ul>
+<p>The plan didn't just publish a date — it exposed the actual risk two months
+before it would have surfaced as a missed deadline.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Given a fixed release date 12 weeks away (six 2-week sprints), a
+must-have backlog of 130 points, and a team velocity history of 18, 20, 17,
+22, 19 (range 17–22): (1) compute best- and worst-case sprint forecasts,
+(2) state whether the date is safe, tight, or at risk, (3) propose one
+concrete scope or date change if it's tight or at risk, and (4) describe
+what you'd re-check at the sprint-3 mark to confirm the plan is still on
+track.</p>
 
 
 

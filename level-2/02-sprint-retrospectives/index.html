@@ -970,6 +970,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Sprint Retrospectives
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -986,6 +1004,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-five-stage-retrospective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The five-stage retrospective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-prime-directive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Prime Directive
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anti-patterns-and-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-patterns and fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-five-stage-retrospective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The five-stage retrospective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-prime-directive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Prime Directive
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anti-patterns-and-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-patterns and fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,126 @@
 
 
 <h1 id="02-sprint-retrospectives">02 · Sprint Retrospectives<a class="headerlink" href="#02-sprint-retrospectives" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>A Retrospective that produces the same three complaints sprint after sprint
+isn't failing by accident — it's usually missing a structure that turns
+observations into owned, checked actions. This module gives you that
+structure.</p>
+<h2 id="the-five-stage-retrospective">The five-stage retrospective<a class="headerlink" href="#the-five-stage-retrospective" title="Permanent link">&para;</a></h2>
+<p>Ad-hoc "what went well / what didn't" retros tend to collapse into venting.
+A structured retro moves deliberately through five stages, each with a
+different purpose:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Purpose</th>
+<th>Typical technique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set the stage</td>
+<td>Get everyone present and safe to speak</td>
+<td>Check-in question, restate the Prime Directive</td>
+</tr>
+<tr>
+<td>Gather data</td>
+<td>Surface facts and events from the sprint, not opinions yet</td>
+<td>Timeline, mood chart, sprint metrics</td>
+</tr>
+<tr>
+<td>Generate insights</td>
+<td>Ask <em>why</em> patterns occurred</td>
+<td>5 Whys, fishbone diagram, grouping/affinity mapping</td>
+</tr>
+<tr>
+<td>Decide what to do</td>
+<td>Convert insight into 1–3 concrete actions</td>
+<td>Dot-voting, effort/impact grid</td>
+</tr>
+<tr>
+<td>Close</td>
+<td>Confirm ownership and appreciate the team</td>
+<td>Restate owners + due sprint, retro-on-the-retro</td>
+</tr>
+</tbody>
+</table>
+<p>Skipping straight from "set the stage" to "decide what to do" is the most
+common failure — it produces actions aimed at symptoms because the team
+never separated <em>what happened</em> from <em>why it happened</em>.</p>
+<h2 id="the-prime-directive">The Prime Directive<a class="headerlink" href="#the-prime-directive" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>"Regardless of what we discover, we understand and truly believe that
+everyone did the best job they could, given what they knew at the time,
+their skills and abilities, the resources available, and the situation at
+hand." — Norm Kerth</p>
+</blockquote>
+<p>Reading this aloud at the start reframes the retro from blame-assignment to
+system-improvement. A recurring bug isn't "Dana's fault" — it's a gap in the
+Definition of Done, a missing test suite, or an unclear requirement that the
+team can fix together.</p>
+<h2 id="anti-patterns-and-fixes">Anti-patterns and fixes<a class="headerlink" href="#anti-patterns-and-fixes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Anti-pattern</th>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Groundhog day</td>
+<td>Same complaint every sprint, no follow-through</td>
+<td>Open the retro by reviewing last sprint's action items first</td>
+</tr>
+<tr>
+<td>Blamestorm</td>
+<td>Retro turns into finger-pointing</td>
+<td>Reinforce the Prime Directive; reframe to systems, not people</td>
+</tr>
+<tr>
+<td>Action item graveyard</td>
+<td>8 actions logged, 0 done</td>
+<td>Cap at 1–3 actions, each with a named owner and a sprint deadline</td>
+</tr>
+<tr>
+<td>Facilitator fatigue</td>
+<td>Same person runs every retro the same way</td>
+<td>Rotate facilitation; vary the technique (see table above)</td>
+</tr>
+<tr>
+<td>Silent majority</td>
+<td>2 people talk, rest nod</td>
+<td>Use written brainstorming (sticky notes / async doc) before discussion</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>A 6-person team has run 12 identical retros: "testing is rushed at the end
+of the sprint" comes up every time, with no lasting fix. Applying the
+five-stage structure:</p>
+<ol>
+<li><strong>Gather data</strong>: the team builds a timeline of the last sprint and
+   notices testing always starts on day 8 of a 10-day sprint — not because
+   testers are slow, but because stories aren't "ready to test" until
+   development finishes near the end.</li>
+<li><strong>Generate insights</strong>: a 5 Whys chain traces this to the Definition of
+   Ready not requiring stories to be split small enough to finish mid-sprint.</li>
+<li><strong>Decide</strong>: one action — amend the Definition of Ready to cap story size
+   at 3 days of dev work, owned by the Product Owner, effective next sprint.</li>
+<li><strong>Close</strong>: the team schedules a 10-minute check at the mid-sprint Daily
+   Scrum to confirm at least one story has reached "ready to test."</li>
+</ol>
+<p>Two sprints later, testing starts by day 5 on average — the retro action
+addressed the upstream cause, not the symptom.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Take a recurring complaint from a real or invented team's retros. Run it
+through the five-stage structure: (1) one fact-based data point (not an
+opinion) that would appear in "gather data," (2) a 5-Whys chain of at least
+three "why"s that reaches a systemic root cause, (3) one action item with an
+owner and a deadline, and (4) how you'd verify at the next retro that the
+action actually worked.</p>
 
 
 

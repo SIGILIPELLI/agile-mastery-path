@@ -1166,6 +1166,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Handling Scope Change Mid-Sprint
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1182,6 +1200,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sprint-goal-as-the-filter-not-no-changes-ever" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint Goal as the filter, not "no changes ever"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-trade-off-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The trade-off rule
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-absorbing-scope-silently-is-worse-than-saying-no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why absorbing scope silently is worse than saying no
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sprint-goal-as-the-filter-not-no-changes-ever" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint Goal as the filter, not "no changes ever"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-trade-off-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The trade-off rule
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-absorbing-scope-silently-is-worse-than-saying-no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why absorbing scope silently is worse than saying no
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,112 @@
 
 
 <h1 id="09-handling-scope-change-mid-sprint">09 · Handling Scope Change Mid-Sprint<a class="headerlink" href="#09-handling-scope-change-mid-sprint" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>"Can you just squeeze this in?" is one of the most common pressures a Scrum
+team faces, and how a team answers it determines whether Sprint commitments
+mean anything. This module gives a decision framework instead of an
+absolute rule.</p>
+<h2 id="sprint-goal-as-the-filter-not-no-changes-ever">Sprint Goal as the filter, not "no changes ever"<a class="headerlink" href="#sprint-goal-as-the-filter-not-no-changes-ever" title="Permanent link">&para;</a></h2>
+<p>Scrum doesn't forbid change — it protects the <em>Sprint Goal</em>, not the exact
+list of tickets. The right question when a change request lands mid-sprint
+is never "can the team fit it," it's "does accepting this still let us meet
+the Sprint Goal."</p>
+<table>
+<thead>
+<tr>
+<th>Request type</th>
+<th>Sprint Goal impact</th>
+<th>Typical response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical production bug</td>
+<td>Threatens the goal if unfixed (outage, data loss)</td>
+<td>Accept; renegotiate scope to compensate</td>
+</tr>
+<tr>
+<td>"Nice to have while you're in there"</td>
+<td>No bearing on the goal</td>
+<td>Defer to backlog, refine for next sprint</td>
+</tr>
+<tr>
+<td>Stakeholder changed their mind on a planned story</td>
+<td>May or may not affect the goal</td>
+<td>Discuss with PO; only mid-sprint change if goal is truly at risk otherwise</td>
+</tr>
+<tr>
+<td>Executive escalation, unrelated to goal</td>
+<td>Doesn't affect the goal by definition</td>
+<td>Push back explicitly; log for next Planning</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-trade-off-rule">The trade-off rule<a class="headerlink" href="#the-trade-off-rule" title="Permanent link">&para;</a></h2>
+<p>If new work genuinely must enter the sprint, something of <em>equal size</em> must
+leave, decided by the Product Owner — not silently absorbed by the team
+working overtime. This keeps the Sprint Goal achievable and keeps
+stakeholders honest about the cost of "urgent" requests.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Who does it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Assess Sprint Goal impact</td>
+<td>Scrum Master + team</td>
+</tr>
+<tr>
+<td>2. If goal is at risk without the change, accept it</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>3. Identify equal-sized item(s) to remove</td>
+<td>Product Owner, in front of the team</td>
+</tr>
+<tr>
+<td>4. Update the Sprint Backlog visibly</td>
+<td>Whoever facilitates</td>
+</tr>
+<tr>
+<td>5. Note the change for the retro</td>
+<td>Scrum Master</td>
+</tr>
+</tbody>
+</table>
+<h2 id="why-absorbing-scope-silently-is-worse-than-saying-no">Why absorbing scope silently is worse than saying no<a class="headerlink" href="#why-absorbing-scope-silently-is-worse-than-saying-no" title="Permanent link">&para;</a></h2>
+<p>A team that always "finds a way" to squeeze in extra work without dropping
+anything teaches stakeholders that the Sprint commitment is soft and
+renegotiable at will — the next urgent request arrives just as casually.
+Making the trade-off visible (something drops) is what keeps "urgent"
+requests rare instead of routine.</p>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>Mid-sprint, a stakeholder asks the team to add a small compliance fix
+"since it's quick." The Scrum Master runs it through the framework:</p>
+<ol>
+<li>Sprint Goal check: the current goal is "ship the redesigned checkout
+   flow." The compliance fix is unrelated.</li>
+<li>Per the table, this is a "nice to have while you're in there" — no goal
+   impact.</li>
+<li>The Scrum Master declines the mid-sprint insertion, logs the item in the
+   backlog, and confirms with the PO it will be prioritized for the next
+   refinement session.</li>
+<li>Two days later, a genuine production incident does threaten the
+   checkout goal (a payment gateway bug). This time the team accepts the
+   fix, and the PO removes an equivalent-sized lower-priority checkout
+   story from the sprint in full view of the team.</li>
+</ol>
+<p>The team said no once and yes once, using the same framework both times —
+consistency, not a blanket rule, is what stakeholders learn to trust.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Invent three mid-sprint change requests of varying urgency (one clearly
+Sprint-Goal-threatening, one clearly not, one ambiguous). For each: (1)
+classify it using the table, (2) state the response, (3) for the one you
+accept, name what equal-sized item you'd remove and who decides, and (4)
+write one sentence you'd say to the stakeholder explaining the trade-off
+out loud.</p>
 
 
 

@@ -1484,6 +1484,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Multi-Team Dependency Management
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1500,6 +1518,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of dependencies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-dependencies-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making dependencies visible
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scrum-of-scrums-done-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scrum of Scrums, done well
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2083,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of dependencies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-dependencies-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making dependencies visible
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scrum-of-scrums-done-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scrum of Scrums, done well
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2165,120 @@
 
 
 <h1 id="07-multi-team-dependency-management">07 · Multi-Team Dependency Management<a class="headerlink" href="#07-multi-team-dependency-management" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Once more than one team shares a product, a codebase, or a platform, "Team
+A is blocked on Team B" becomes routine. Left unmanaged, dependencies
+silently determine the real schedule regardless of what any single team's
+Sprint Backlog says. This module covers making them visible and manageable.</p>
+<h2 id="types-of-dependencies">Types of dependencies<a class="headerlink" href="#types-of-dependencies" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+<th>Typical fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Technical</td>
+<td>Team A's feature needs an API Team B hasn't built yet</td>
+<td>Sequence work; build a stub/mock in the meantime</td>
+</tr>
+<tr>
+<td>Resource</td>
+<td>Both teams need the one engineer who knows the legacy billing system</td>
+<td>Cross-train, or explicitly schedule that person's time across teams</td>
+</tr>
+<tr>
+<td>Knowledge</td>
+<td>Team A doesn't know a constraint only Team B's domain expert knows</td>
+<td>Early cross-team refinement session, not discovered mid-sprint</td>
+</tr>
+<tr>
+<td>Sequencing</td>
+<td>Feature B can't ship before feature A per business/legal reasons</td>
+<td>Backlog ordering reflects the constraint, visible to both teams</td>
+</tr>
+</tbody>
+</table>
+<h2 id="making-dependencies-visible">Making dependencies visible<a class="headerlink" href="#making-dependencies-visible" title="Permanent link">&para;</a></h2>
+<p>A dependency invisible until the sprint it blocks is a dependency that
+already cost you the sprint. Visibility has to happen at refinement/planning
+time, not discovery time.</p>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>How it works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dependency board / cross-team backlog tags</td>
+<td>Every story tagged with which other team(s) it depends on or is depended on by</td>
+</tr>
+<tr>
+<td>Scrum of Scrums</td>
+<td>A short, regular sync (not a status meeting) among representatives of dependent teams, focused on blockers</td>
+</tr>
+<tr>
+<td>Big-room/PI planning (SAFe-style, or a lightweight equivalent)</td>
+<td>Teams jointly sequence work across a shared timeline before committing</td>
+</tr>
+<tr>
+<td>Shared roadmap view</td>
+<td>One visual timeline showing all teams' major work, dependencies drawn as arrows</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scrum-of-scrums-done-well">Scrum of Scrums, done well<a class="headerlink" href="#scrum-of-scrums-done-well" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Healthy version</th>
+<th>Common failure mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Each rep reports only cross-team blockers, not their team's full status</td>
+<td>Turns into a second Daily Scrum re-reporting internal team status</td>
+</tr>
+<tr>
+<td>Short (15 min), focused, action-oriented</td>
+<td>Runs long because it tries to solve problems live instead of parking them</td>
+</tr>
+<tr>
+<td>Attendees can act — escalate or unblock on the spot</td>
+<td>Attendees are messengers with no authority, so nothing resolves</td>
+</tr>
+</tbody>
+</table>
+<p>The single fix that prevents the most common failure: cap the question at
+"what does another team need from us, or what do we need from another
+team" — anything else belongs in that team's own Daily Scrum.</p>
+<h2 id="a-worked-example">A worked example<a class="headerlink" href="#a-worked-example" title="Permanent link">&para;</a></h2>
+<p>Three teams building a checkout redesign discover in week 6 of an 8-week
+project that Team A's payment-method story depends on a shared component
+Team C was refactoring — and Team C's refactor isn't scheduled to finish
+until week 7. Neither team knew until Team A's story failed integration
+testing.</p>
+<p>Root cause: no dependency board existed; refinement happened per-team in
+isolation. The fix: the three teams start a twice-weekly 15-minute Scrum of
+Scrums, add a dependency-tag column to each team's backlog, and hold one
+joint refinement session before each new initiative to surface
+cross-team dependencies before sprint commitments are made. The next
+initiative surfaces a similar dependency in week 1 instead of week 6,
+giving Team C's refactor time to be resequenced ahead of the dependent
+work.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>For three teams sharing one platform, where Team X needs a shared library
+change from Team Y before it can start its own top-priority story: (1)
+classify the dependency type using the table, (2) propose a visibility
+mechanism to catch this two sprints earlier than discovery-time, (3) draft
+a 4-question Scrum of Scrums agenda focused only on cross-team blockers,
+and (4) name one resequencing decision the backlog should reflect once the
+dependency is known.</p>
 
 
 
