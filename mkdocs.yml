@@ -1,8 +1,8 @@
 site_name: Agile & Software Delivery Mastery Path
 site_description: A structured, module-wise Agile, Scrum, Kanban, Waterfall and SDLC training program from entry level to master level, treated as one integrated software delivery methodology curriculum.
-site_url: https://sigilipelli.github.io/agile-mastery-path/
-repo_url: https://github.com/SIGILIPELLI/agile-mastery-path
-repo_name: agile-mastery-path
+site_url: https://sigilipelli.github.io/agile-skillmastery/
+repo_url: https://github.com/SIGILIPELLI/agile-skillmastery
+repo_name: agile-skillmastery
 
 theme:
   name: material
