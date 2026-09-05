@@ -66,6 +66,49 @@ established self-organization. Over two sprints, the fix is incremental:
    as a resource to unblock people, not as the person assigning the day's
    work.
 
+## How It Actually Works
+
+The nested-loop model isn't just a taxonomy — the loops actually depend on
+each other in a specific direction, and most "ceremony theater" failures are
+a lower loop silently substituting for a higher one it can't actually
+replace.
+
+**Why a tight Daily Scrum can coexist with building the wrong thing.** The
+Daily Scrum's feedback signal is purely internal — it only checks "are we on
+pace against the plan we already made," which says nothing about whether the
+plan itself is still correct. A team can run a crisp, efficient 12-minute
+Daily Scrum every single day while the Sprint Review — the loop that checks
+the plan against outside reality — gets skipped or reduced to a slide deck.
+The inner loop optimizing something that was never validated against the
+outer loop is exactly how a team reports "we're on track" for eight straight
+sprints while shipping something stakeholders don't actually want; the inner
+loop has no mechanism to detect that failure, because detecting it isn't its
+job.
+
+**Why timeboxes surface upstream problems instead of causing them.** A
+timebox is a fixed amount of "conversation budget" for a fixed scope of
+decision. When Sprint Planning needs 6 hours, the actual bottleneck is
+almost never "the team talks too much" — it's that the items being planned
+arrive underspecified, so the room has to do real analysis work (What does
+this actually mean? Is this even one story or three?) live, in the meeting,
+that should have already happened in backlog refinement. Extending the
+timebox absorbs that missing work without fixing it, which is why the same
+6-hour Planning recurs sprint after sprint until refinement itself is fixed
+— the symptom is portable, the timebox just relocates it.
+
+**Why "what did you do yesterday" and "what's blocking the goal" produce
+structurally different meetings.** The first question's natural audience is
+whoever is listening and evaluating — it invites a status report because it's
+literally asking for one. The second question has no sensible audience
+except teammates who might be able to help, because only they can act on a
+blocker; a manager hearing "I'm blocked on the categorization API" can't fix
+it, but the developer sitting three feet away who wrote that API can. This is
+why the tech-lead-coaching step in the worked example is necessary and not
+optional — as long as the tech lead answers with assignments, the room
+correctly learns that the real audience for the meeting is the tech lead,
+and reverts to reporting to them regardless of which question is nominally
+asked.
+
 ## Exercise
 
 Pick one Scrum event from the table above that you believe is running

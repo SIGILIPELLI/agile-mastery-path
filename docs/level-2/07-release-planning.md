@@ -59,6 +59,49 @@ velocity is 19 (range 15–24).
 The plan didn't just publish a date — it exposed the actual risk two months
 before it would have surfaced as a missed deadline.
 
+## How It Actually Works
+
+A release plan built on a velocity *range* rather than a single average
+number is doing real risk-quantification work — it's converting "will we
+make the date" from a guess into a probability statement the business can
+actually act on.
+
+**Why the worst-case number, not the average, is what determines whether a
+date is "safe" or "tight."** The average (95÷19≈5 sprints) matching the date
+exactly means there is roughly a coin-flip chance of landing later than plan
+— by definition, half of a team's historical sprints fall below their own
+average. The worst-case forecast (95÷15≈7 sprints) is what actually answers
+"what happens if this release behaves like our worst recent sprints twice in
+a row," which is not a rare or unfair scenario — it's within the team's own
+observed range. Calling the plan "tight" rather than "on track" is the
+correct read specifically because the fixed date sits at the *median* of the
+outcome distribution, not comfortably inside the safe end of it.
+
+**Why cutting scope, not the Definition of Done, is the only sound lever
+under date pressure.** The math above forecasts sprints needed *given a
+fixed, unchanging notion of "done."* If a team instead compresses the DoD
+under deadline pressure (skips review, cuts test coverage) to hit the same
+date with the same point total, they haven't actually reduced the work —
+they've just moved it past the deadline, into defect-fixing sprints that
+don't show up in this forecast at all (this is Module 05's DoD-erosion
+mechanism, now happening under external date pressure instead of internal
+velocity pressure). Trimming the scope itself (removing the two edge cases)
+is the only move that genuinely reduces the points that must clear the
+line, which is why the worked example's business explicitly chooses that
+lever over the alternative.
+
+**Why re-forecasting every sprint, not once, is what makes the plan
+trustworthy.** A forecast made once at kickoff is a single sample of a
+noisy process projected far into the future — as sprints 1 and 2 complete,
+the team gains *actual, current-project* velocity data, which is a strictly
+better predictor of sprints 3-5 than a 6-sprint historical average from a
+different piece of work. Re-forecasting isn't admitting the original plan
+was wrong; it's the mechanism by which the plan gets *more* accurate as
+uncertainty resolves — which is exactly why the sprint-3 check in the
+worked example (actual velocity 21-23) is able to upgrade the plan's status
+from "tight" to "on track with margin" using real information the original
+forecast couldn't have had.
+
 ## Exercise
 
 Given a fixed release date 12 weeks away (six 2-week sprints), a

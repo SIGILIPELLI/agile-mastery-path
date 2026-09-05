@@ -54,6 +54,51 @@ established where any team can bring a real problem; and the practice
 library is opened for any team to contribute to, not just the coaches —
 shifting the CoE from a gate to a shared resource.
 
+## How It Actually Works
+
+The permanent-embed CoE's collapse in the worked example follows the same
+authority-versus-service structural failure that shows up throughout this
+level (Module 02's directing-vs-coaching, Module 03's gate-vs-automated-
+check) — a support function that becomes a mandatory checkpoint stops being
+judged on whether it helps and starts being judged on whether it can be
+avoided.
+
+**Why "check with your coach first" inevitably becomes a bottleneck,
+regardless of coach quality.** The moment a coach's approval is required
+before a team can act, the coach's time becomes a hard constraint on every
+one of their five teams' throughput — this is a direct application of the
+Theory of Constraints from Module 05, Level 1: whatever process step
+everything must pass through caps the system's total speed at that step's
+capacity, no matter how fast the rest of the pipeline moves. Five embedded
+coaches gating five teams' worth of decisions is structurally identical to
+a single reviewer gating a Kanban "In Review" column (Module 04, Level 2) —
+the fix there (rotate the bottleneck, cap WIP) is the same fix applied here
+(rotate coaches through a shared, pulled pool instead of a fixed
+one-to-one gate).
+
+**Why permanent embedding also starves the community-of-practice
+mechanism.** A coach permanently assigned to five teams accumulates deep,
+valuable context — but that context stays trapped inside those five teams'
+boundaries unless something forces cross-pollination. This is the same
+silo problem Module 02, Level 3 diagnoses for distributed multi-team
+dependencies: knowledge that only exists in one place is knowledge that
+can't help anyone outside that place, and a CoE without a deliberate
+sharing mechanism (the monthly cross-team session) recreates exactly the
+information-isolation problem it exists to solve, just relocated from
+teams to coaches.
+
+**Why health metrics have to be explicitly protected from becoming a
+ranking tool, not just informally discouraged.** The moment a metric like
+"team-reported psychological safety" is visible in a format that ranks
+teams against each other, it triggers the identical Goodhart's Law dynamic
+as Module 06, Level 2's velocity leaderboard: teams start optimizing their
+self-reported score rather than their actual psychological safety, because
+the visible ranking creates a reputational incentive stronger than the
+metric's original diagnostic purpose. Using the metric only to *route
+coaching investment* (not to publish comparisons) keeps it functioning as
+the honest signal it was designed to be, for exactly the same reason
+velocity stays honest only when nobody's rewarded for inflating it.
+
 ## Exercise
 
 Your 150-engineer organization has no formal agile support function today;

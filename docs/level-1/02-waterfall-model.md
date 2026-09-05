@@ -75,6 +75,46 @@ cannot legally absorb the kind of scope flexibility Agile assumes.
 | No room for market/user feedback | If user needs shift during the 6–12 months of a Waterfall project, there's no checkpoint to react to it |
 | Sunk-cost pressure to ship anyway | Because so much is invested by the time defects surface, teams are pressured to ship known-flawed software rather than reopen a gate |
 
+## How It Actually Works
+
+The mechanism that makes Waterfall expensive to correct isn't bureaucracy for
+its own sake — it's that each phase gate converts a *decision* into *sunk
+work downstream*, and the cost of reopening a gate scales with how much has
+been built on top of it.
+
+**Why "big bang integration" happens mechanically, not accidentally.** When
+Design produces a set of interface contracts (an API shape, a data schema,
+a message format) and different teams then build against those contracts in
+isolation for months, each team is implicitly making small interpretive
+choices the contract didn't fully pin down — how a null field behaves, what
+units a number is in, what happens on a timeout. Those choices are invisible
+and consistent *within* one team's code, because they only get exercised
+against that team's own assumptions. Integration is the first moment two
+teams' interpretations actually collide, which is precisely why it surfaces
+late (nothing before it exercised the seam) and expensively (weeks of
+parallel work now have to be reconciled instead of one design conversation).
+
+**Why the change-request process exists, and what it's actually doing.** A
+formal change request isn't red tape — it's the mechanism that prices in the
+cascading cost of a late change *before* anyone approves it. Changing a
+requirement after Design is signed off means re-touching the design
+artifacts derived from it, then the code derived from that design, then the
+tests derived from that code, then possibly redoing sign-offs that already
+happened. The change-request form is forcing someone to trace that
+dependency chain and put a number on it, which is exactly the audit trail a
+regulator or fixed-price client needs — and exactly the overhead that makes
+Waterfall a bad fit once requirements are expected to move.
+
+**Why sunk-cost pressure to ship is structural, not a personality flaw.**
+Because Waterfall front-loads nearly all its spend into Requirements through
+Implementation and only tests near the very end, the moment a critical
+defect surfaces is also the moment the project has the least budget and
+schedule left to absorb a phase reopening — the two things happen together
+by construction, not coincidence. That's why "ship it, patch it later" is the
+default outcome of a late Waterfall defect: reopening Testing → Design →
+Implementation at 90% of budget spent is a bigger ask than accepting known
+risk, even when the team knows better.
+
 ## Exercise
 
 Take a real or hypothetical software project (choose something with either a

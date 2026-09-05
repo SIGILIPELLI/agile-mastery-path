@@ -64,6 +64,50 @@ every sprint. The regulatory sign-off remains a genuine Waterfall-style gate
 at the end — that part can't be iterative — but everything before it now
 gets caught early instead of at a single final review.
 
+## How It Actually Works
+
+Water-Scrum-Fall works when it does — and collapses into "Agile in name
+only" when it doesn't — based on one precise distinction: whether the locked
+part of the contract constrains the *outcome* or the *solution*.
+
+**Why locking outcomes preserves the feedback loop and locking solutions
+destroys it.** A contract that locks "patient records must meet regulatory
+standard X, for price Y" leaves the entire solution space — screen layouts,
+workflow sequencing, data model — open to sprint-by-sprint discovery. A
+contract that instead locks a detailed upfront spec (specific screens,
+specific field layouts) has pre-decided the solution before any real usage
+data exists, which means the sprints that follow are executing a plan, not
+testing one — there's no room for a Sprint Review to actually change
+anything, because the thing it would want to change was frozen months
+earlier in the contract itself. This is exactly the mechanism behind
+"Agile in name only": the ceremonies survive, but the one thing that made
+them valuable (the ability to act on what a Sprint Review reveals) was
+signed away at the contracting phase.
+
+**Why the regulatory gate specifically can't be made iterative, and why
+that's fine.** A regulatory approval process evaluates a complete, static
+artifact against a fixed standard — there's no partial-credit version of
+"approved," and re-submitting after every sprint would multiply review
+overhead by however many sprints exist, most of which aren't ready for
+final review anyway. This genuinely differs from the *build* phase, where
+partial, imperfect versions have real diagnostic value (a client seeing
+sprint 3's rough UI can say "this doesn't match our workflow" long before
+sprint 9). The hybrid shape isn't a compromise weakening Agile's principles
+— it's correctly recognizing that only one part of the process (the gate
+itself) has the specific one-shot, all-or-nothing property that actually
+demands Waterfall's sequencing.
+
+**Why "no iteration demoed to the client" is the single highest-leverage
+failure to prevent.** The nine-month UI mismatch in the worked example isn't
+a testing failure — it's a *feedback-loop-latency* failure identical in
+mechanism to Module 01, Level 1's core Waterfall problem: the longer the gap
+between a wrong assumption forming and someone discovering it, the more
+expensive-to-undo work gets built on top of it in the meantime. A
+fixed-price contract can lock price without also locking out the one thing
+that makes Agile's core promise real — regular exposure of the actual,
+current state of the work to the person who can say "that's wrong" while
+it's still cheap to fix.
+
 ## Exercise
 
 For a project with a fixed government compliance deadline 6 months out and

@@ -74,6 +74,44 @@ A 5-person team building a mobile banking app runs a 2-week sprint:
    contract review with backend team" as a Sprint Planning checklist item
    going forward.
 
+## How It Actually Works
+
+Scrum's ten pieces aren't independent — they form a closed feedback loop, and
+most real-world Scrum failures are the loop breaking at one specific joint.
+
+**Why the role split creates a forcing function, not just a division of
+labor.** Separating "what to build" (Product Owner) from "how to build it"
+(Developers) only works because each accountability holds a veto the other
+can't override: the PO can reorder the backlog but can't tell a developer
+which line of code to write, and Developers can push back on scope within a
+sprint but can't unilaterally decide what the product should do next. When a
+PO starts assigning tasks to individuals, that veto structure collapses
+because now one person is making both the "what" and the "how" call, and the
+self-organization principle isn't damaged abstractly — concretely, it means
+the people closest to the technical tradeoffs (the Developers) no longer get
+to make them, and technical debt or brittle shortcuts creep in unnoticed
+because no one with visibility into "how" has authority to say no.
+
+**Why the events are a loop, not a list.** Sprint Planning produces a Sprint
+Goal; the Daily Scrum re-plans against that goal every 24 hours using fresh
+information; the Sprint Review exposes the resulting Increment to reality
+(stakeholders) and feeds *new* information back into the Product Backlog;
+the Retrospective closes the loop by adjusting the *process itself* based on
+what happened. Each event's output is the next cycle's input. A team that
+runs all four events but never changes anything from a Retrospective has
+technically closed the loop's shape while cutting its one feedback wire — the
+meetings keep happening, but the system stops learning, which is why teams
+can "do Scrum" for years and never get measurably better at it.
+
+**Why the three commitments are what make an artifact self-correcting.** A
+Product Backlog, Sprint Backlog, or Increment without its commitment (Product
+Goal, Sprint Goal, Definition of Done respectively) has no way to reject bad
+input — anything can be added, because there's no standing objective to
+check it against. This is exactly why the null-field incident in the worked
+example gets absorbed cleanly: the team has a Sprint Goal to protect, so a
+mid-sprint technical surprise gets triaged against "does fixing this serve
+the goal" rather than becoming an argument about priorities from scratch.
+
 ## Exercise
 
 Design a Sprint Backlog for a 2-week sprint for a team of your choosing

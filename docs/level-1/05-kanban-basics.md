@@ -74,6 +74,43 @@ Verify backlog. By week three, average time from Triage to Done drops from
 limit forced attention onto the actual constraint instead of letting
 everyone stay "individually busy" while total throughput stagnated.
 
+## How It Actually Works
+
+WIP limits work because of a real, provable relationship in queueing theory —
+**Little's Law** — not because "focus is a nice idea." It states:
+
+`Average Time in System = Average Work In Progress / Average Throughput`
+
+Rearranged, this says: for a fixed throughput rate, more WIP mechanically
+*means* longer time-in-system, not just correlates with it. This is why the
+support team's cycle time dropped from 6 days to 3.5 days without anyone
+working harder — they didn't increase throughput, they decreased WIP, and the
+formula forced the average time-per-item down as a direct consequence, not a
+side effect of morale or effort.
+
+**Why an idle developer is the correct outcome, mechanically.** When
+Development is full and a developer finishes early, starting a new item
+increases WIP without increasing the rate at which items complete — by
+Little's Law, that action can only make cycle time *worse* for every item
+already in flight, because now there are more things sharing the same finite
+throughput. Going to help clear the Review bottleneck instead doesn't just
+"feel like teamwork" — it's the only action available that increases
+effective throughput at the actual constraint, which is the one lever that
+improves the formula's outcome. This is a direct application of the Theory
+of Constraints: a system's total throughput is capped by its slowest stage,
+so effort spent anywhere else is invisible in the final number.
+
+**Why "wait time" and "work time" have to be tracked separately.** An item
+that sits untouched between two columns for three days isn't costing anyone
+active effort, but it is fully counted in the numerator of Little's Law — it
+inflates time-in-system exactly as much as three days of someone actively
+working it would. Teams that only track "hours worked per item" miss this
+entirely, because the biggest lever on cycle time in most real workflows
+turns out to be handoff delay (something waiting for a reviewer, an
+approval, an environment) rather than the work itself — which is why
+practice #5 (explicit feedback loops reviewing the board) exists: it's the
+mechanism for actually noticing where time is being lost.
+
 ## Exercise
 
 Design a Kanban board for a real or invented workflow (support tickets,

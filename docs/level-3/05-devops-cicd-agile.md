@@ -66,6 +66,53 @@ manual change-request gate is renegotiated to apply only to flag flips, not
 every code deploy, since deploys themselves are now low-risk and reversible.
 Time from "done" to "usable by real users" drops from a month to same-day.
 
+## How It Actually Works
+
+The worked example's core failure — "done" stories sitting unusable for a
+month — happens because two feedback loops that look identical on a Scrum
+board (both produce a green checkmark) are actually measuring different
+things, and closing one does nothing to close the other.
+
+**Why feature flags solve a *sequencing* problem that sprints alone
+cannot.** A Sprint Review's demo and a real user's access to a feature are,
+by default, the same event — the code has to be live in production for
+either to happen. That coupling forces a false choice: either delay
+deployment until a feature is fully polished (defeating the point of
+incremental delivery) or expose half-finished work to every real user the
+moment it merges. Feature flags break the coupling by separating "the code
+is deployed" from "the code is switched on for users" into two independent
+decisions — the team can deploy continuously (closing the technical loop)
+while the product decision of *when* to expose a feature stays entirely
+separate and reversible, which is exactly why Sprint Review can safely demo
+dark-shipped work: nothing about demoing it commits the team to exposing it
+broadly yet.
+
+**Why CI/CD is correctly framed as DoD automation, not a parallel
+initiative.** The manual version of "code peer-reviewed, tests passing, no
+critical findings" requires a human to remember and execute each check every
+time — which means its actual enforcement rate depends on human diligence
+under sprint-end time pressure, exactly the condition where checklist steps
+get silently skipped (Module 05, Level 2's DoD-erosion mechanism, again). A
+pipeline enforces the identical checklist as a mechanical gate that cannot
+be skipped under pressure, because it isn't a person choosing whether to run
+it — it runs on every commit regardless of how rushed anyone feels. This is
+why "CI/CD is automating the DoD" isn't a metaphor: it's structurally
+removing the exact human failure point that causes DoD erosion in teams
+without it.
+
+**Why fixing the pipeline without fixing the Dev/Ops handoff changes
+nothing end-to-end.** Little's Law (Module 04, Level 2) applies just as
+much to an org-level value stream as to a Kanban column: total time from
+"done" to "usable" is the sum of every stage's wait time, and a
+lightning-fast CI pipeline followed by a month-long manual Ops queue still
+produces a month-long total, because the bottleneck — the slowest stage —
+dominates the sum regardless of how fast the other stages run. This is why
+the worked example's real fix isn't step 1 (automated staging deploy) alone
+— it's step 3, renegotiating the change-request gate itself, because that
+manual approval queue was always the actual bottleneck, and speeding up
+everything upstream of a bottleneck has almost no effect on total
+throughput.
+
 ## Exercise
 
 For a team whose Definition of Done currently stops at "merged to main,

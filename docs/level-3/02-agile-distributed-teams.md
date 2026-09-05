@@ -66,6 +66,49 @@ time. Engagement in the sync window becomes near-100% within a month
 because attendance is fair across time zones instead of a fixed cost one
 side always pays.
 
+## How It Actually Works
+
+Distributed Agile failures usually trace back to one specific mechanism:
+co-located Scrum ceremonies work partly because of *unpriced, invisible*
+inputs (body language, hallway asides, equal convenience) that a remote
+setup either has to replace deliberately or silently loses.
+
+**Why a fixed meeting time is a hidden tax that always falls on the same
+people.** A 7am Pacific / 7:30pm India Daily Scrum isn't neutral just
+because both sides technically attend — one side pays the cost every single
+day (evening personal time) while the other pays nothing. This is invisible
+in a status dashboard (attendance looks fine on paper) but shows up exactly
+where it did in the worked example: engagement, not attendance, degrades
+first, because attending under resentment produces the minimum viable
+participation, not real re-planning. Rotating the sync window converts a
+fixed, one-sided tax into a shared, distributed one — the total cost to the
+team doesn't change, but who bears it each day does, which is what makes it
+sustainable instead of resented.
+
+**Why anonymous input has to precede discussion, not replace it, in a
+distributed retro.** In-person psychological safety is partly built by
+low-stakes repeated interaction (seeing someone relax, joke, or admit a
+small mistake casually) that a scheduled video call doesn't reproduce —
+without deliberately re-adding a safety mechanism, distributed retros
+default to whoever is most comfortable speaking first into a mostly-silent
+call, which systematically favors extroverted or higher-status voices.
+Anonymous input first breaks that ordering effect: everyone's honest
+observation exists on the board *before* anyone has to be first to say it
+aloud, and the subsequent discussion can then engage with the substance
+instead of the social risk of raising it.
+
+**Why "reserve synchronous time for what actually needs it" is a real
+throughput argument, not just etiquette.** Synchronous time across a 10-hour
+spread is a genuinely scarce, non-fungible resource — there are only a
+handful of overlapping hours in the day, shared across every meeting the
+team needs. Spending that scarce resource on content that could have been
+async (a status update with no ambiguity) means there's less of it left for
+content that structurally *requires* real-time back-and-forth (working
+through a genuine disagreement, unblocking a stuck decision) — which is why
+the async-hybrid pattern isn't a downgrade from "real" Scrum, it's routing
+each kind of communication to the channel that actually fits its bandwidth
+needs.
+
 ## Exercise
 
 For a team split evenly across two time zones 9 hours apart: (1) choose one

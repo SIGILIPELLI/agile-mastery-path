@@ -59,6 +59,49 @@ company uses." Two things go wrong if you do:
    its Definition of Done is doing the work of "testing phase complete."
    Kanban's "Done" column is doing the same job with different vocabulary.
 
+## How It Actually Works
+
+The SDLC isn't a checklist a team consults — it's what emerges automatically
+from a handful of dependency and feedback rules that hold whether or not
+anyone names the phases out loud.
+
+**Why the order is forced, not chosen.** Implementation can't start until
+design produces something concrete to implement, because a developer needs
+to know what data structures and API shapes exist before writing code against
+them — trying to code first just means silently doing design work inline,
+badly, one function at a time. Testing can't meaningfully start until there's
+an implementation to exercise, and deployment can't happen until testing has
+produced enough confidence to justify the risk. This is why "skipping a
+phase" is a myth: what actually happens when a team "skips testing" is that
+the testing work doesn't disappear, it just gets pushed downstream into
+production, where it's discovered by users instead of testers and costs 10-100x
+more to fix (the classic cost-of-defect curve) because by then the bug is
+entangled with other code written on top of it, and undoing it means undoing
+those dependents too.
+
+**The feedback loop that makes phases repeat.** In pure Waterfall the loop
+back from a later phase to an earlier one is expensive and rare — testing
+discovers a requirements gap, and fixing it means reopening a document,
+getting new sign-off, and re-doing design and implementation for that piece.
+Agile's real innovation isn't removing phases, it's shrinking the loop: by
+running all six phases on a two-week slice instead of the whole product, the
+gap between "requirement was wrong" and "someone finds out" drops from months
+to days, so the expensive rework never has time to compound. This is the
+actual mechanism behind "fail fast" — it's not a slogan, it's cutting the
+feedback loop's latency.
+
+**Where the six phases actually live inside a sprint.** A single two-week
+sprint compresses all six phases, but not evenly — Requirements and Design
+happen mostly in Sprint Planning and backlog refinement (in miniature, for
+just the items pulled into that sprint), Implementation and Testing happen
+concurrently throughout the sprint (a developer writes a function, then a
+test, then the next function — not two weeks of coding followed by two weeks
+of testing), Deployment happens continuously via CI/CD rather than as a
+single event at the end, and Maintenance for last sprint's work runs in
+parallel with this sprint's new work. A team that instead does "two weeks of
+coding, then a testing sprint" hasn't done Agile with an SDLC twist — they've
+just re-invented Waterfall with a two-week ruler.
+
 ## Exercise
 
 Pick a feature you've used recently in any app (a "like" button, a search

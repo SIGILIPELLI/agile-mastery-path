@@ -80,6 +80,55 @@ units rather than one-off fixed-scope projects.
 | Full scale | 9-14 | All 12 teams plus platform group; portfolio WSJF prioritization live |
 | Consolidate | 15-18 | Metrics reviewed against baseline; hiring/promotion criteria updated to anchor gains (Kotter step 8) |
 
+## How It Actually Works
+
+This roadmap's nine steps aren't independently good ideas stacked together —
+each later step depends on an earlier step already being real, and the
+sequencing itself is the actual design, not just a scheduling convenience.
+
+**Why Step 1-2's team-level fundamentals have to exist before Step 4's
+scaling layer means anything.** A Scrum-of-Scrums or class-of-service lane
+coordinates *between* teams that already have a functioning internal
+process — Module 07, Level 3's dependency-visibility mechanisms assume each
+team already has honest velocity, a real Definition of Done, and a backlog
+that isn't fiction. Scaling coordination onto teams whose own Sprint
+Backlogs are guesses (no real DoR/DoD, per Module 05, Level 2) just
+coordinates noise faster — this is why the timeline gates "early scale"
+(months 4-8) behind the pilot teams demonstrably running real Level 1-2
+practices first, not just on a calendar schedule.
+
+**Why the deliberately-recruited skeptical managers matter more than the
+respected senior engineers.** Module 01, Level 4 diagnosed the failed
+200-engineer rollout as missing exactly this: middle management, the layer
+that controls incentives and resourcing, wasn't part of the coalition. A
+coalition of only enthusiastic senior engineers builds technical credibility
+but does nothing to address the review-cycle and budget-reporting decisions
+that live with managers — recruiting skeptics specifically (not avoiding
+them) means the objections that would otherwise surface as passive
+resistance in month 9 get raised and answered in month 1, when the roadmap
+can still adapt.
+
+**Why the CAB redefinition (Step 6) and the portfolio funding shift (Step 7)
+have to land roughly together, not sequentially at either extreme.**
+Quarterly WSJF re-prioritization (Module 07, Level 4) assumes teams can
+actually ship against changing priorities without waiting on a governance
+bottleneck — funding flexibility without release flexibility just produces
+teams that are told to reprioritize but can't deploy the result any faster
+than before (the exact CAB-batching failure from Module 03, Level 4). This
+is why both appear in the same "full scale" phase: one changes what gets
+funded, the other changes how fast funded work reaches production, and
+neither alone closes the gap between "leadership wants faster delivery" and
+delivery actually being faster.
+
+**Why baselining starts in month 1, not after the transformation is
+declared complete.** Module 06, Level 4's central lesson — that
+"improvement" is unfalsifiable without a captured "before" — is why Step 8's
+baseline collection is scheduled at the very start of Step 9's timeline,
+concurrent with the pilot, rather than retrofitted at month 18 when
+leadership asks for a results readout. A transformation that only starts
+measuring once someone wants to know if it worked cannot actually answer
+that question, regardless of how well the rollout itself went.
+
 ## Capstone deliverable — what to produce
 
 For an organization of your own choosing (or this scenario), produce:

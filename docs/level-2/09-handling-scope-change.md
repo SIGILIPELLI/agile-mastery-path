@@ -62,6 +62,48 @@ Mid-sprint, a stakeholder asks the team to add a small compliance fix
 The team said no once and yes once, using the same framework both times —
 consistency, not a blanket rule, is what stakeholders learn to trust.
 
+## How It Actually Works
+
+The trade-off rule isn't a negotiating tactic — it's a conservation law
+applied to team capacity, and the reason it has to be enforced *visibly* is
+about incentive signals, not fairness for its own sake.
+
+**Why capacity is conserved, so silent absorption is really borrowed
+capacity, not free capacity.** A team's effective capacity for a sprint was
+already set during Planning (Module 09/10, Level 1) using historical
+velocity and focus-factor math. Adding new work without removing anything
+doesn't create additional hours — it borrows them from somewhere invisible:
+usually from the quality bar (skipped tests, rushed review — see Module 05's
+DoD-erosion) or from unpaid overtime, both of which are costs that don't
+show up in this sprint's status report but do show up later, as defects or
+burnout. The visible trade-off in Step 3 isn't bureaucracy, it's making the
+*true* cost of the "quick" request show up in the same place and the same
+sprint where the benefit is being claimed.
+
+**Why the Sprint Goal, not the ticket list, is the correct filter.** Testing
+a request against "can the team fit it" invites a yes almost every time —
+there's almost always *some* way to squeeze one more thing in if quality or
+hours flex. Testing it against "does the goal survive without this" is a
+much harder bar, and it's the right bar because the goal, not the ticket
+count, is what the team actually committed to protect (Module 04, Level 1).
+This is exactly why the compliance fix and the payment-gateway bug get
+opposite verdicts despite both being framed as "urgent" by the requester —
+urgency described by the stakeholder is not the same signal as goal-impact
+measured against the actual commitment, and the framework is designed to
+tell those two things apart.
+
+**Why saying yes and no with the same visible process, rather than a
+blanket rule, is what shapes stakeholder behavior long-term.** If the team
+always says no, stakeholders learn to escalate around the process entirely
+(going over the PO's head) because the process itself has no path to yes.
+If the team always finds a way to say yes silently, stakeholders learn that
+"urgent" carries no real cost, so the label gets applied to everything,
+diluting its own signal (the boy-who-cried-wolf mechanism). A consistent,
+visible process that sometimes yields yes-with-a-tradeoff and sometimes
+no-log-it-for-next-sprint is what keeps "urgent" meaning something, because
+the two outcomes are distinguishable only by the actual goal-impact, not by
+who asked or how loudly.
+
 ## Exercise
 
 Invent three mid-sprint change requests of varying urgency (one clearly

@@ -62,6 +62,50 @@ any story involving an unfamiliar third-party dependency gets a
 risk-register entry and an early, small-scale spike in the first sprint
 that touches it — regardless of that story's business priority ranking.
 
+## How It Actually Works
+
+"Short sprints automatically reduce risk" is the most common misreading of
+Agile risk management, and the payments-gateway failure in the worked
+example shows exactly the mechanism that breaks: short cycles only surface a
+risk once something in the sprint actually *exercises* it — a risk nobody
+names or schedules against can sit completely invisible through nine
+uneventful sprints.
+
+**Why sprint cadence surfaces only the risks a sprint's actual work
+touches.** A short sprint is a fast feedback loop, but a feedback loop only
+reports on the variable it's measuring. The payment gateway's rate limit was
+never going to surface in a normal sprint's feature work, because normal
+feature development at low volume never approaches the limit — the risk was
+latent and undetectable by *ordinary* sprint activity, and only became
+visible under load testing, which nothing in the plan scheduled until week
+9. This is why the fix isn't "run more sprints" — it's deliberately routing
+the *specific* activity (a small-scale load test) that would exercise the
+risk into an early sprint, on purpose, ahead of its natural business
+priority.
+
+**Why the trigger/signal field is what separates a risk register from a
+worry list.** "Integration may be hard" gives nobody anything to check
+during a normal week — it's too vague to notice violating. "Load test
+throughput below X" is a specific, binary, checkable condition that someone
+running a load test in sprint 1 either does or doesn't observe. This
+converts a risk from something that requires remembering to worry about it
+into something a normal process activity (a load test that was going to
+happen anyway, just earlier) can mechanically detect — the register's value
+isn't in listing risks, it's in making each one *falsifiable* by ordinary
+work.
+
+**Why risk-based resequencing has to override pure business-value
+ordering, deliberately.** Backlog ordering by value alone (Module 03/07,
+Level 2) will always rank the payment gateway story by its feature value,
+not by how much uncertainty it carries — and a story with high value but
+unknown risk sitting at position 3 instead of position 1 means the team
+finds out about the risk exactly when the value-ranking says to build it,
+which could be arbitrarily late. Explicitly tagging risky items during
+refinement and pulling them forward isn't abandoning value-based
+prioritization — it's recognizing that *reducing uncertainty* has its own
+value (avoiding a week-9 surprise) that a pure feature-value ranking has no
+way to represent on its own.
+
 ## Exercise
 
 For a project integrating with an unfamiliar external API under a fixed

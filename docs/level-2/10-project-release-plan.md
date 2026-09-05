@@ -82,6 +82,45 @@ mid-sprint scope creep.
 > for must-have scope; medium for nice-to-have scope**, contingent on the
 > auth spike in sprint 1 not surfacing major unknowns.
 
+## How It Actually Works
+
+This plan works because it deliberately does *not* trust the raw arithmetic
+(26 points ÷ 20.3 velocity ≈ 1.3 sprints) to be the real answer — every
+non-obvious decision in it exists to correct a specific way that raw number
+lies.
+
+**Why the hardening sprint is a fixed cost added outside the point system,
+not folded into the estimates.** Story points measure the size of *feature*
+work, calibrated against the team's own history of building features — but
+regression testing, security review, and load testing at release scale are
+categorically different work with no comparable history to estimate against
+(the team has never shipped *this* release before). Trying to fold that into
+inflated story points would corrupt the velocity series the same way
+partial-credit counting does (Module 06) — instead, the team keeps its
+points honest and adds the hardening cost as a separate, named allowance,
+which is also why it's easier to defend to a stakeholder: "hardening is a
+fixed cost of shipping anything" is a clearer claim than a padded story-point
+number no one can audit.
+
+**Why sprint 3's nice-to-have work functions as the plan's real safety
+margin, not sprint 5.** The 1.3-sprint forecast for must-haves means there's
+already slack built into a 2-sprint allocation before nice-to-haves even
+start — if the auth story spike (identified as the plan's named risk) runs
+long, that slack absorbs it invisibly, and the nice-to-have tier simply
+shrinks or slips into sprint 3, exactly as intended by tiering the backlog in
+the first place (Module 03's splitting discipline pays off directly here:
+because nice-to-haves are separable, independent stories, dropping any of
+them costs nothing to the must-have commitment).
+
+**Why the working agreement protecting sprint 4 is the same mechanism as
+Module 09's mid-sprint trade-off rule, just applied at the release level.**
+Without an explicit "no new stories in sprint 4" norm, the natural pressure
+near a deadline is to squeeze one more feature into the hardening sprint
+"since we're close" — exactly the silent-absorption failure Module 09
+describes, just at release-plan granularity instead of single-sprint
+granularity. Naming the norm in advance, while there's no pressure yet, is
+what makes it enforceable later, when there is.
+
 ## Project deliverable — what to produce
 
 For a product of your own choosing, produce:

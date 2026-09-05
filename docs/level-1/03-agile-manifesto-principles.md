@@ -65,6 +65,45 @@ up with all the meeting overhead of Agile and none of its actual benefit.
 Recognizing this pattern — "process without the values behind it" — is one
 of the most useful diagnostic skills in this entire course.
 
+## How It Actually Works
+
+"Cargo cult Agile" — ceremonies with none of the intended effect — isn't a
+mysterious failure. It happens because each ceremony is a *proxy* for a
+mechanism, and copying the proxy without the mechanism produces the same
+schedule with none of the outcome.
+
+**Why "responding to change" requires a cost structure, not just an
+attitude.** Waterfall makes late change expensive because so much sequential
+work depends on early decisions (see Module 02). Agile makes late change
+cheap by structurally limiting how much depends on any one decision: a
+two-week sprint means the most that can be "wrong" and need rework is two
+weeks of work, not six months. A team that keeps two-week sprints but writes
+a fully locked backlog for the next six months has kept the timebox and
+discarded the actual mechanism — they've reintroduced Waterfall's dependency
+chain inside a Scrum calendar, so "welcoming change" has nothing cheap left
+to welcome it into.
+
+**Why face-to-face conversation is a bandwidth argument, not a lifestyle
+preference.** Written specs can only carry the information someone thought
+to write down; a live conversation carries tone, follow-up questions, and the
+listener's real-time confusion signal ("wait, what do you mean by
+'category'?") that surfaces a misunderstanding in the room instead of three
+weeks later in a bug report. A daily standup done as a status report to a
+manager throws away exactly this mechanism — the two developers who most
+need to catch each other's wrong assumption about the categorization API are
+talking *at* the Scrum Master instead of *to each other*, so the
+misunderstanding survives the meeting.
+
+**Why "no documentation" is a self-defeating misreading, mechanically.**
+Working software is the measure of progress because documentation can claim
+anything is done while software either runs correctly or doesn't — it's a
+harder-to-fake signal. But a team that deletes design docs entirely loses the
+one artifact that lets someone six months later understand *why* a decision
+was made, which forces every future change to be made by guesswork or by
+re-deriving the reasoning from the code itself — the exact costly rediscovery
+the manifesto's authors were trying to eliminate, just relocated from
+"upfront" to "every time someone touches the code later."
+
 ## Exercise
 
 Read all twelve principles in the original manifesto text (search "Agile

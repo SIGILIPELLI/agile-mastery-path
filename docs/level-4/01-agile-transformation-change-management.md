@@ -55,6 +55,50 @@ two willing pilot teams with engaged managers, runs an 8-week pilot with a
 dedicated coach, and only expands further once those two teams can show a
 concrete before/after result the rest of the org recognizes as real.
 
+## How It Actually Works
+
+The 200-engineer rollout failed at a specific, identifiable point — not
+"lack of enthusiasm" but a broken feedback loop between the visible layer
+(ceremonies) and the invisible layer (incentives) that actually drives
+behavior, and every symptom in the worked example traces back to that one
+gap.
+
+**Why performance-review criteria override any ceremony, mechanically.**
+People optimize for what they're actually measured and rewarded on, not for
+what a training session told them to value — this isn't cynicism, it's
+rational behavior under the org's real incentive structure. If reviews still
+score individual output, a developer correctly perceives that helping a
+teammate finish their story (the self-organizing behavior Scrum depends on,
+Module 04, Level 1) costs them personally while looking busy on their own
+tickets pays off at review time. Running standups doesn't change this
+calculation at all — the ceremony sits on top of an unchanged incentive
+layer, which is exactly why "anchor in culture" is Kotter's *last* step, not
+an optional add-on: skip it and every earlier step's gains erode back toward
+whatever the real incentives reward.
+
+**Why treating sprint commitments as immovable deadlines defeats the exact
+mechanism Scrum relies on.** A Sprint Backlog is supposed to be a forecast
+the team re-plans against as reality unfolds (Module 09, Level 1) — but if
+management treats the committed point total as a fixed deadline the way a
+Waterfall milestone would be treated, the team's rational response is to
+protect against being wrong by inflating estimates (the exact velocity-
+inflation mechanism from Module 06, Level 2, now driven by management
+pressure instead of a leaderboard). The ceremony (Sprint Planning) survived
+the rollout; the underlying trust relationship that makes its numbers
+honest did not, because nothing in a two-day training session changed how
+management actually reacts to a missed sprint.
+
+**Why "big bang, no pilot" removes the one thing that makes later steps
+possible.** Kotter's "generate short-term wins" step exists because belief
+that the new way of working *actually helps* has to be built from evidence,
+not instruction — a 200-person simultaneous rollout has no early, visible
+proof point anyone can point to when skepticism arises in week 3, because
+every team is equally unproven at the same time. A pilot generates exactly
+the evidence a skeptical middle manager needs to justify changing their own
+behavior (the "empower action" step) — without it, the change has no social
+proof to draw on, and reverts to whatever behavior the *actual* incentive
+structure (still unreformed) rewards.
+
 ## Exercise
 
 Your organization wants to move 6 teams from ad hoc project management to

@@ -64,6 +64,47 @@ Three sprints later, carryover drops to under 10% and defect reports
 trace-backed to "missing tests" fall to zero, because incomplete work no
 longer counts as done.
 
+## How It Actually Works
+
+DoR and DoD aren't two independent quality checklists — they're the two
+ends of a single pipe, and a leak at either end corrupts the same
+downstream signal: velocity.
+
+**Why a weak DoD inflates velocity while quietly creating debt.** If "done"
+only requires "code merged," a story with zero tests completes in less
+elapsed time than the same story built properly — so it earns its full
+story-point credit *faster*, artificially raising apparent velocity. But the
+work the DoD skipped (tests, review) doesn't vanish; it resurfaces later as
+a defect, which then re-enters the backlog as new, *unplanned* work that
+competes with future sprints' capacity. The team experiences this as
+"velocity looks great but we can never get ahead" — which is precisely what
+you'd expect if every sprint's measured output is partly borrowed against
+future sprints that haven't happened yet, the same mechanism as technical
+debt (Module 09) but happening at the level of a single story instead of an
+architecture decision.
+
+**Why a missing DoR corrupts estimation instead of just delivery.** A story
+estimated on the spot, from a one-line description, is being estimated
+against an imagined scope rather than an agreed one — Planning Poker's
+comparison mechanism (Module 08, Level 1) only works when everyone is
+comparing against the *same* thing. Two developers voting 3 and 8 on a
+vague story aren't actually disagreeing about size; they're estimating two
+different mental pictures of what the story includes. This is why carryover
+and volatile velocity are the predictable symptom of a missing DoR: half the
+sprint's "surprises" aren't scope creep, they're scope that was always
+implied by the story but never made explicit before estimation happened.
+
+**Why the checklist has to be applied literally, not just exist as a
+document.** A DoD or DoR that exists as a wiki page but isn't checked item-
+by-item at the moment it matters (Planning for DoR, story close for DoD)
+degrades into something everyone agrees with in principle and nobody
+actually enforces under time pressure — this is the same failure mode as an
+unenforced Definition of Ready in Module 03. The fix in the worked example
+works specifically because it converts the DoR from a shared belief into a
+literal gate on the Planning board: a story with an unchecked box physically
+cannot proceed, which removes the judgment call ("this looks close enough")
+that's the actual point where enforcement silently erodes.
+
 ## Exercise
 
 Write a Definition of Done (5–7 criteria) and a Definition of Ready (5–6

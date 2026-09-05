@@ -50,6 +50,51 @@ milestones, but adopts daily standups and a visible task board for
 transparency — borrowing agile's communication practices without forcing
 sprint boundaries onto genuinely fixed-scope, well-understood work.
 
+## How It Actually Works
+
+Every mismatch in this module's table reduces to the same underlying
+diagnostic: a methodology's overhead only pays for itself when the
+*specific mechanism* it provides addresses uncertainty or variability that
+actually exists in the work. Applying it where that mechanism has nothing
+to act on produces ceremony with no function — costly theater, not a
+process error you can tune your way out of.
+
+**Why "ceremonies feel like theater" is the correct diagnostic signal, not
+just a complaint.** Sprint Review exists to let stakeholder feedback change
+what happens next (Module 04, Level 1) — but Team C's regulatory filing has
+requirements fixed by law, so there is nothing a Sprint Review's feedback
+loop *can* change; the review happens, produces no course correction, and
+everyone present correctly senses that the exercise accomplished nothing.
+This isn't a facilitation failure to fix with better retro techniques — it's
+the mechanism itself having no uncertainty to resolve in this specific
+context, which is why the fix is removing the mechanism (sprint boundaries)
+rather than running it better.
+
+**Why Team B's unpredictable ticket flow breaks specifically on the sprint
+boundary, not on Scrum's other parts.** A Sprint Backlog commits to a fixed
+set of items for a fixed window — but a support team's incoming tickets
+arrive at an unpredictable rate with unpredictable urgency (a production
+incident doesn't wait for the next Sprint Planning). Forcing that flow into
+sprint boundaries means either the sprint commitment gets broken routinely
+(destroying its value as a forecast, Module 09, Level 1) or urgent tickets
+get artificially delayed until the next planning session (defeating the
+point of a support function). Kanban's pull-based, continuous-flow model
+(Module 05, Level 1) has no boundary to violate — WIP limits regulate flow
+without requiring the arrival rate to be predictable, which is exactly the
+property this kind of work needs and Scrum's timeboxed commitment doesn't
+provide.
+
+**Why Team C still benefits from daily standups despite not needing
+sprints.** A standup's value — surfacing blockers fast, in the room with
+people who can act on them (Module 01, Level 2) — has nothing to do with
+requirements uncertainty; it's a communication-bandwidth mechanism (Module
+03, Level 1) that helps *any* team coordinate daily work, regardless of
+whether the overall plan is fixed or adaptive. This is why the right answer
+for Team C isn't "no agile practices at all" — it's isolating which specific
+mechanism (iterative re-planning vs. daily communication) each agile
+practice provides, and keeping only the ones whose underlying uncertainty
+actually exists in this project.
+
 ## Exercise
 
 Your portfolio includes: (1) a brand-new mobile app with unclear

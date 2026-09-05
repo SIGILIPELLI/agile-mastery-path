@@ -75,6 +75,58 @@ Given the no-freeze, feature-flagged approach, the program reserves 10% of
 each team's sprint capacity for debt incurred by flag scaffolding, with an
 explicit backlog item to remove dead flags within two sprints of launch.
 
+## How It Actually Works
+
+This plan's nine decisions aren't independent choices bolted together — each
+one is compensating for a specific failure mode that a different one of this
+plan's own decisions would otherwise create, and seeing those cross-links is
+what separates a coherent program plan from a checklist of separately-good
+ideas.
+
+**Why the class-of-service lane for Platform is what actually makes the
+Scrum-of-Scrums choice viable.** Choosing lightweight coordination over SAFe
+(Step 1) only works if the shared Platform dependency doesn't become an
+unmanaged bottleneck — three teams below SAFe's overhead threshold (Module
+01) still concentrate all cross-team risk onto one team's backlog the moment
+two other teams depend on it. The "blocking another team" class-of-service
+lane is the specific mechanism that prevents Platform's own internal
+priorities from silently starving Checkout and Catalog — without it, the
+lightweight coordination choice from Step 1 would be undermined by exactly
+the kind of invisible dependency Module 07 describes.
+
+**Why freezing the API contract before feature flags exist is a strict
+prerequisite, not a parallel workstream.** Feature-flagging launch items
+(Step 4's release risk) only de-risks the *release* date — it does nothing
+about the *design*-phase risk that Checkout and Catalog are building against
+a contract that might still change. If the API froze *after* both teams
+started integrating, every subsequent change would ripple through both
+teams' already-built code (the big-bang-integration mechanism from Module
+02, Level 1), regardless of how good the feature-flag and no-freeze release
+strategy is. This is why the plan sequences it as an early Design-phase gate
+before either dependent team starts — the two risk mitigations target
+different SDLC phases (Module 04) and neither substitutes for the other.
+
+**Why the nightly cross-team integration suite has to exist alongside
+feature flags, not instead of them.** Feature flags decouple *deployment*
+from *user exposure* (Module 05) but say nothing about whether three teams'
+services actually compose correctly when merged — that's a technical
+integration question, not a release-sequencing one. Running the suite
+nightly rather than only at launch-week is applying the same short-feedback-
+loop principle from Module 01, Level 1 one level up: a compatibility break
+found the morning after it's introduced costs one day's rework; the same
+break found during launch week, after weeks of further work built on the
+broken assumption, costs the entire program's remaining schedule.
+
+**Why the debt-scaffolding guardrail is aimed specifically at flags, not
+debt in general.** A no-freeze, feature-flagged approach necessarily
+accumulates a *specific, predictable* kind of debt — dead flags and their
+branching logic — that ordinary Boy-Scout cleanup (Module 09) won't
+naturally catch, because a dormant flag doesn't get touched by future
+feature work the way the checkout-module example's hardcoded coupling did.
+Reserving capacity with an explicit removal deadline compensates for the
+one place this program's chosen delivery style creates debt that its own
+normal maintenance cycle wouldn't otherwise surface.
+
 ## Program deliverable — what to produce
 
 For a multi-team program of your own choosing, produce:

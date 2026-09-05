@@ -94,6 +94,49 @@ Each of these is independently small, testable, and shippable — a team
 could deliver "change password" in one sprint without needing "delete
 account" to exist yet.
 
+## How It Actually Works
+
+User stories work as a planning unit because they encode *just enough*
+information to make three different decisions later, and INVEST is really a
+checklist for whether those decisions are still possible.
+
+**Why the "so that" clause changes what happens during implementation, not
+just documentation.** A developer implementing "pre-fill the saved address"
+without the benefit clause has no way to resolve an edge case that the
+acceptance criteria didn't anticipate — say, an address with a typo the
+customer never noticed. With the benefit clause ("so I don't have to
+re-type it"), the developer can reason from intent: pre-fill *and* leave it
+editable, because forcing a full re-entry on a typo defeats the entire
+purpose of the story. Without it, the developer either guesses or stops and
+asks — and a team of eight developers each stopping to ask on ambiguous
+edge cases is the throughput cost that a well-formed story is specifically
+designed to avoid.
+
+**Why splitting for INVEST is a dependency-graph operation, not just
+"making things smaller."** "Manage my account" fails Independent because it
+secretly bundles several features that share no code path (email change
+touches notification settings; password change touches the auth session;
+account deletion touches the data-retention pipeline) — bundling them means
+none can ship until all are done, so if deletion needs a legal review that
+stalls for two weeks, email-change sits blocked behind it for no technical
+reason. Splitting along the natural seams in the underlying system (each
+piece touches a different subsystem) is what actually makes each piece
+Independent — the INVEST letters aren't independent virtues, they're mostly
+downstream consequences of finding the right seam: split correctly and a
+story becomes small, testable, and estimable almost automatically; split
+along the wrong seam (e.g., by UI screen instead of by subsystem) and you get
+several "small" stories that are still secretly coupled.
+
+**Why backlog ordering has to be a single ranked list, not buckets.** A
+backlog organized into "High/Medium/Low" buckets still leaves ambiguous which
+of ten "High" items to pull first — the moment two items compete for the same
+sprint capacity, someone has to break the tie anyway, just later and under
+more time pressure. A single ordered list forces that tie-breaking judgment
+to happen during refinement, when there's time to think about it, rather
+than during Sprint Planning under a ticking clock — which is also why only
+the top few items need to be fully detailed: detailing item 47 today is work
+that will very likely be thrown away before it's ever relevant.
+
 ## Exercise
 
 Write five user stories for a product of your choosing (real or invented),

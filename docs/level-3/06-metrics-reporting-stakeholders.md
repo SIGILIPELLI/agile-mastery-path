@@ -56,6 +56,49 @@ in business terms. The escalation resolves in one conversation, because the
 report now answers "are we on track" directly instead of leaving the
 executive to infer it from a graph never designed for that audience.
 
+## How It Actually Works
+
+The velocity-dip escalation in the worked example is a textbook case of a
+correct internal signal being read by the wrong audience as a different,
+incorrect signal — and the fix works because it addresses *why* the
+misread happens, not just because it uses nicer words.
+
+**Why a raw metric always gets interpreted through the reader's own mental
+model, not the metric's actual definition.** Velocity was defined (Level 2,
+Module 06) as a noisy, team-relative forecasting input with an expected
+range of variation — dips are normal, not alarming, to someone who
+understands the underlying distribution. An executive with no exposure to
+that context has no such model; the only interpretation available to them
+is the intuitive one everyone brings to a downward-trending line on a
+slide — "this is getting worse." The chart isn't lying, but it's answering
+a question ("what's the trend") the executive wasn't actually asking
+("are we on track for the thing I approved budget for") — and a metric
+answering the wrong question reliably produces a wrong conclusion even when
+every number on it is accurate.
+
+**Why "status: on track" plus a named cause resolves the escalation in one
+pass, while the graph alone never could.** A release forecast range (Level
+2, Module 07) already has the planned migration's capacity cost baked into
+it — the report isn't hiding the dip, it's showing that the dip was already
+priced into the number that actually answers the executive's real question.
+Naming the specific, time-boxed cause converts an ambiguous downward trend
+into a bounded, already-accounted-for event, which is the difference
+between "something might be going wrong, indefinitely" and "something
+specific happened, on schedule, for a known reason, and doesn't change the
+forecast" — only the second version is actually reassuring, because only it
+answers the causal question a worried reader is implicitly asking.
+
+**Why omitting the "Ask" trains stakeholders to stop reading carefully.** A
+report that only informs gives the reader no reason to engage with it beyond
+skimming for bad news — there's nothing to *do* with the information, so
+attention naturally drops over successive reports (this is the same
+attention-allocation dynamic as Module 02, Level 2's action-item-graveyard:
+things with no clear next action get deprioritized by the reader's own
+brain). A report that regularly asks for a specific decision trains the
+opposite habit — the stakeholder learns the report is a place where their
+input actually changes something, so they read it as an active document
+rather than a status broadcast to file away.
+
 ## Exercise
 
 Given a sprint where the team completed 14 of 18 planned points because a

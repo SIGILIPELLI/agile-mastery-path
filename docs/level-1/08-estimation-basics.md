@@ -84,6 +84,45 @@ Planning Poker's structured disagreement step is designed to produce.
 | Skipping the disagreement discussion when short on time | The convergence step is where hidden risk actually surfaces | Protect the 2–3 minutes it takes; it's cheaper than discovering the risk mid-sprint |
 | Re-estimating stories after they're already in progress | Story points estimate *before* the work starts; once started, track remaining work in hours/tasks instead | Don't re-point a story mid-sprint — that corrupts the historical velocity data |
 
+## How It Actually Works
+
+Story points work as a forecasting tool for a specific statistical reason:
+they convert an unreliable *absolute* judgment into a reliable *relative*
+one, and then let the team's own historical throughput do the unit
+conversion.
+
+**Why comparison is more reliable than absolute duration, cognitively.**
+Estimating "6 hours" requires modeling every step of an unfamiliar task in
+your head and summing imagined durations — a process with compounding error
+at each step, and no anchor against reality. Estimating "about twice as big
+as the story we finished last week" only requires recognizing structural
+similarity to something already experienced, which is a much shorter
+inferential chain and degrades far less with unfamiliarity. This is the same
+reason humans are bad at guessing a building's height in feet but good at
+guessing "about three times as tall as that other building" — relative
+judgment routes around the part of the estimate people are actually bad at.
+
+**Why the conversion to real time has to happen later, in aggregate.** A
+story point never claims to equal a fixed number of hours for any individual
+story — a "5" might take one developer 4 hours and another 9, and the same
+developer 3 hours on a good day and 7 on a day full of interruptions. What's
+statistically stable is not any single estimate but the *team's average
+points completed per sprint* (velocity, covered later) — averaging washes out
+the individual noise the same way flipping a coin 100 times gives a much more
+reliable estimate of its bias than flipping it once. This is precisely why
+comparing velocity across teams is meaningless: each team's points-to-hours
+ratio is a private constant baked into their own history, not a shared unit.
+
+**Why simultaneous reveal is the mechanism that prevents information
+collapse.** A sequential go-around turns four independent estimates into
+one estimate plus three social confirmations — once Dev A says "3" out loud,
+Dev B's "8" now carries social cost to state, so the group's four data points
+degrade into effectively one. Simultaneous reveal preserves four independent
+samples of the team's judgment, and it's specifically the *outlier* (Dev C's
+8) that carries new information — the discussion step exists because an
+outlier is usually outlier because they know something (a hidden dependency)
+the rest of the room doesn't, not because they're wrong.
+
 ## Exercise
 
 Write five stories of varying real or plausible complexity for a project of

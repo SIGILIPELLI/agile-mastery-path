@@ -60,6 +60,51 @@ protected slice to the tooling improvement (justified by risk reduction
 rather than raw value), and defers the platform rewrite to next quarter's
 re-prioritization once the higher-scoring bets have delivered.
 
+## How It Actually Works
+
+WSJF's real function is forcing a hidden variable — the *opportunity cost of
+time* — into a decision that would otherwise be made on visibility and
+political capital, and the platform-rewrite scoring last is the direct
+mechanical consequence of what the formula deliberately penalizes.
+
+**Why job size sits in the denominator, not as a separate factor to
+"consider."** Two initiatives with identical total value produce very
+different economic outcomes if one takes one quarter and the other takes
+eight — the fast one returns its value (and frees capacity for the next
+bet) seven quarters sooner, which compounds across everything that capacity
+could have been used for in the meantime. Placing job size in the
+denominator makes this compounding effect explicit and comparable across
+very differently-shaped initiatives, rather than leaving "but it'll take
+years" as a vague, easily-overridden caveat attached to an otherwise
+impressive value story — which is exactly the caveat that gets waved away
+when the initiative also happens to be the one executives are most excited
+about.
+
+**Why time criticality has to be scored separately from raw value, not
+folded into it.** Two initiatives can unlock identical dollar value, but if
+one's value decays with delay (a market window, a regulatory deadline) and
+the other's doesn't, treating them as equally urgent misallocates capacity —
+the decaying-value initiative loses real value for every quarter it waits,
+while the stable one loses nothing by waiting. This is precisely why the
+compliance feature outranks the platform rewrite despite lower raw value:
+its effective urgency (hard external deadline) is a cost of delay the
+rewrite simply doesn't carry, and WSJF's separate time-criticality term is
+what makes that difference visible in the ranking instead of buried in
+qualitative discussion.
+
+**Why "exit criteria, not implementation" is the correct governance
+boundary, and violating it recreates enterprise micromanagement.** A
+portfolio committee dictating a team's internal technical choices is making
+a decision with far less context than the team actually has about its own
+codebase and constraints — this is the identical authority-mismatch failure
+as Module 03, Level 4's stage-gated CAB reviewing every release regardless
+of risk, or Module 05, Level 4's coach becoming a mandatory approval step:
+a higher layer inserting itself into decisions the lower layer is better
+positioned to make. Setting the exit criterion (a measurable business
+outcome) and then stepping back is what lets the portfolio layer govern
+*what* gets funded without recreating the very micromanagement agile
+principles were adopted to remove at the team level.
+
 ## Exercise
 
 Score these three initiatives with WSJF (use a 1-10 scale for each

@@ -56,6 +56,50 @@ initiative surfaces a similar dependency in week 1 instead of week 6,
 giving Team C's refactor time to be resequenced ahead of the dependent
 work.
 
+## How It Actually Works
+
+The week-6 integration failure in the worked example isn't a communication
+problem in the vague sense — it's a specific structural gap: per-team
+refinement (Module 03, Level 2) is designed to surface uncertainty *within*
+one team's own backlog, and has no mechanism at all for surfacing
+uncertainty that lives at the seam *between* two teams' backlogs.
+
+**Why isolated refinement is blind to cross-team dependencies by
+construction.** Team A's refinement session asks "is this story small,
+testable, estimable" using Team A's own knowledge — but nobody in that room
+necessarily knows that Team C is mid-refactor on a component Team A's story
+touches, because that fact lives entirely in Team C's context. Refinement
+done well *locally* can still produce a story that passes every Definition
+of Ready criterion and is still fundamentally unbuildable on schedule,
+because "Ready" as each team defines it never checked the one condition
+that actually mattered. This is why a dependency board isn't redundant with
+good refinement — it's covering a blind spot refinement structurally cannot
+see on its own.
+
+**Why Scrum of Scrums has to be capped to cross-team-only content, or it
+silently reverts to failure.** A rep who reports their team's full internal
+status is duplicating each team's own Daily Scrum in front of an audience
+that can't act on internal blockers (the Team B rep can't unblock a Team A
+internal code-review delay) — this wastes the meeting's only scarce
+resource (attendees' time) on content with no addressable audience present.
+Capping the question to "what does another team need from us" ensures every
+piece of information raised has someone in the room who can actually act on
+it, which is the same principle behind Module 01's "what's blocking the goal"
+reframe of the Daily Scrum, just applied one level up the coordination
+hierarchy.
+
+**Why finding the same dependency in week 1 instead of week 6 changes the
+total cost by more than 6x, not just 6 weeks.** A dependency discovered
+before either team starts work costs one resequencing conversation. The
+identical dependency discovered after Team A has already built five weeks
+of work against a wrong assumption (that the shared component was stable)
+costs that resequencing conversation *plus* rework on everything Team A
+built on top of the now-changing component — this is the same big-bang-
+integration mechanism from Module 02, Level 1's Waterfall failure modes,
+reproduced here at multi-team scale: the cost of a dependency isn't fixed,
+it's a function of how much has been built on the wrong assumption before
+anyone catches it.
+
 ## Exercise
 
 For three teams sharing one platform, where Team X needs a shared library

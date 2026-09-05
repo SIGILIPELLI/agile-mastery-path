@@ -50,6 +50,52 @@ showing influence beyond one team, which is precisely the gap the coach
 role tests for — and the certification, pursued afterward, complements
 rather than substitutes for that evidence.
 
+## How It Actually Works
+
+The certification-first instinct fails for a specific, structural reason:
+each rung of this ladder tests a different *mechanism of impact*, not more
+of the same mechanism at larger scope, and a credential can attest to
+knowledge without ever having exercised the mechanism the next role
+actually requires.
+
+**Why "influence without authority" cannot be demonstrated by anything
+that happened inside one team.** A Scrum Master fixing their own team's
+process uses positional trust and daily proximity — the team already
+listens to them because of the role. Spreading a Definition-of-Ready
+checklist to *two other teams who have no obligation to listen* requires an
+entirely different mechanism: the practice has to be good enough, and
+communicated well enough, that another team adopts it voluntarily, with no
+authority compelling them to. This is precisely why "I fixed this for my
+team" and "I helped this spread beyond my team" are different evidence
+types, not the same achievement at different scale — the second one is the
+actual skill an Agile Coach role tests every day (coaching teams that don't
+report to them), and nothing about running one team well, however long,
+exercises it.
+
+**Why data literacy is a prerequisite for influence at scale, not a
+separate nice-to-have.** Inside one team, a Scrum Master's credibility comes
+from daily shared experience — teammates already trust their judgment from
+proximity. An Agile Coach or Director influencing people they don't work
+with daily has no such proximity-based trust to draw on, so the argument has
+to stand on its own evidence: an outcome metric (Module 06's lead time,
+change failure rate) that a skeptical stakeholder can independently verify
+is a far more portable form of credibility than "trust me, it worked" — this
+is exactly why the worked example's Scrum Master switches to presenting
+cycle time instead of story points even before officially changing roles:
+they're practicing the evidentiary standard the next role will actually be
+judged by.
+
+**Why a certification measures the wrong variable for this specific gap.**
+A credential like CSM or a coaching certification demonstrates that someone
+has been exposed to the concepts (GROW, coaching stances, portfolio
+thinking) — but the actual bottleneck for this Scrum Master is never having
+*practiced* influencing people outside their reporting line, which no exam
+can simulate. This mirrors the exact distinction Module 02 draws between
+teaching (knowledge transfer) and coaching (build the skill through doing)
+— a certificate is teaching-mode evidence, and the coach role tests a
+doing-mode skill, which is why the module frames certifications as
+complementary at best, not sufficient.
+
 ## Exercise
 
 You are a Scrum Master for one team and want to move toward an Agile Coach

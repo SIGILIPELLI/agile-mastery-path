@@ -70,6 +70,48 @@ session:
 The backlog goes from one unmovable epic to four independently shippable,
 estimated, ordered stories in one session.
 
+## How It Actually Works
+
+Refinement's real function is moving *uncertainty-resolution* work out of
+the expensive, time-pressured Sprint Planning meeting and into a cheap,
+unpressured setting — the "10% of capacity" figure is the price of buying
+back much larger costs later.
+
+**Why an un-refined story blows up Sprint Planning specifically.** When a
+story arrives at Planning without acceptance criteria or a split, the room
+has to do that analysis live, with everyone present and the sprint's start
+time on the line — which is the single most expensive setting in the whole
+cadence to be doing discovery work in (multiply the analysis time by every
+person in the room, who's now idle while two people hash out scope). This is
+mechanically identical to the timeboxing problem in Module 01: a 6-hour
+Planning session isn't a facilitation failure, it's unrefined backlog items
+consuming the meeting's time budget doing work that a 30-minute refinement
+session earlier in the sprint could have done with just the PO and one or
+two developers.
+
+**Why splitting along the *right* axis is what actually produces
+independence, not the act of splitting itself.** Splitting "Improve search"
+by workflow step (relevance ranking, typo tolerance, filtering) works
+because each resulting piece touches a different part of the underlying
+system and can be built, tested, and shipped without the others existing —
+the split follows a real seam in the software. A team that instead splits
+"Improve search" into "backend work" and "frontend work" hasn't achieved
+independence at all — the frontend piece is unusable without the backend
+piece finishing first, so "two stories" is really one story with a
+mid-point checkpoint, and Sprint Planning will discover the hidden coupling
+when the frontend story can't actually be pulled on its own.
+
+**Why the Definition of Ready has to be an exit gate, not a wish list.** A
+checklist that's advisory rather than enforced degrades under sprint-start
+time pressure — when Planning is running long and item 6 "looks close
+enough," the temptation is to pull it in anyway and hope the gaps surface
+cheaply. They don't: an ambiguous acceptance criterion discovered on day 1
+costs a clarifying conversation; the same gap discovered on day 8, after
+code has been written against the wrong interpretation, costs a rewrite.
+Treating Ready as a hard gate (not "ready enough") is what keeps that
+discovery cost on the cheap side of the sprint boundary instead of the
+expensive side.
+
 ## Exercise
 
 Take an epic-sized backlog item (real or invented, e.g. "add

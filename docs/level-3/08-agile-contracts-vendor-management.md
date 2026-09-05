@@ -61,6 +61,50 @@ sign-off. The vendor now has a direct incentive to sequence the
 highest-value features first, since early termination is now a real
 possibility.
 
+## How It Actually Works
+
+The reason "money for nothing, change for free" fixes what a fixed-scope
+appendix breaks is that it changes the vendor's *incentive gradient*, not
+just the paperwork — and incentive gradients, not good intentions, are what
+actually determine vendor behavior under a contract.
+
+**Why a fixed feature-list appendix makes the vendor's rational move the
+wrong move for the client.** Once a vendor is paid a fixed price for a
+fixed list of 40 features, their profit is maximized by delivering exactly
+that list with minimum rework — any client request to reorder or swap
+scope is, from the vendor's economic position, pure downside (more work, no
+more money) unless a change order captures the difference. This isn't
+vendor bad faith; it's the contract's own structure making "defend the
+original scope" the financially rational strategy. The two-week
+change-order cycle in the worked example isn't bureaucratic friction that
+appeared by accident — it's the vendor's only mechanism for being paid for
+the extra work a scope change implies, so slowing it down (or making it
+costly) is aligned with the vendor's incentives, not opposed to them.
+
+**Why swapping (not just adding) is the specific mechanism that keeps price
+fixed while scope stays flexible.** A pure change-order model treats new
+requests as *additions* requiring new payment — which is exactly what makes
+reprioritization expensive. "Change for free" instead treats a new priority
+as a *substitution* for equal-sized not-yet-started scope: the total
+committed work-volume never changes, only its composition does, which means
+the vendor's revenue is unaffected by the swap and there's no financial
+reason to resist it. This is the contract-law equivalent of Module 09,
+Level 2's mid-sprint trade-off rule (something equal-sized must leave for
+something new to enter) — the same conservation principle, just enforced at
+contract scope instead of sprint scope.
+
+**Why the kill-fee clause is what actually aligns vendor sequencing with
+client value, not the sprint reviews alone.** Sprint reviews make quality
+and progress visible, but visibility alone doesn't change what the vendor
+is paid to build first — a vendor could demo diligently every sprint while
+still working through the appendix in its own preferred order. The
+possibility of early termination is what makes sequencing matter: if the
+client can walk away after any sprint and only pay for what's delivered,
+the vendor's revenue now depends on delivering the *highest-value* work
+early, because that's the scope most likely to actually get paid for before
+a potential stop. The kill fee converts "please prioritize value" from a
+request into a financial incentive the vendor cannot ignore.
+
 ## Exercise
 
 Your organization is about to sign a 6-month, fixed-price contract with an

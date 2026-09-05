@@ -71,6 +71,46 @@ stage gates is extremely common, and is not a contradiction; it's matching
 each layer of the work to the kind of certainty available at that layer.
 Level 3 of this course covers these hybrid models in depth.
 
+## How It Actually Works
+
+The "iron triangle" (scope, schedule, cost — pick one to fix) isn't a rule of
+thumb, it's a consequence of how estimation uncertainty actually compounds
+on a project.
+
+**Why you can't fix all three, mechanically.** Cost is largely a function of
+team size × time; schedule is time; scope is the amount of work. If scope is
+genuinely uncertain (which it always is to some degree — you don't fully know
+what a feature needs until you build part of it and see real usage), then
+fixing schedule and cost simultaneously requires scope to be the thing that
+flexes when reality deviates from the estimate — there's no third resource
+left to absorb the error. A stakeholder who says "I want it all, by this
+date, on this budget" is really saying "give me zero estimation error," which
+no process, Agile or Waterfall, can manufacture; the difference between the
+two methodologies is *when* the correction happens — Waterfall corrects it
+once, expensively, at the end (schedule slips or scope gets cut in a crisis);
+Agile corrects it continuously, cheaply, every sprint (the backlog quietly
+reorders and low-value items fall off the bottom).
+
+**Why the "fixed variable" test predicts the right process, not just
+describes it.** A fixed-scope regulatory form has already had its estimation
+uncertainty resolved externally — the law specifies the fields, so there's
+nothing left to discover mid-project that changes the plan, which is exactly
+the condition where Waterfall's expensive-to-reopen gates cost nothing extra
+(there's nothing to reopen them for). An open-ended internal tool has real,
+unresolved uncertainty about what "done" even means, so a process that
+commits early to a fixed spec is committing to guesses instead of learning —
+Agile's incremental delivery is a mechanism for replacing guesses with
+observed usage data before the cost of being wrong compounds.
+
+**Why hybrids aren't a compromise but a match to layered uncertainty.** An
+annual budget cycle has low uncertainty (headcount and burn rate are known a
+year out), so Waterfall-style planning fits that layer with no cost; but the
+question of exactly which features that budget produces has high uncertainty
+month to month, so Agile fits *that* layer. The two aren't in tension because
+they're answering different questions at different time horizons — the
+budget gate doesn't need sprint-level flexibility, and the sprint doesn't
+need annual-level certainty.
+
 ## Exercise
 
 Take two software projects — one you'd argue should be Waterfall, one you'd

@@ -62,6 +62,49 @@ units that were never equivalent. The fix is removing the leaderboard and
 replacing it with each team's own release forecast range, reviewed
 privately with each team.
 
+## How It Actually Works
+
+Velocity inflation isn't a discipline problem — it's a predictable
+consequence of Goodhart's Law ("when a measure becomes a target, it ceases
+to be a good measure") acting on a number that was only ever accurate
+*because* nobody was optimizing it directly.
+
+**Why the leaderboard breaks the measurement in exactly two sprints.** Story
+points have no external anchor — a "5" means whatever the team's own past
+"5"s meant, calibrated only by comparison within that team's own history
+(Module 08, Level 1). The moment velocity becomes a visible, ranked
+scoreboard, every team gains a direct incentive to move the one thing they
+fully control — their own internal calibration — rather than the thing
+leadership actually wants (more delivered value). Recalibrating "this is now
+an 8, not a 5" costs nothing and immediately improves the ranking, so it's
+the path of least resistance; actually delivering 20-30% more real work in
+two sprints is not achievable at all, which is exactly how you can tell the
+rise is inflation and not genuine improvement — the two are mechanically
+distinguishable by whether shipped features increased to match.
+
+**Why forecasting must use a range, and why a single number is actively
+misleading.** Velocity is a noisy sample from sprint to sprint (illness,
+an unexpectedly gnarly bug, a holiday week) — averaging 6 sprints gives a
+central estimate, but the variance around it (15 to 24 in the example) is
+real, recurring variation, not a mistake to average away. A stakeholder told
+"7 sprints" hears a promise; told "6 to 9 sprints" hears a forecast — the
+difference matters mechanically because reality landing at sprint 8 falsifies
+the first framing and confirms the second, even though both came from
+identical underlying data. This is the same statistical move as Module 09's
+point-in-time capacity math: report the distribution, not just its center,
+whenever the thing being forecast has meaningful variance.
+
+**Why partial-credit counting corrupts the *next* forecast, not just the
+current one.** If a team counts points for a story that's 90% done but not
+fully meeting the DoD, this sprint's velocity number looks better, but next
+sprint inherits the unfinished 10% as either invisible carryover or a
+disguised new story — either way, the historical velocity series now
+contains a number that doesn't represent what the team actually completed,
+which means every future forecast built on that series (including the
+6-sprint average above) is quietly built on a corrupted data point,
+propagating the error forward indefinitely until enough clean sprints dilute
+it.
+
 ## Exercise
 
 Given a team's last 8 sprint velocities (invent plausible numbers with some

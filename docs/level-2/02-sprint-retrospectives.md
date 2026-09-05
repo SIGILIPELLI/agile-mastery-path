@@ -65,6 +65,46 @@ five-stage structure:
 Two sprints later, testing starts by day 5 on average — the retro action
 addressed the upstream cause, not the symptom.
 
+## How It Actually Works
+
+"Groundhog day" retros aren't a facilitation-skill problem so much as a
+*root-cause depth* problem — and the five-stage structure works specifically
+because it enforces a minimum depth before anyone is allowed to propose a
+fix.
+
+**Why skipping straight to "decide what to do" produces symptom-fixes.**
+Without a data-gathering step, the loudest, most recent memory in the room
+becomes the working theory of what happened — usually the surface symptom
+("testing was rushed"), not the mechanism that produced it. An action item
+proposed straight off that surface symptom ("let's just test earlier") has
+no mechanism to change anything, because it doesn't address *why* testing
+was starting late — it's a wish, not a lever. The 5 Whys chain in the worked
+example is doing real work: each "why" moves one causal link upstream, from
+"testing is rushed" → "testing starts day 8" → "stories aren't ready to test
+until late" → "the Definition of Ready doesn't cap story size" — and only at
+that fourth link does an actual controllable variable (story size cap)
+appear. Stop at link one or two and every proposed fix targets something the
+team can't actually control (telling testers to "hurry up" isn't a lever;
+capping story size is).
+
+**Why capping actions at 1-3 is a completion-rate mechanism, not a
+politeness rule.** Each action item competes for the same scarce resource —
+someone's attention amid a new sprint's work — and attention allocated to
+action 6 is attention *not* allocated to actions 1-3 finishing. Teams that
+log 8 actions per retro don't have 8x the improvement capacity; they have the
+same capacity spread thin enough that the marginal action gets essentially
+zero follow-through, which is exactly the "action item graveyard" pattern —
+it's not that people forget, it's that an 8-item list was never going to be
+executed by a team also shipping a sprint's worth of feature work.
+
+**Why the Prime Directive changes what data actually surfaces.** People
+under implicit threat of blame systematically under-report the facts that
+would implicate them — which means a retro run without it doesn't just feel
+worse, it structurally gathers *less accurate data*, because the person who
+knows the real reason testing ran late (they were also fixing an unrelated
+production issue no one else saw) has an incentive to stay quiet rather than
+supply the fact that would actually unlock the correct root cause.
+
 ## Exercise
 
 Take a recurring complaint from a real or invented team's retros. Run it

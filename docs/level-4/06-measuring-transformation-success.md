@@ -61,6 +61,51 @@ real bottleneck was a manual, weekly-batch QA sign-off process the
 transformation never touched, invisible to compliance metrics but obvious
 in the outcome ones.
 
+## How It Actually Works
+
+The company that declared success and then discovered unchanged
+time-to-market illustrates the same Goodhart's Law dynamic seen throughout
+this course (Module 06, Level 2's velocity inflation; Module 05, Level 4's
+psychological-safety ranking risk), operating at the scale of an entire
+transformation program.
+
+**Why compliance metrics detect the wrong thing even when accurately
+measured.** "100% of teams running Scrum ceremonies" can be entirely true
+and simultaneously tell you nothing about whether the ceremonies are
+producing their intended function — Module 01, Level 2 already showed that
+running the Daily Scrum and Sprint Review as calendar events, disconnected
+from their inspect-and-adapt purpose, is a common failure mode that looks
+identical to success on a compliance dashboard. This isn't measurement
+error; it's a category mismatch — compliance metrics measure whether a
+*form* was followed, and the transformation's actual goal was a change in
+*outcome*, and those two things are only correlated when the ceremonies are
+genuinely functioning, which a compliance count cannot itself verify.
+
+**Why the manual QA sign-off bottleneck was invisible to every metric
+leadership was tracking, and visible immediately to lead time.** Lead time
+measures the full path from idea to production — it's a sum across every
+stage a change passes through, so a single unaddressed bottleneck (this
+company's weekly-batch QA sign-off) shows up directly as a stalled total,
+regardless of how much progress happened everywhere else in the pipeline.
+This is the release-process-level analog of Little's Law reasoning (Module
+04, Level 2 and Module 03, Level 4): speeding up ceremonies and training
+touches the *planning* loop, but the QA sign-off sits in the *technical
+delivery* loop (Module 05, Level 3) — an outcome metric spanning the whole
+pipeline catches a bottleneck that a compliance metric scoped only to the
+planning layer structurally cannot see.
+
+**Why a baseline is not optional — without it, "improvement" cannot even
+be falsified.** A metric reported only after the change (e.g., "lead time
+is now 4 days") carries no information about whether the transformation
+caused anything, because there's no prior value to compare against — any
+number, good or bad, could be claimed as evidence of success in the absence
+of a "before." This is why the reset explicitly reconstructs a baseline
+from old ticket timestamps rather than starting the new metric set from
+zero: without that reconstructed "before," the two-quarter finding that
+lead time stayed flat would have been indistinguishable from "lead time was
+always this fast," destroying the one signal that actually diagnosed the
+real problem.
+
 ## Exercise
 
 Your organization is six months into an agile transformation and leadership

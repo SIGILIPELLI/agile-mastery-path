@@ -98,6 +98,47 @@ Planning Poker, e.g. a quick technical walkthrough of story 1's data model
 before estimating story 3? Commit to one concrete change for the next
 sprint.
 
+## How It Actually Works
+
+This capstone's real lesson is that a first sprint for a brand-new team has
+to be planned differently from sprint four, because the one input every
+later technique depends on — historical velocity — doesn't exist yet, and
+every step above is a specific workaround for that missing data point.
+
+**Why "1.5-2 points per person-day" is a deliberately conservative proxy,
+not a real formula.** With no velocity history, the team has no evidence for
+how their specific points-to-hours ratio behaves — so they substitute an
+industry rule-of-thumb, and lean it toward the pessimistic end on purpose.
+This matters mechanically: an over-commitment in sprint one doesn't just cost
+that sprint, it also produces a *corrupted* first velocity data point (a
+missed 19-point commitment reads differently than a met 14-point one), and
+every subsequent sprint's planning in Module 9 depends on trusting that
+number. Landing safely under-target isn't caution for its own sake — it's
+protecting the integrity of the data the whole rest of the process runs on.
+
+**Why the story-3 estimation mismatch is exactly the kind of risk Planning
+Poker is supposed to catch — and almost didn't.** Dev B's 5 (versus 2 and 3
+from the others) came from believing story 3 required a new API, when it
+actually just reused story 1's data model — a scope misunderstanding, not a
+genuine complexity disagreement. This is precisely why the outlier gets
+asked to explain their number instead of being averaged away: averaging (2,
+5, 3) to a smoothed ~3.3 would have hidden the misunderstanding entirely,
+while surfacing it let the team correct a wrong mental model *before* the
+sprint started, for the cost of one conversation, instead of during
+implementation, for the cost of Dev B redesigning an API that was never
+needed.
+
+**Why leaving the charting story out is a dependency-risk decision, not a
+capacity one.** At 19 points, story 5 fits inside the numeric target range —
+but a brand-new team's first-ever use of a new charting library is exactly
+the kind of unknown-unknown that historical velocity has never priced in
+(there's no history to price it against). Substituting a smaller, better-
+understood story preserves the point total's meaning: 14 points of familiar-
+shaped work is a much more honest first data point than 19 points that
+includes an unbounded integration risk, because the whole point of measuring
+velocity is to make future capacity predictable, and one wildcard story
+undermines exactly that.
+
 ## Capstone deliverable — what to produce
 
 Following the exact structure above, but for a product of your own choosing
