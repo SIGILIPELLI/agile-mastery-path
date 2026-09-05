@@ -969,6 +969,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2261,6 +2272,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2464,6 +2486,40 @@ Planning Poker's structured disagreement step is designed to produce.</p>
 </tr>
 </tbody>
 </table>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>Story points work as a forecasting tool for a specific statistical reason:
+they convert an unreliable <em>absolute</em> judgment into a reliable <em>relative</em>
+one, and then let the team's own historical throughput do the unit
+conversion.</p>
+<p><strong>Why comparison is more reliable than absolute duration, cognitively.</strong>
+Estimating "6 hours" requires modeling every step of an unfamiliar task in
+your head and summing imagined durations — a process with compounding error
+at each step, and no anchor against reality. Estimating "about twice as big
+as the story we finished last week" only requires recognizing structural
+similarity to something already experienced, which is a much shorter
+inferential chain and degrades far less with unfamiliarity. This is the same
+reason humans are bad at guessing a building's height in feet but good at
+guessing "about three times as tall as that other building" — relative
+judgment routes around the part of the estimate people are actually bad at.</p>
+<p><strong>Why the conversion to real time has to happen later, in aggregate.</strong> A
+story point never claims to equal a fixed number of hours for any individual
+story — a "5" might take one developer 4 hours and another 9, and the same
+developer 3 hours on a good day and 7 on a day full of interruptions. What's
+statistically stable is not any single estimate but the <em>team's average
+points completed per sprint</em> (velocity, covered later) — averaging washes out
+the individual noise the same way flipping a coin 100 times gives a much more
+reliable estimate of its bias than flipping it once. This is precisely why
+comparing velocity across teams is meaningless: each team's points-to-hours
+ratio is a private constant baked into their own history, not a shared unit.</p>
+<p><strong>Why simultaneous reveal is the mechanism that prevents information
+collapse.</strong> A sequential go-around turns four independent estimates into
+one estimate plus three social confirmations — once Dev A says "3" out loud,
+Dev B's "8" now carries social cost to state, so the group's four data points
+degrade into effectively one. Simultaneous reveal preserves four independent
+samples of the team's judgment, and it's specifically the <em>outlier</em> (Dev C's
+8) that carries new information — the discussion step exists because an
+outlier is usually outlier because they know something (a hidden dependency)
+the rest of the room doesn't, not because they're wrong.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Write five stories of varying real or plausible complexity for a project of
 your choice. Assign each a story point value from the Fibonacci scale, and

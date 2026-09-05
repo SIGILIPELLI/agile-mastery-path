@@ -1525,6 +1525,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2261,6 +2272,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2425,6 +2447,44 @@ team pulled from existing engineers (no new RTE role), and a lightweight
 weekly cross-team sync. Planning overhead drops by roughly 80% with no loss
 of coordination, because the team count never justified SAFe's scale in the
 first place.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>Every scaling framework is really solving the same underlying problem —
+Fred Brooks's observation that communication overhead grows roughly with the
+<em>square</em> of team count (n(n-1)/2 pairwise links) — and they differ only in
+which mechanism they use to cap that growth.</p>
+<p><strong>Why coordination overhead is combinatorial, not linear, and why this
+forces a structural answer.</strong> With 1 team, coordination is internal — zero
+cross-team links. With 4 teams, there are 6 potential pairwise dependency
+relationships; with 10 teams, 45. A company can informally manage 6 links
+with ad hoc Slack messages, but not 45 — at that point, unmanaged
+dependencies start silently blocking each other (Team A ships a change Team
+B didn't know was coming) at a rate that scales faster than headcount does.
+Every scaling framework's added structure — SAFe's PI Planning, Nexus's
+Integration Team, LeSS's single backlog — is a mechanism for converting
+that unmanaged n² problem into a managed, linear one: instead of every team
+tracking every other team, everyone synchronizes against one shared
+artifact or one integration point.</p>
+<p><strong>Why SAFe's overhead is a genuine cost, not a wasted one, at true scale —
+and a pure waste below it.</strong> Quarterly PI Planning that gathers 8 teams into
+one room for two days is expensive, but it's front-loading the resolution of
+dependencies that would otherwise surface as blocked work mid-quarter, one
+at a time, at a much higher aggregate cost across dozens of teams. At 4
+teams, that same combinatorial argument doesn't hold — 4 teams have only 6
+pairwise links, well within what a half-day working session can resolve — so
+the same ceremony that pays for itself at 20 teams is pure overhead at 4,
+which is exactly the mechanism behind the worked example's 80% overhead
+reduction: the coordination need didn't shrink, the <em>tool</em> was mismatched to
+the actual n² cost it was trying to solve.</p>
+<p><strong>Why LeSS's "almost no new roles" only works below a specific team-count
+threshold.</strong> LeSS relies on teams self-coordinating using shared context and
+discipline instead of a dedicated coordination role — which is viable
+exactly as long as the n² link count stays small enough for informal
+mechanisms (a shared backlog, cross-team refinement) to actually cover it.
+Past roughly 8 teams (LeSS's own stated ceiling before "LeSS Huge"), the
+link count outgrows what shared discipline alone can track, which is why
+LeSS Huge reintroduces structure (area backlogs, area POs) rather than
+scaling the minimal version indefinitely — the underlying n² pressure
+doesn't go away just because the framework prefers minimalism.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Given an organization with 6 teams building two related products sharing a
 platform: (1) recommend one of the three frameworks and justify it using

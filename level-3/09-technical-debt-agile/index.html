@@ -1738,6 +1738,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2239,6 +2250,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2380,6 +2402,47 @@ gut feel. Six months later, the debt log shows the payment-gateway coupling
 as the single highest-interest item (touched by four of the last six
 features), and it gets scheduled and fixed before it blocks the next
 required integration.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The financial-debt metaphor isn't decorative — technical debt behaves like
+real debt in a specific, measurable way: it charges <em>interest</em> every time
+someone has to work around it, and the interest rate scales with how often
+that code path gets touched, which is exactly why the prioritization signal
+in this module is change-frequency, not discomfort.</p>
+<p><strong>Why the hardcoded payment-gateway assumption's cost compounds instead of
+staying fixed.</strong> Each new feature that touches the checkout module has to
+work <em>around</em> the hardcoded provider assumption rather than through a clean
+interface — meaning every one of the four features built between the launch
+crunch and the discovery paid a small "interest" cost (extra time
+navigating the coupling) without anyone tracking it as debt. By the time a
+second provider is genuinely needed, the interest already paid across four
+features plus the principal cost of the eventual refactor is far larger than
+the cost would have been to build it cleanly the first time — this is
+identical, mechanically, to compound interest: the debt itself didn't grow,
+but the number of transactions charged against it did, and each one paid a
+little more because the coupling had spread further (five files, not one).</p>
+<p><strong>Why "deliberate and untracked" is specifically the most dangerous
+quadrant, not just an inconvenient one.</strong> Deliberate-and-tracked debt at
+least gives someone downstream the chance to notice the tag and decide it's
+worth paying down before it compounds. Deliberate-and-untracked debt is
+invisible to everyone except the person who made the trade-off in the
+moment — which means the decision to accept a shortcut effectively becomes
+permanent by default (nobody manages what they can't see), even though the
+original author might have happily flagged it for cleanup if asked. This is
+why "log every shortcut before the sprint closes" is the single highest-
+leverage fix in the worked example: it costs one sentence at decision time
+and converts a permanent, invisible liability into a visible, manageable
+one.</p>
+<p><strong>Why dedicated capacity has to be protected like a real sprint commitment,
+not treated as slack.</strong> A percentage reserved for debt paydown that gets
+silently reabsorbed into feature work under deadline pressure (the same
+mid-sprint erosion pattern as Module 09, Level 2) never actually pays down
+anything — it just becomes a line item that exists on paper while the debt
+log grows unchecked sprint after sprint. Protecting it the same way a Sprint
+Goal is protected (Module 09, Level 2's framework: something else has to
+give if this capacity is claimed for something else) is what keeps the
+paydown real instead of aspirational — which is precisely why the fix in
+the worked example commits a <em>fixed</em> 15%, not a "we'll get to it when we
+can" intention.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Your team just shipped a feature under deadline pressure by copy-pasting a
 validation function instead of refactoring a shared one, and no one logged

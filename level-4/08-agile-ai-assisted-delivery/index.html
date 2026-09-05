@@ -2086,6 +2086,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2239,6 +2250,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2372,6 +2394,46 @@ time dropped but review time didn't. The next retrospective tracks cycle
 time specifically (not just story throughput), revealing the real
 bottleneck moved to code review — prompting the team to invest coaching
 time in review practices rather than further prompting technique.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The team celebrating a "3x throughput increase" and then discovering
+unchanged real cycle time is the Theory of Constraints (already seen in
+Module 05, Level 1's Kanban mechanics) playing out with a twist: AI
+assistance sped up a <em>non-bottleneck</em> stage, which by definition cannot
+improve total system throughput at all.</p>
+<p><strong>Why speeding up implementation alone cannot improve cycle time if review
+was already the constraint.</strong> In a pipeline of sequential stages
+(implement → review → integrate), total throughput is capped by the slowest
+stage — this is the same principle behind Module 04, Level 2's cycle-time
+diagnosis. If review was already running at capacity before AI assistance
+arrived, making implementation faster just means more finished work arrives
+at the review queue's door per unit time, without review's own capacity
+changing at all — the queue backs up, WIP balloons, and by Little's Law
+(cycle time = WIP ÷ throughput), cycle time for any individual item actually
+<em>worsens</em> even though "story throughput" (a misleading metric here, since
+completion is gated by review, not implementation) looked like it tripled.</p>
+<p><strong>Why lowering the WIP limit, not raising it, is the mechanically correct
+response.</strong> The intuitive move — more capacity upstream, so raise the "in
+progress" ceiling to match — ignores that the actual constraint didn't move.
+Raising a non-bottleneck stage's limit while the bottleneck stays fixed only
+grows the queue in front of the bottleneck faster, which is exactly the
+"lots of items in progress, few finished" symptom from Module 04, Level 2's
+Kanban table. Lowering the review-column limit instead forces the same pull
+discipline that fixes any bottleneck: work stops entering the pipeline
+faster than the actual constraint (human review) can absorb it, which is
+uncomfortable (developers producing code faster than it can be reviewed)
+but is precisely the friction that reveals review as the true limiting
+factor, rather than letting unreviewed AI output silently pile up
+unverified.</p>
+<p><strong>Why re-baselining estimates has to separate implementation time from
+review time, not just adjust the total.</strong> If a story's point value simply
+drops because implementation got faster, without accounting for review
+effort staying constant, the team's forecasting math (Module 06, Level 2)
+silently breaks — the same point total no longer maps to the same real
+elapsed time, because the ratio of implementation-to-review effort inside
+that point has shifted. This is a subtler version of velocity inflation:
+not gaming the number for appearance, but letting an unexamined change in
+the underlying work composition corrupt the historical series anyway,
+unless the team deliberately re-measures what a point represents now.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Your team has adopted an AI coding assistant and story throughput has
 doubled, but two production incidents in the last month traced back to

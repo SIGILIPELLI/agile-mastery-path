@@ -807,6 +807,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2217,6 +2228,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2382,6 +2404,40 @@ without internalizing the <em>values</em> those mechanics exist to serve, and en
 up with all the meeting overhead of Agile and none of its actual benefit.
 Recognizing this pattern — "process without the values behind it" — is one
 of the most useful diagnostic skills in this entire course.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>"Cargo cult Agile" — ceremonies with none of the intended effect — isn't a
+mysterious failure. It happens because each ceremony is a <em>proxy</em> for a
+mechanism, and copying the proxy without the mechanism produces the same
+schedule with none of the outcome.</p>
+<p><strong>Why "responding to change" requires a cost structure, not just an
+attitude.</strong> Waterfall makes late change expensive because so much sequential
+work depends on early decisions (see Module 02). Agile makes late change
+cheap by structurally limiting how much depends on any one decision: a
+two-week sprint means the most that can be "wrong" and need rework is two
+weeks of work, not six months. A team that keeps two-week sprints but writes
+a fully locked backlog for the next six months has kept the timebox and
+discarded the actual mechanism — they've reintroduced Waterfall's dependency
+chain inside a Scrum calendar, so "welcoming change" has nothing cheap left
+to welcome it into.</p>
+<p><strong>Why face-to-face conversation is a bandwidth argument, not a lifestyle
+preference.</strong> Written specs can only carry the information someone thought
+to write down; a live conversation carries tone, follow-up questions, and the
+listener's real-time confusion signal ("wait, what do you mean by
+'category'?") that surfaces a misunderstanding in the room instead of three
+weeks later in a bug report. A daily standup done as a status report to a
+manager throws away exactly this mechanism — the two developers who most
+need to catch each other's wrong assumption about the categorization API are
+talking <em>at</em> the Scrum Master instead of <em>to each other</em>, so the
+misunderstanding survives the meeting.</p>
+<p><strong>Why "no documentation" is a self-defeating misreading, mechanically.</strong>
+Working software is the measure of progress because documentation can claim
+anything is done while software either runs correctly or doesn't — it's a
+harder-to-fake signal. But a team that deletes design docs entirely loses the
+one artifact that lets someone six months later understand <em>why</em> a decision
+was made, which forces every future change to be made by guesswork or by
+re-deriving the reasoning from the code itself — the exact costly rediscovery
+the manifesto's authors were trying to eliminate, just relocated from
+"upfront" to "every time someone touches the code later."</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Read all twelve principles in the original manifesto text (search "Agile
 Manifesto principles" — it's a public, freely available document, and
