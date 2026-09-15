@@ -104,6 +104,10 @@ reproduced here at multi-team scale: the cost of a dependency isn't fixed,
 it's a function of how much has been built on the wrong assumption before
 anyone catches it.
 
+## 🔀 Related lessons on other tracks
+
+- [Terraform — 07 · Dependency Management & the Graph](https://sigilipelli.github.io/terraform-mastery-path/level-3/07-dependency-graph/)
+
 ## Exercise
 
 For three teams sharing one platform, where Team X needs a shared library

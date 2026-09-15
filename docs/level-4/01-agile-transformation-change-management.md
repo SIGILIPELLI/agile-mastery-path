@@ -103,6 +103,12 @@ behavior (the "empower action" step) — without it, the change has no social
 proof to draw on, and reverts to whatever behavior the *actual* incentive
 structure (still unreformed) rewards.
 
+## 🔀 Related lessons on other tracks
+
+- [AI Manager — 08 · Change Management for AI Adoption](https://sigilipelli.github.io/ai-manager-mastery-path/level-2/08-change-management-ai-adoption/)
+- [AI Tools — 06 · Change Management for AI Tool Rollouts](https://sigilipelli.github.io/ai-tools-mastery-path/level-3/06-change-management-rollouts/)
+- [Claude Training — 02 · Change Management for AI Adoption](https://sigilipelli.github.io/claude-training-mastery-path/level-4/02-change-management-ai-adoption/)
+
 ## Exercise
 
 Your organization wants to move 6 teams from ad hoc project management to

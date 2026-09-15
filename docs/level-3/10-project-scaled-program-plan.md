@@ -149,3 +149,7 @@ For a multi-team program of your own choosing, produce:
 7. A contract-model decision for any external party, using the Module 08
    framework.
 8. One technical-debt guardrail specific to the delivery approach chosen.
+
+## 🔀 Related lessons on other tracks
+
+- [Project Manager — 10 · Project — Program Plan for 3 Related Projects](https://sigilipelli.github.io/project-manager-mastery-path/level-3/10-project-program-plan/)

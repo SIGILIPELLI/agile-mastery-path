@@ -140,3 +140,7 @@ For a product of your own choosing, produce:
    from scope creep.
 6. A one-paragraph stakeholder-facing summary stating confidence level and
    naming the specific condition that confidence depends on.
+
+## 🔀 Related lessons on other tracks
+
+- [Project Manager — 10 · Project — Agile Plan with Sprint Schedule](https://sigilipelli.github.io/project-manager-mastery-path/level-2/10-project-agile-sprint-plan/)

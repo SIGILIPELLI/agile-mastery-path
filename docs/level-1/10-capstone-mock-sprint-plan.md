@@ -163,3 +163,7 @@ Following the exact structure above, but for a product of your own choosing
    ask a real stakeholder.
 8. A Sprint Retrospective agenda that references a specific event from your
    own plan (not a generic "communicate better" item).
+
+## 🔀 Related lessons on other tracks
+
+- [Project Manager — 10 · Project — Agile Plan with Sprint Schedule](https://sigilipelli.github.io/project-manager-mastery-path/level-2/10-project-agile-sprint-plan/)

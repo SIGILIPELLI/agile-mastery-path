@@ -109,6 +109,12 @@ early, because that's the scope most likely to actually get paid for before
 a potential stop. The kill fee converts "please prioritize value" from a
 request into a financial incentive the vendor cannot ignore.
 
+## 🔀 Related lessons on other tracks
+
+- [AI Manager — 08 · Vendor & Partner Management for AI](https://sigilipelli.github.io/ai-manager-mastery-path/level-3/08-vendor-partner-management/)
+- [AI Tools — 03 · Advanced Vendor Risk Management for AI Tools](https://sigilipelli.github.io/ai-tools-mastery-path/level-4/03-advanced-vendor-risk-management/)
+- [Project Manager — 04 · Vendor & Contract Management](https://sigilipelli.github.io/project-manager-mastery-path/level-3/04-vendor-contract-management/)
+
 ## Exercise
 
 Your organization is about to sign a 6-month, fixed-price contract with an

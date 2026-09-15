@@ -107,6 +107,10 @@ paydown real instead of aspirational — which is precisely why the fix in
 the worked example commits a *fixed* 15%, not a "we'll get to it when we
 can" intention.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Manager — 09 · Managing Technical Debt & Platform Investments](https://sigilipelli.github.io/product-manager-mastery-path/level-3/09-managing-technical-debt-platform-investments/)
+
 ## Exercise
 
 Your team just shipped a feature under deadline pressure by copy-pasting a

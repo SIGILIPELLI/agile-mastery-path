@@ -110,6 +110,12 @@ prioritization — it's recognizing that *reducing uncertainty* has its own
 value (avoiding a week-9 surprise) that a pure feature-value ranking has no
 way to represent on its own.
 
+## 🔀 Related lessons on other tracks
+
+- [AI Tools — 03 · Advanced Vendor Risk Management for AI Tools](https://sigilipelli.github.io/ai-tools-mastery-path/level-4/03-advanced-vendor-risk-management/)
+- [Cybersecurity — 09 · Security Leadership & Risk Management](https://sigilipelli.github.io/cybersecurity-mastery-path/level-4/09-security-leadership-risk-management/)
+- [Project Manager — 06 · Risk Management Basics](https://sigilipelli.github.io/project-manager-mastery-path/level-1/06-risk-management-basics/)
+
 ## Exercise
 
 For a project integrating with an unfamiliar external API under a fixed
