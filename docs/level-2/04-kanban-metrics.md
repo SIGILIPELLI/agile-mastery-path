@@ -1,3 +1,7 @@
+---
+description: "Kanban Metrics (Cycle Time, Lead Time, CFD) — Level 1 covered WIP limits and pull as Kanban's mechanics. This module covers the metrics that tell you…"
+---
+
 # 04 · Kanban Metrics (Cycle Time, Lead Time, CFD)
 
 Level 1 covered WIP limits and pull as Kanban's mechanics. This module

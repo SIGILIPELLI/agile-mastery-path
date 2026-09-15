@@ -1,3 +1,7 @@
+---
+description: "Leading Agile at Portfolio Level — At the portfolio level, the unit of work isn't a story or a sprint — it's an investment decision across many products…"
+---
+
 # 07 · Leading Agile at Portfolio Level
 
 At the portfolio level, the unit of work isn't a story or a sprint — it's an

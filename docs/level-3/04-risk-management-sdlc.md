@@ -1,3 +1,7 @@
+---
+description: "Risk Management Across SDLC Phases — Waterfall front-loads risk analysis into one upfront phase; Agile spreads risk management across every sprint, but…"
+---
+
 # 04 · Risk Management Across SDLC Phases
 
 Waterfall front-loads risk analysis into one upfront phase; Agile spreads

@@ -1,3 +1,7 @@
+---
+description: "Agile in Distributed Teams — Scrum's ceremonies assume people can gather in a room, read body language, and pair informally at a whiteboard. Distributed…"
+---
+
 # 02 · Agile in Distributed Teams
 
 Scrum's ceremonies assume people can gather in a room, read body language,

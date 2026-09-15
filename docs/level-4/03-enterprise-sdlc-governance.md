@@ -1,3 +1,7 @@
+---
+description: "Enterprise SDLC Governance — Large enterprises carry real governance obligations — audit, compliance, security sign-off, financial controls — that don't…"
+---
+
 # 03 · Enterprise SDLC Governance
 
 Large enterprises carry real governance obligations — audit, compliance,

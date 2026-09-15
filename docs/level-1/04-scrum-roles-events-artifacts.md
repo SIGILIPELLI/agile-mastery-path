@@ -1,3 +1,7 @@
+---
+description: "Scrum Roles, Events & Artifacts — Scrum is the single most widely adopted Agile framework, and it works because it's built from a small, fixed set of…"
+---
+
 # 04 · Scrum Roles, Events & Artifacts
 
 Scrum is the single most widely adopted Agile framework, and it works

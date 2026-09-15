@@ -1,3 +1,7 @@
+---
+description: "Project — Release Plan with Sprint Roadmap — This project combines every Level 2 module into one deliverable: a release plan spanning several sprints…"
+---
+
 # 10 · Project — Release Plan with Sprint Roadmap
 
 This project combines every Level 2 module into one deliverable: a release

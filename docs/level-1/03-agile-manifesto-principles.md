@@ -1,3 +1,7 @@
+---
+description: "The Agile Manifesto & Principles — In February 2001, seventeen software practitioners met at a ski resort in Snowbird, Utah, frustrated with heavyweight…"
+---
+
 # 03 · The Agile Manifesto & Principles
 
 In February 2001, seventeen software practitioners met at a ski resort in

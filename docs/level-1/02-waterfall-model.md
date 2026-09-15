@@ -1,3 +1,7 @@
+---
+description: "The Waterfall Model — Waterfall is the SDLC run once, straight through, in strict sequence, with a formal sign-off gate between each phase. The name comes…"
+---
+
 # 02 · The Waterfall Model
 
 Waterfall is the SDLC run **once, straight through, in strict sequence**,

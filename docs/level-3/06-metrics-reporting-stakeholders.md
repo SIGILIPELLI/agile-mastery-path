@@ -1,3 +1,7 @@
+---
+description: "Metrics & Reporting for Stakeholders — The metrics a team needs to run itself (cycle time, velocity range) are rarely the metrics a stakeholder needs to…"
+---
+
 # 06 · Metrics & Reporting for Stakeholders
 
 The metrics a team needs to run itself (cycle time, velocity range) are

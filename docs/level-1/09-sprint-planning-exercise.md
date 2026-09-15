@@ -1,3 +1,7 @@
+---
+description: "A Simple Sprint-Planning Exercise — This module is a bridge between the concepts covered so far (Scrum's events, user stories, story points) and the Level…"
+---
+
 # 09 · A Simple Sprint-Planning Exercise
 
 This module is a bridge between the concepts covered so far (Scrum's

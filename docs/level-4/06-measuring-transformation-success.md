@@ -1,3 +1,7 @@
+---
+description: "Measuring Transformation Success — 'Are we agile yet?' is the wrong question — it invites checklist theater (are we doing the ceremonies) instead of…"
+---
+
 # 06 · Measuring Transformation Success
 
 "Are we agile yet?" is the wrong question — it invites checklist theater

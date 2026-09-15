@@ -1,3 +1,7 @@
+---
+description: "Agile Contracts & Vendor Management — Agile assumes changing requirements; most commercial contracts assume fixed scope. When a vendor or client…"
+---
+
 # 08 · Agile Contracts & Vendor Management
 
 Agile assumes changing requirements; most commercial contracts assume fixed

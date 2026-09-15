@@ -1,3 +1,7 @@
+---
+description: "Definition of Done & Definition of Ready — Two short checklists — one gating entry into a sprint, one gating exit — prevent most of the mid-sprint…"
+---
+
 # 05 · Definition of Done & Definition of Ready
 
 Two short checklists — one gating entry into a sprint, one gating exit —

@@ -1,3 +1,7 @@
+---
+description: "Scrum Ceremonies in Depth — Level 1 introduced the five Scrum events as a table of timeboxes and purposes. That's enough to recognize Scrum on paper.…"
+---
+
 # 01 · Scrum Ceremonies in Depth
 
 Level 1 introduced the five Scrum events as a table of timeboxes and

@@ -1,3 +1,7 @@
+---
+description: "Hybrid Agile-Waterfall Models — Most real organizations aren't purely Agile or purely Waterfall — a fixed contractual milestone, a hardware dependency, or…"
+---
+
 # 03 · Hybrid Agile-Waterfall Models
 
 Most real organizations aren't purely Agile or purely Waterfall — a fixed

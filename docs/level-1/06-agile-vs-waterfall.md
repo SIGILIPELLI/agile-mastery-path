@@ -1,3 +1,7 @@
+---
+description: "Agile vs. Waterfall — Most requests to 'just be more agile' without examining this test are really requests to fix all three variables simultaneously …"
+---
+
 # 06 · Agile vs. Waterfall
 
 Modules 2 and 3 covered Waterfall and Agile separately. This module puts

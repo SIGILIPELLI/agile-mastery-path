@@ -1,3 +1,7 @@
+---
+description: "Working Agreements & Team Norms — Two teams can run identical Scrum ceremonies and still feel completely different to work on — the difference is usually…"
+---
+
 # 08 · Working Agreements & Team Norms
 
 Two teams can run identical Scrum ceremonies and still feel completely

@@ -1,3 +1,7 @@
+---
+description: "Technical Debt in an Agile Delivery Model — Agile's short cycles and pressure to ship every sprint make it easy to accumulate technical debt without…"
+---
+
 # 09 · Technical Debt in an Agile Delivery Model
 
 Agile's short cycles and pressure to ship every sprint make it easy to

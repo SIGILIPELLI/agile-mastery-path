@@ -1,3 +1,7 @@
+---
+description: "Estimation Basics (Story Points & Planning Poker) — Agile teams need to answer 'how much can we commit to this sprint?' without the luxury of a fully…"
+---
+
 # 08 · Estimation Basics (Story Points & Planning Poker)
 
 Agile teams need to answer "how much can we commit to this sprint?" without

@@ -1,3 +1,7 @@
+---
+description: "Velocity Tracking — Velocity is the most commonly misused Agile metric — treated as a productivity score, a cross-team comparison tool, or a management…"
+---
+
 # 06 · Velocity Tracking
 
 Velocity is the most commonly misused Agile metric — treated as a

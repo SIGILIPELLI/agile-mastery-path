@@ -1,3 +1,7 @@
+---
+description: "Capstone — Full Organizational Agile Transformation Roadmap — This capstone combines every module from Levels 1-4 into one deliverable: a full…"
+---
+
 # 10 · Capstone — Full Organizational Agile Transformation Roadmap
 
 This capstone combines every module from Levels 1-4 into one deliverable: a

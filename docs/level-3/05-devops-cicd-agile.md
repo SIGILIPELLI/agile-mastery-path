@@ -1,3 +1,7 @@
+---
+description: "DevOps & CI/CD Integration with Agile — Agile shortens the planning feedback loop to weeks; DevOps and CI/CD are what shorten the technical feedback loop…"
+---
+
 # 05 · DevOps & CI/CD Integration with Agile
 
 Agile shortens the *planning* feedback loop to weeks; DevOps and CI/CD are

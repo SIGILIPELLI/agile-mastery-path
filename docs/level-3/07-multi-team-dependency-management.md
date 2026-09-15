@@ -1,3 +1,7 @@
+---
+description: "Multi-Team Dependency Management — Once more than one team shares a product, a codebase, or a platform, 'Team A is blocked on Team B' becomes routine.…"
+---
+
 # 07 · Multi-Team Dependency Management
 
 Once more than one team shares a product, a codebase, or a platform, "Team

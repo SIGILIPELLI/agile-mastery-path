@@ -1,3 +1,7 @@
+---
+description: "Project — Scaled Program Delivery Plan — This project combines every Level 3 module into one deliverable: a delivery plan for a program spanning multiple…"
+---
+
 # 10 · Project — Scaled Program Delivery Plan
 
 This project combines every Level 3 module into one deliverable: a delivery

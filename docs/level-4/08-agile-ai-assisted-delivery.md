@@ -1,3 +1,7 @@
+---
+description: "Agile & AI-Assisted Delivery — AI coding assistants and agents change the economics of individual tasks — often making implementation faster than…"
+---
+
 # 08 · Agile & AI-Assisted Delivery
 
 AI coding assistants and agents change the economics of individual tasks —

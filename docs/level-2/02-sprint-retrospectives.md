@@ -1,3 +1,7 @@
+---
+description: "Sprint Retrospectives — A Retrospective that produces the same three complaints sprint after sprint isn't failing by accident — it's usually missing a…"
+---
+
 # 02 · Sprint Retrospectives
 
 A Retrospective that produces the same three complaints sprint after sprint

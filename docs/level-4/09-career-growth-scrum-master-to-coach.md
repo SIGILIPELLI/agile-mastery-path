@@ -1,3 +1,7 @@
+---
+description: "Career Growth: Scrum Master to Agile Coach/Director — The path from Scrum Master to enterprise/agile coach or director isn't just 'do Scrum Master tasks…"
+---
+
 # 09 · Career Growth: Scrum Master to Agile Coach/Director
 
 The path from Scrum Master to enterprise/agile coach or director isn't just

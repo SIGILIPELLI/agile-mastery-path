@@ -1,3 +1,7 @@
+---
+description: "Handling Scope Change Mid-Sprint — 'Can you just squeeze this in?' is one of the most common pressures a Scrum team faces, and how a team answers it…"
+---
+
 # 09 · Handling Scope Change Mid-Sprint
 
 "Can you just squeeze this in?" is one of the most common pressures a Scrum

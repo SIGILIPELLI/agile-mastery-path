@@ -1,3 +1,7 @@
+---
+description: "Coaching Teams — At the master level, the job shifts from running ceremonies to developing the people and teams who run them. Coaching is a distinct skill…"
+---
+
 # 02 · Coaching Teams
 
 At the master level, the job shifts from running ceremonies to developing

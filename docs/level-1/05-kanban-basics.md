@@ -1,3 +1,7 @@
+---
+description: "Kanban Basics (WIP Limits & Pull System) — Kanban is a flow-based method for managing work, in contrast to Scrum's iteration-based approach. There are no…"
+---
+
 # 05 · Kanban Basics (WIP Limits & Pull System)
 
 Kanban is a **flow-based** method for managing work, in contrast to Scrum's

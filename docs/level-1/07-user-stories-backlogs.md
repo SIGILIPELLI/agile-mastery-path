@@ -1,3 +1,7 @@
+---
+description: "User Stories & Backlogs — A user story is a small, specific expression of a need, written from the perspective of the person who has it — not a technical…"
+---
+
 # 07 · User Stories & Backlogs
 
 A **user story** is a small, specific expression of a need, written from the

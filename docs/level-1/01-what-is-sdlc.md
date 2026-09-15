@@ -1,3 +1,7 @@
+---
+description: "What Is the SDLC? — The Software Development Life Cycle (SDLC) is the sequence of phases a piece of software passes through from 'someone has an idea' to…"
+---
+
 # 01 · What Is the SDLC?
 
 The **Software Development Life Cycle (SDLC)** is the sequence of phases a

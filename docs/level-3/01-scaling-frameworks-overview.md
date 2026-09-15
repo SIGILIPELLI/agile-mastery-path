@@ -1,3 +1,7 @@
+---
+description: "Scaling Frameworks Overview (SAFe, LeSS, Nexus) — A single Scrum team tops out around 5–9 people. Once a product needs 3, 10, or 50 teams working toward…"
+---
+
 # 01 · Scaling Frameworks Overview (SAFe, LeSS, Nexus)
 
 A single Scrum team tops out around 5–9 people. Once a product needs 3, 10,

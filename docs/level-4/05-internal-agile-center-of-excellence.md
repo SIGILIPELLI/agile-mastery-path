@@ -1,3 +1,7 @@
+---
+description: "Building an Internal Agile Center of Excellence — Once an organization has more than a handful of agile teams, ad hoc coaching (one senior person helping…"
+---
+
 # 05 · Building an Internal Agile Center of Excellence
 
 Once an organization has more than a handful of agile teams, ad hoc coaching

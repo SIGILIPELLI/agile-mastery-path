@@ -1,3 +1,7 @@
+---
+description: "Backlog Refinement — Sprint Planning runs long, stories get pulled in half-understood, and developers discover missing acceptance criteria mid-sprint …"
+---
+
 # 03 · Backlog Refinement
 
 Sprint Planning runs long, stories get pulled in half-understood, and

@@ -1,3 +1,7 @@
+---
+description: "Release Planning — Sprints answer 'what are we doing next'; release planning answers 'when will stakeholders actually get something, and what will it…"
+---
+
 # 07 · Release Planning
 
 Sprints answer "what are we doing next"; release planning answers "when

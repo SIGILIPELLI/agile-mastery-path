@@ -1,3 +1,7 @@
+---
+description: "Agile Transformation & Change Management — Rolling out agile across an organization is a change-management problem first and a process problem second.…"
+---
+
 # 01 · Agile Transformation & Change Management
 
 Rolling out agile across an organization is a change-management problem

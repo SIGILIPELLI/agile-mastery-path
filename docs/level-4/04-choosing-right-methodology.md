@@ -1,3 +1,7 @@
+---
+description: "Choosing the Right Methodology per Project Type — No single methodology is correct everywhere. A master-level practitioner matches the approach to the…"
+---
+
 # 04 · Choosing the Right Methodology per Project Type
 
 No single methodology is correct everywhere. A master-level practitioner
