@@ -152,4 +152,4 @@ For a multi-team program of your own choosing, produce:
 
 ## 🔀 Related lessons on other tracks
 
-- [Project Manager — 10 · Project — Program Plan for 3 Related Projects](https://sigilipelli.github.io/project-manager-mastery-path/level-3/10-project-program-plan/)
+- [Project Manager — 10 · Project — Program Plan for 3 Related Projects](https://learnmasterypath.com/project-manager-mastery-path/level-3/10-project-program-plan/)

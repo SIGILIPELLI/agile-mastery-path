@@ -105,9 +105,9 @@ velocity stays honest only when nobody's rewarded for inflating it.
 
 ## 🔀 Related lessons on other tracks
 
-- [AI Tools — 07 · Building an AI Center of Excellence](https://sigilipelli.github.io/ai-tools-mastery-path/level-4/07-building-ai-center-of-excellence/)
-- [Claude Training — 08 · Building an AI Usage Center of Excellence](https://sigilipelli.github.io/claude-training-mastery-path/level-4/08-ai-center-of-excellence/)
-- [Tableau — 01 · Building a BI Center of Excellence](https://sigilipelli.github.io/tableau-mastery-path/level-4/02-bi-center-of-excellence/)
+- [AI Tools — 07 · Building an AI Center of Excellence](https://learnmasterypath.com/ai-tools-mastery-path/level-4/07-building-ai-center-of-excellence/)
+- [Claude Training — 08 · Building an AI Usage Center of Excellence](https://learnmasterypath.com/claude-training-mastery-path/level-4/08-ai-center-of-excellence/)
+- [Tableau — 01 · Building a BI Center of Excellence](https://learnmasterypath.com/tableau-mastery-path/level-4/02-bi-center-of-excellence/)
 
 ## Exercise
 

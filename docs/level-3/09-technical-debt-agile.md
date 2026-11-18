@@ -109,7 +109,7 @@ can" intention.
 
 ## 🔀 Related lessons on other tracks
 
-- [Product Manager — 09 · Managing Technical Debt & Platform Investments](https://sigilipelli.github.io/product-manager-mastery-path/level-3/09-managing-technical-debt-platform-investments/)
+- [Product Manager — 09 · Managing Technical Debt & Platform Investments](https://learnmasterypath.com/product-manager-mastery-path/level-3/09-managing-technical-debt-platform-investments/)
 
 ## Exercise
 

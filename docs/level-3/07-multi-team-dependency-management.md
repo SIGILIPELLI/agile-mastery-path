@@ -106,7 +106,7 @@ anyone catches it.
 
 ## 🔀 Related lessons on other tracks
 
-- [Terraform — 07 · Dependency Management & the Graph](https://sigilipelli.github.io/terraform-mastery-path/level-3/07-dependency-graph/)
+- [Terraform — 07 · Dependency Management & the Graph](https://learnmasterypath.com/terraform-mastery-path/level-3/07-dependency-graph/)
 
 ## Exercise
 

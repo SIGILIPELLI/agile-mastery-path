@@ -101,8 +101,8 @@ actually exists in this project.
 
 ## 🔀 Related lessons on other tracks
 
-- [AI Tools — 02 · Choosing the Right AI Tool for a Task](https://sigilipelli.github.io/ai-tools-mastery-path/level-1/02-choosing-the-right-ai-tool/)
-- [Server Ops — 05 · Choosing the Right HA Architecture for a Given SLA](https://sigilipelli.github.io/server-ops-mastery-path/level-4/05-choosing-ha-architecture-for-sla/)
+- [AI Tools — 02 · Choosing the Right AI Tool for a Task](https://learnmasterypath.com/ai-tools-mastery-path/level-1/02-choosing-the-right-ai-tool/)
+- [Server Ops — 05 · Choosing the Right HA Architecture for a Given SLA](https://learnmasterypath.com/server-ops-mastery-path/level-4/05-choosing-ha-architecture-for-sla/)
 
 ## Exercise
 

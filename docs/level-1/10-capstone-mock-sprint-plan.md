@@ -166,4 +166,4 @@ Following the exact structure above, but for a product of your own choosing
 
 ## 🔀 Related lessons on other tracks
 
-- [Project Manager — 10 · Project — Agile Plan with Sprint Schedule](https://sigilipelli.github.io/project-manager-mastery-path/level-2/10-project-agile-sprint-plan/)
+- [Project Manager — 10 · Project — Agile Plan with Sprint Schedule](https://learnmasterypath.com/project-manager-mastery-path/level-2/10-project-agile-sprint-plan/)

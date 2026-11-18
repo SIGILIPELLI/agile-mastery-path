@@ -113,7 +113,7 @@ doesn't go away just because the framework prefers minimalism.
 
 ## 🔀 Related lessons on other tracks
 
-- [Project Manager — 06 · Scaling Agile (SAFe, LeSS)](https://sigilipelli.github.io/project-manager-mastery-path/level-3/06-scaling-agile/)
+- [Project Manager — 06 · Scaling Agile (SAFe, LeSS)](https://learnmasterypath.com/project-manager-mastery-path/level-3/06-scaling-agile/)
 
 ## Exercise
 

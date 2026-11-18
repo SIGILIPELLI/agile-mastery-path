@@ -102,9 +102,9 @@ complementary at best, not sufficient.
 
 ## 🔀 Related lessons on other tracks
 
-- [English Fluency & IELTS — 09 · Career Growth: Becoming an English Fluency Coach](https://sigilipelli.github.io/english-fluency-mastery-path/level-4/09-career-growth-fluency-coach/)
-- [Product Manager — 09 · Career Growth: IC to Director/VP](https://sigilipelli.github.io/product-manager-mastery-path/level-4/09-career-growth-ic-to-director-vp/)
-- [Project Manager — 09 · Career Growth: PM to Program/Portfolio Director](https://sigilipelli.github.io/project-manager-mastery-path/level-4/09-career-growth-pm-to-director/)
+- [English Fluency & IELTS — 09 · Career Growth: Becoming an English Fluency Coach](https://learnmasterypath.com/english-fluency-mastery-path/level-4/09-career-growth-fluency-coach/)
+- [Product Manager — 09 · Career Growth: IC to Director/VP](https://learnmasterypath.com/product-manager-mastery-path/level-4/09-career-growth-ic-to-director-vp/)
+- [Project Manager — 09 · Career Growth: PM to Program/Portfolio Director](https://learnmasterypath.com/project-manager-mastery-path/level-4/09-career-growth-pm-to-director/)
 
 ## Exercise
 
