@@ -1,3 +1,7 @@
+---
+description: "Level 4 (Master) of the free Agile & Software Delivery Mastery Path: Agile Transformation & Change Management, Coaching Teams, Enterprise SDLC Governance…"
+---
+
 # Level 4 · Master
 
 ## Modules

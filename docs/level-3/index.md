@@ -1,3 +1,7 @@
+---
+description: "Level 3 (Advanced) of the free Agile & Software Delivery Mastery Path: Scaling Frameworks Overview (SAFe, LeSS, Nexus), Agile in Distributed Teams, Hybrid…"
+---
+
 # Level 3 · Advanced
 
 ## Modules

@@ -1,3 +1,7 @@
+---
+description: "Level 1 (Entry) of the free Agile & Software Delivery Mastery Path: What Is the SDLC?, The Waterfall Model, The Agile Manifesto & Principles, Scrum Roles…"
+---
+
 # Level 1 · Entry
 
 ## Modules

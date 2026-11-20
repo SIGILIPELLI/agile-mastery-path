@@ -1,3 +1,7 @@
+---
+description: "Level 2 (Intermediate) of the free Agile & Software Delivery Mastery Path: Scrum Ceremonies in Depth, Sprint Retrospectives, Backlog Refinement, Kanban…"
+---
+
 # Level 2 · Intermediate
 
 ## Modules
