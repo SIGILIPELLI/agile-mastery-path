@@ -52,9 +52,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/progress-tracker.css
+  - stylesheets/final-quiz.css
 
 extra_javascript:
   - javascripts/progress-tracker.js
+  - javascripts/final-quiz.js
 
 
 
@@ -121,3 +123,5 @@ nav:
       - "08 · Agile & AI-Assisted Delivery": level-4/08-agile-ai-assisted-delivery.md
       - "09 · Career Growth: Scrum Master to Agile Coach/Director": level-4/09-career-growth-scrum-master-to-coach.md
       - "10 · Capstone — Full Organizational Agile Transformation Roadmap": level-4/10-capstone-organizational-transformation-roadmap.md
+  - "🎯 Final Quiz": quiz.md
+
