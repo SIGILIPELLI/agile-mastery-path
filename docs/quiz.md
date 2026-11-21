@@ -79,14 +79,14 @@ you can retake it as many times as you like. Your best result is saved in this b
     "explanation": "Velocity varies; a range avoids the 'you said 7 sprints' trap. Verified by computing."
   },
   {
-    "question": "A team's stories show Dev B's velocity at 30 while Team A's is 20, and a manager wants Team A to 'match B'. What is wrong?",
+    "question": "Team B's velocity is 30 and Team A's is 20, and a manager wants Team A to 'match B'. What is wrong?",
     "options": [
-      "Team A is slower",
       "Story points are relative and team-specific, so cross-team comparison is meaningless and invites inflation",
       "Use hours instead",
-      "Nothing, set it as a target"
+      "Nothing, set it as a target",
+      "Team A is slower"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "explanation": "Velocity is for forecasting a team's own capacity."
   },
   {
