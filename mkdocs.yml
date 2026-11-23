@@ -77,8 +77,8 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
-  - "📋 Cheat Sheet": cheat-sheet.md
+  - Interview Questions: interview-questions.md
+  - Cheat Sheet: cheat-sheet.md
   - "Level 1 · Entry":
       - Overview: level-1/index.md
       - "01 · What Is the SDLC?": level-1/01-what-is-sdlc.md
@@ -127,5 +127,5 @@ nav:
       - "08 · Agile & AI-Assisted Delivery": level-4/08-agile-ai-assisted-delivery.md
       - "09 · Career Growth: Scrum Master to Agile Coach/Director": level-4/09-career-growth-scrum-master-to-coach.md
       - "10 · Capstone — Full Organizational Agile Transformation Roadmap": level-4/10-capstone-organizational-transformation-roadmap.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
