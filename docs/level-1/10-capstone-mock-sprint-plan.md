@@ -2,7 +2,7 @@
 description: "Capstone — Run a Mock 1-Week Sprint Plan — This capstone combines every Level 1 module into one deliverable: a complete, realistic 1-week sprint plan for…"
 ---
 
-# 10 · Capstone — Run a Mock 1-Week Sprint Plan
+# 10 · Project — Run a Mock 1-Week Sprint Plan
 
 This capstone combines every Level 1 module into one deliverable: a
 complete, realistic 1-week sprint plan for a small product, built the same
